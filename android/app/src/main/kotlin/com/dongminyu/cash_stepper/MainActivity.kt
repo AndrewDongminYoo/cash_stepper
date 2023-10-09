@@ -1,4 +1,4 @@
-package com.example.verygoodcore.cash_stepper
+package com.dongminyu.cash_stepper
 
 import io.flutter.embedding.android.FlutterActivity
 
