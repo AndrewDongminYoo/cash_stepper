@@ -92,10 +92,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/fonts/
     - assets/images/
-    - assets/videos/
-    - assets/audios/
-    - assets/lottie_animations/
-    - assets/rive_animations/
-    - assets/pdfs/
+    # - assets/videos/
+    # - assets/audios/
+    # - assets/lottie_animations/
+    # - assets/rive_animations/
+    # - assets/pdfs/
+
+  fonts:
+    - family: Lexend Deca
+      fonts:
+        - asset: assets/fonts/Lexend Deca-Medium.ttf
+        - asset: assets/fonts/Lexend Deca-Regular.ttf
