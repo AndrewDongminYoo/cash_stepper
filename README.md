@@ -63,43 +63,43 @@ This project relies on [flutter_localizations][flutter_localizations_link] and f
 
 1. To add a new localizable string, open the `app_en.arb` file at `lib/l10n/arb/app_en.arb`.
 
-    ```json
-    {
-        "@@locale": "en",
-        "counterAppBarTitle": "Counter",
-        "@counterAppBarTitle": {
-            "description": "Text shown in the AppBar of the Counter Page"
-        }
-    }
-    ```
+   ```json
+   {
+     "@@locale": "en",
+     "counterAppBarTitle": "Counter",
+     "@counterAppBarTitle": {
+       "description": "Text shown in the AppBar of the Counter Page"
+     }
+   }
+   ```
 
 2. Then add a new key/value and description
 
-    ```json
-    {
-        "@@locale": "en",
-        "counterAppBarTitle": "Counter",
-        "@counterAppBarTitle": {
-            "description": "Text shown in the AppBar of the Counter Page"
-        },
-        "helloWorld": "Hello World",
-        "@helloWorld": {
-            "description": "Hello World Text"
-        }
-    }
-    ```
+   ```json
+   {
+     "@@locale": "en",
+     "counterAppBarTitle": "Counter",
+     "@counterAppBarTitle": {
+       "description": "Text shown in the AppBar of the Counter Page"
+     },
+     "helloWorld": "Hello World",
+     "@helloWorld": {
+       "description": "Hello World Text"
+     }
+   }
+   ```
 
 3. Use the new string
 
-    ```dart
-    import 'package:cash_stepper/l10n/l10n.dart';
+   ```dart
+   import 'package:cash_stepper/l10n/l10n.dart';
 
-    @override
-    Widget build(BuildContext context) {
-    final l10n = context.l10n;
-    return Text(l10n.helloWorld);
-    }
-    ```
+   @override
+   Widget build(BuildContext context) {
+   final l10n = context.l10n;
+   return Text(l10n.helloWorld);
+   }
+   ```
 
 ### Adding Supported Locales
 
@@ -121,38 +121,38 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
 
 1. For each supported locale, add a new ARB file in `lib/l10n/arb`.
 
-    ```log
-    ├── l10n
-    │   ├── arb
-    │   │   ├── app_en.arb
-    │   │   └── app_es.arb
-    ```
+   ```log
+   ├── l10n
+   │   ├── arb
+   │   │   ├── app_en.arb
+   │   │   └── app_es.arb
+   ```
 
 2. Add the translated strings to each `.arb` file:
 
-    `app_en.arb`
+   `app_en.arb`
 
-    ```json
-    {
-        "@@locale": "en",
-        "counterAppBarTitle": "Counter",
-        "@counterAppBarTitle": {
-            "description": "Text shown in the AppBar of the Counter Page"
-        }
-    }
-    ```
+   ```json
+   {
+     "@@locale": "en",
+     "counterAppBarTitle": "Counter",
+     "@counterAppBarTitle": {
+       "description": "Text shown in the AppBar of the Counter Page"
+     }
+   }
+   ```
 
-    `app_es.arb`
+   `app_es.arb`
 
-    ```json
-    {
-        "@@locale": "ko",
-        "counterAppBarTitle": "카운터",
-        "@counterAppBarTitle": {
-            "description": "카운터 페이지의 앱바에 표시되는 텍스트"
-        }
-    }
-    ```
+   ```json
+   {
+     "@@locale": "ko",
+     "counterAppBarTitle": "카운터",
+     "@counterAppBarTitle": {
+       "description": "카운터 페이지의 앱바에 표시되는 텍스트"
+     }
+   }
+   ```
 
 ### Generating Translations
 
