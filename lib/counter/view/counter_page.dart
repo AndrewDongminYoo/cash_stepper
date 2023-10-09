@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 // 🌎 Project imports:
-import 'package:cash_stepper/counter/counter.dart';
-import 'package:cash_stepper/l10n/l10n.dart';
+import '/counter/counter.dart';
+import '/l10n/l10n.dart';
 
 class CounterPage extends StatelessWidget {
   const CounterPage({super.key});
@@ -25,7 +25,7 @@ class CounterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = context.l10n;
+    final l10n = context.l10ns;
     return Scaffold(
       appBar: AppBar(title: Text(l10n.counterAppBarTitle)),
       body: const Center(child: CounterText()),
