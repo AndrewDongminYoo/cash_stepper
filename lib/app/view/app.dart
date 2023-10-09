@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:cash_stepper/counter/counter.dart';
 import 'package:cash_stepper/l10n/l10n.dart';
 
-class App extends StatelessWidget {
-  const App({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

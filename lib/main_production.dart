@@ -3,5 +3,5 @@ import 'package:cash_stepper/app/app.dart';
 import 'package:cash_stepper/bootstrap.dart';
 
 void main() {
-  bootstrap(() => const App());
+  bootstrap(() => const MyApp());
 }
