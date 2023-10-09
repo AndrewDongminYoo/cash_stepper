@@ -7,8 +7,8 @@ import '../base_auth_user_provider.dart';
 
 export '../base_auth_user_provider.dart';
 
-class WallaceFirebaseUser extends BaseAuthUser {
-  WallaceFirebaseUser(this.user);
+class CashStepperFirebaseUser extends BaseAuthUser {
+  CashStepperFirebaseUser(this.user);
   User? user;
   @override
   bool get loggedIn => user != null;
@@ -50,17 +50,18 @@ class WallaceFirebaseUser extends BaseAuthUser {
 
   static BaseAuthUser fromUserCredential(UserCredential userCredential) =>
       fromFirebaseUser(userCredential.user);
-  static BaseAuthUser fromFirebaseUser(User? user) => WallaceFirebaseUser(user);
+  static BaseAuthUser fromFirebaseUser(User? user) =>
+      CashStepperFirebaseUser(user);
 }
 
-Stream<BaseAuthUser> wallaceFirebaseUserStream() => FirebaseAuth.instance
+Stream<BaseAuthUser> cashStepperFirebaseUserStream() => FirebaseAuth.instance
         .authStateChanges()
         .debounce((user) => user == null && !loggedIn
             ? TimerStream(true, const Duration(seconds: 1))
             : Stream.value(user))
         .map<BaseAuthUser>(
       (user) {
-        currentUser = WallaceFirebaseUser(user);
+        currentUser = CashStepperFirebaseUser(user);
         return currentUser!;
       },
     );

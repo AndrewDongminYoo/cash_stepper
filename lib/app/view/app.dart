@@ -4,31 +4,16 @@
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 // 🌎 Project imports:
 import '/auth/firebase_auth/auth_util.dart';
 import '/auth/firebase_auth/firebase_user_provider.dart';
-import '/firebase_options.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/internationalization.dart';
 import '/pages/pages.dart';
-
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform);
-
-  await FlutterFlowTheme.initialize();
-
-  usePathUrlStrategy();
-  runApp(const MyApp());
-}
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -59,7 +44,7 @@ class _MyAppState extends State<MyApp> {
 
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier);
-    userStream = wallaceFirebaseUserStream()
+    userStream = cashStepperFirebaseUserStream()
       ..listen((user) => _appStateNotifier.update(user));
     jwtTokenStream.listen((_) {});
     Future.delayed(
@@ -87,7 +72,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'wallace',
+      title: 'cashstepper',
       localizationsDelegates: const [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,

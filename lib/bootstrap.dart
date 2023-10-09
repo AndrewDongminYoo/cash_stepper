@@ -7,6 +7,12 @@ import 'package:flutter/widgets.dart';
 
 // 📦 Package imports:
 import 'package:bloc/bloc.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
+
+// 🌎 Project imports:
+import '/firebase_options.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -25,13 +31,18 @@ class AppBlocObserver extends BlocObserver {
 }
 
 Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
+  Bloc.observer = const AppBlocObserver();
+
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
-  Bloc.observer = const AppBlocObserver();
-
-  // Add cross-flavor configuration here
+  await FlutterFlowTheme.initialize();
+  usePathUrlStrategy();
 
   runApp(await builder());
 }
