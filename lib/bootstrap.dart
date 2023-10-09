@@ -1,8 +1,12 @@
+// 🎯 Dart imports:
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:bloc/bloc.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/widgets.dart';
+
+// 📦 Package imports:
+import 'package:bloc/bloc.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();

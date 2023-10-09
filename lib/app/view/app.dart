@@ -1,4 +1,7 @@
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
 import 'package:cash_stepper/counter/counter.dart';
 import 'package:cash_stepper/l10n/l10n.dart';
 
