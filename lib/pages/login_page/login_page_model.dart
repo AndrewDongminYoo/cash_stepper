@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'login_page_widget.dart' show LoginPageWidget;
 
 class LoginPageModel extends CustomModel<LoginPageWidget> {

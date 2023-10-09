@@ -10,7 +10,7 @@ import 'package:provider/provider.dart';
 // 🌎 Project imports:
 import '../../auth/base_auth_user_provider.dart';
 import '/app/view/app.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import '/pages/pages.dart';
 
 export 'package:go_router/go_router.dart';

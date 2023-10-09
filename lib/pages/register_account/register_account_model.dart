@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'register_account_widget.dart' show RegisterAccountWidget;
 
 class RegisterAccountModel extends CustomModel<RegisterAccountWidget> {

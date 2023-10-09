@@ -9,11 +9,11 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/upload_data.dart';
+import '/base/custom_animations.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
+import '/base/custom_widgets.dart';
+import '/base/upload_data.dart';
 import 'complete_profile_model.dart';
 
 export 'complete_profile_model.dart';

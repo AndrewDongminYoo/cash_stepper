@@ -7,9 +7,9 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 // 🌎 Project imports:
 import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_icon_button.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
 import 'payment_details_model.dart';
 
 export 'payment_details_model.dart';

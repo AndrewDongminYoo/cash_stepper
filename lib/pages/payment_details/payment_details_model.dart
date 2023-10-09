@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'payment_details_widget.dart' show PaymentDetailsWidget;
 
 class PaymentDetailsModel extends CustomModel<PaymentDetailsWidget> {

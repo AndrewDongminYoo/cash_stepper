@@ -7,8 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 // 🌎 Project imports:
 import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
 import 'home_page_model.dart';
 
 export 'home_page_model.dart';

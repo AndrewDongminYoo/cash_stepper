@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_drop_down.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/form_field_controller.dart';
+import '/base/custom_animations.dart';
+import '/base/custom_drop_down.dart';
+import '/base/custom_icon_button.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
+import '/base/custom_widgets.dart';
+import '/base/form_field_controller.dart';
 import 'transfer_funds_model.dart';
 
 export 'transfer_funds_model.dart';

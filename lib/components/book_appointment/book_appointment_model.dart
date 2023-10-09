@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
+import '/base/custom_util.dart';
+import '/base/form_field_controller.dart';
 import 'book_appointment_widget.dart' show BookAppointmentWidget;
 
 class BookAppointmentModel extends CustomModel<BookAppointmentWidget> {

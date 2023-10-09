@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 // 🌎 Project imports:
 import '/backend/schema/util/schema_util.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 
 typedef RecordBuilder<T> = T Function(DocumentSnapshot snapshot);
 

@@ -13,7 +13,7 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 
 // 🌎 Project imports:
 import '/firebase_options.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
+import 'base/custom_theme.dart';
 
 Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   WidgetsFlutterBinding.ensureInitialized();

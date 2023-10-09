@@ -19,7 +19,7 @@ import '/app/view/app.dart';
 export 'lat_lng.dart';
 export 'place.dart';
 export 'uploaded_file.dart';
-export 'flutter_flow_model.dart';
+export 'custom_model.dart';
 export 'dart:math' show min, max;
 export 'dart:typed_data' show Uint8List;
 export 'dart:convert' show jsonEncode, jsonDecode;

@@ -9,13 +9,13 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 // 🌎 Project imports:
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_drop_down.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/form_field_controller.dart';
+import '/base/custom_animations.dart';
+import '/base/custom_drop_down.dart';
+import '/base/custom_icon_button.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
+import '/base/custom_widgets.dart';
+import '/base/form_field_controller.dart';
 import 'book_appointment_model.dart';
 
 export 'book_appointment_model.dart';

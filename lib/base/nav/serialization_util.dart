@@ -5,8 +5,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '../../flutter_flow/place.dart';
-import '../../flutter_flow/uploaded_file.dart';
+import '/base/place.dart';
+import '/base/uploaded_file.dart';
 import '/backend/backend.dart';
 
 /// SERIALIZATION HELPERS

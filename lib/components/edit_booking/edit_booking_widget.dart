@@ -7,12 +7,12 @@ import 'package:flutter_datetime_picker_plus/flutter_datetime_picker_plus.dart';
 // 🌎 Project imports:
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_drop_down.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/form_field_controller.dart';
+import '/base/custom_drop_down.dart';
+import '/base/custom_icon_button.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
+import '/base/custom_widgets.dart';
+import '/base/form_field_controller.dart';
 import 'edit_booking_model.dart';
 
 export 'edit_booking_model.dart';

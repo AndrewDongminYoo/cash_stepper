@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'm_y_profile_page_widget.dart' show MYProfilePageWidget;
 
 class MYProfilePageModel extends CustomModel<MYProfilePageWidget> {

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'transfer_complete_widget.dart' show TransferCompleteWidget;
 
 class TransferCompleteModel extends CustomModel<TransferCompleteWidget> {

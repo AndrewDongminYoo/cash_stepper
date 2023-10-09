@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'change_password_widget.dart' show ChangePasswordWidget;
 
 class ChangePasswordModel extends CustomModel<ChangePasswordWidget> {

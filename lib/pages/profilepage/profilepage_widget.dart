@@ -7,9 +7,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_animations.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
 import 'profilepage_model.dart';
 
 export 'profilepage_model.dart';

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'onboarding_widget.dart' show OnboardingWidget;
 
 class OnboardingModel extends CustomModel<OnboardingWidget> {

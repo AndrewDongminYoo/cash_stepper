@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
+import '/base/custom_util.dart';
+import '/base/form_field_controller.dart';
 import 'transaction_a_d_d_widget.dart' show TransactionADDWidget;
 
 class TransactionADDModel extends CustomModel<TransactionADDWidget> {

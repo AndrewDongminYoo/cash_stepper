@@ -10,9 +10,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // 🌎 Project imports:
 import '/auth/firebase_auth/auth_util.dart';
 import '/auth/firebase_auth/firebase_user_provider.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/internationalization.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
+import '/base/internationalization.dart';
 import '/pages/pages.dart';
 
 class MyApp extends StatefulWidget {

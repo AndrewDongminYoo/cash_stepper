@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
+import '/base/custom_util.dart';
+import '/base/form_field_controller.dart';
 import 'request_funds_widget.dart' show RequestFundsWidget;
 
 class RequestFundsModel extends CustomModel<RequestFundsWidget> {

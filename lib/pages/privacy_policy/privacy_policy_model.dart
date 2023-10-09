@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'privacy_policy_widget.dart' show PrivacyPolicyWidget;
 
 class PrivacyPolicyModel extends CustomModel<PrivacyPolicyWidget> {

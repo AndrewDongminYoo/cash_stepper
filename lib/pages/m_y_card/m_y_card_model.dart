@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'm_y_card_widget.dart' show MYCardWidget;
 
 class MYCardModel extends CustomModel<MYCardWidget> {

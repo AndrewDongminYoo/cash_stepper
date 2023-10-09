@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'tutorial_p_r_o_f_i_l_e_widget.dart' show TutorialPROFILEWidget;
 
 class TutorialPROFILEModel extends CustomModel<TutorialPROFILEWidget> {

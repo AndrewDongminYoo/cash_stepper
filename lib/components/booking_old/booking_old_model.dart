@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
+import '/base/custom_util.dart';
+import '/base/form_field_controller.dart';
 import 'booking_old_widget.dart' show BookingOldWidget;
 
 class BookingOldModel extends CustomModel<BookingOldWidget> {

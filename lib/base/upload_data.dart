@@ -16,8 +16,8 @@ import 'package:video_player/video_player.dart';
 
 // 🌎 Project imports:
 import '../auth/firebase_auth/auth_util.dart';
-import 'flutter_flow_theme.dart';
-import 'flutter_flow_util.dart';
+import 'custom_theme.dart';
+import 'custom_util.dart';
 
 const allowedFormats = {'image/png', 'image/jpeg', 'video/mp4', 'image/gif'};
 

@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_theme.dart';
+import '/base/custom_util.dart';
 import 'tutorial_p_r_o_f_i_l_e_model.dart';
 
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'

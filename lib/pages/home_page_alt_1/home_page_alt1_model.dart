@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import '/flutter_flow/flutter_flow_util.dart';
+import '/base/custom_util.dart';
 import 'home_page_alt1_widget.dart' show HomePageAlt1Widget;
 
 class HomePageAlt1Model extends CustomModel<HomePageAlt1Widget> {
