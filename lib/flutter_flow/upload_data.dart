@@ -295,7 +295,7 @@ Future<List<SelectedFile>?> selectFiles({
 }
 
 List<SelectedFile> selectedFilesFromUploadedFiles(
-  List<FFUploadedFile> uploadedFiles, {
+  List<GetUploadedFile> uploadedFiles, {
   String? storageFolderPath,
   bool isMultiData = false,
 }) =>

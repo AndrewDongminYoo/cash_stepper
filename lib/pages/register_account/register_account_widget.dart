@@ -302,7 +302,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                               Padding(
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0, 24, 0, 24),
-                                child: FFButtonWidget(
+                                child: GetButtonWidget(
                                   onPressed: () async {
                                     GoRouter.of(context).prepareAuthEvent();
                                     if (_model.passwordCreateController.text !=
@@ -338,7 +338,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         'completeProfile', context.mounted);
                                   },
                                   text: 'Create Account',
-                                  options: FFButtonOptions(
+                                  options: GetButtonOptions(
                                     width: 160,
                                     height: 50,
                                     padding: EdgeInsetsDirectional.zero,
@@ -431,7 +431,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                       Padding(
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                        child: FFButtonWidget(
+                        child: GetButtonWidget(
                           onPressed: () async {
                             GoRouter.of(context).prepareAuthEvent();
                             final user =
@@ -449,7 +449,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                             context.goNamedAuth('MY_Card', context.mounted);
                           },
                           text: 'Continue as Guest',
-                          options: FFButtonOptions(
+                          options: GetButtonOptions(
                             width: 230,
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,

@@ -293,7 +293,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           selectedMedia.every((m) =>
                               validateFileFormat(m.storagePath, context))) {
                         setState(() => _model.isDataUploading = true);
-                        var selectedUploadedFiles = <FFUploadedFile>[];
+                        var selectedUploadedFiles = <GetUploadedFile>[];
 
                         var downloadUrls = <String>[];
                         try {
@@ -303,7 +303,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             showLoading: true,
                           );
                           selectedUploadedFiles = selectedMedia
-                              .map((m) => FFUploadedFile(
+                              .map((m) => GetUploadedFile(
                                     name: m.storagePath.split('/').last,
                                     bytes: m.bytes,
                                     height: m.dimensions?.height,
@@ -515,7 +515,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         );
                       }
                       final buttonLoginUsersRecord = snapshot.data!;
-                      return FFButtonWidget(
+                      return GetButtonWidget(
                         onPressed: () async {
                           await buttonLoginUsersRecord.reference
                               .update(createUsersRecordData(
@@ -528,7 +528,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           await context.pushNamed('onboarding');
                         },
                         text: 'Complete Profile',
-                        options: FFButtonOptions(
+                        options: GetButtonOptions(
                           width: 230,
                           height: 50,
                           padding: EdgeInsetsDirectional.zero,
@@ -570,12 +570,12 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         );
                       }
                       // final buttonLoginUsersRecord = snapshot.data!;
-                      return FFButtonWidget(
+                      return GetButtonWidget(
                         onPressed: () async {
                           await context.pushNamed('onboarding');
                         },
                         text: 'Skip for Now',
-                        options: FFButtonOptions(
+                        options: GetButtonOptions(
                           width: 140,
                           height: 50,
                           padding: EdgeInsetsDirectional.zero,

@@ -248,7 +248,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
               children: [
                 Row(
                   children: [
-                    FFButtonWidget(
+                    GetButtonWidget(
                       onPressed: () async {
                         await context.pushNamed(
                           'transferComplete',
@@ -262,7 +262,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                         );
                       },
                       text: 'Request Funds',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 300,
                         height: 70,
                         padding: EdgeInsetsDirectional.zero,

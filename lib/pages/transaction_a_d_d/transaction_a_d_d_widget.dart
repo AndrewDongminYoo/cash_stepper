@@ -505,7 +505,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                               buttonBudgetsRecordList.isNotEmpty
                                   ? buttonBudgetsRecordList.first
                                   : null;
-                          return FFButtonWidget(
+                          return GetButtonWidget(
                             onPressed: () async {
                               await TransactionsRecord.collection.doc().set({
                                 ...createTransactionsRecordData(
@@ -529,7 +529,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                               Navigator.of(context).pop();
                             },
                             text: 'Add Transaction',
-                            options: FFButtonOptions(
+                            options: GetButtonOptions(
                               width: 300,
                               height: 70,
                               padding: EdgeInsetsDirectional.zero,

@@ -227,7 +227,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                         dateTimeFormat(
                           'MMMEd',
                           paymentDetailsTransactionsRecord.transactionTime,
-                          locale: FFLocalizations.of(context).languageCode,
+                          locale: GetLocalizations.of(context).languageCode,
                         ),
                         style: FlutterFlowTheme.of(context).bodySmall,
                       ),
@@ -238,7 +238,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                           dateTimeFormat(
                             'jm',
                             paymentDetailsTransactionsRecord.transactionTime,
-                            locale: FFLocalizations.of(context).languageCode,
+                            locale: GetLocalizations.of(context).languageCode,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodySmall

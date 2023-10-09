@@ -311,7 +311,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                 children: [
                   Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
-                    child: FFButtonWidget(
+                    child: GetButtonWidget(
                       onPressed: () async {
                         await context.pushNamed(
                           'createBudgetBegin',
@@ -325,7 +325,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         );
                       },
                       text: 'Create Your Budget',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 200,
                         height: 50,
                         padding: EdgeInsetsDirectional.zero,

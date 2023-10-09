@@ -322,7 +322,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                           locale: LocaleType.values.firstWhere(
                             (l) =>
                                 l.name ==
-                                FFLocalizations.of(context).languageCode,
+                                GetLocalizations.of(context).languageCode,
                             orElse: () => LocaleType.en,
                           ),
                         );
@@ -372,7 +372,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                                         dateTimeFormat(
                                           'MMMMEEEEd',
                                           _model.datePicked,
-                                          locale: FFLocalizations.of(context)
+                                          locale: GetLocalizations.of(context)
                                               .languageCode,
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -423,12 +423,12 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        FFButtonWidget(
+                        GetButtonWidget(
                           onPressed: () async {
                             context.pop();
                           },
                           text: 'Cancel',
-                          options: FFButtonOptions(
+                          options: GetButtonOptions(
                             width: 100,
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,
@@ -448,7 +448,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        FFButtonWidget(
+                        GetButtonWidget(
                           onPressed: () async {
                             await AppointmentsRecord.collection
                                 .doc()
@@ -464,7 +464,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                             context.pop();
                           },
                           text: 'Book Now',
-                          options: FFButtonOptions(
+                          options: GetButtonOptions(
                             width: 150,
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,

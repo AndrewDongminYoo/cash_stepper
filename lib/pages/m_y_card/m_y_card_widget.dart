@@ -792,7 +792,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                     'relative',
                                                     transactionListTransactionsRecord
                                                         .transactionTime,
-                                                    locale: FFLocalizations.of(
+                                                    locale: GetLocalizations.of(
                                                             context)
                                                         .languageCode,
                                                   ),

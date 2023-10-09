@@ -182,12 +182,12 @@ class _NotificationsSettingsWidgetState
                 ),
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                  child: FFButtonWidget(
+                  child: GetButtonWidget(
                     onPressed: () async {
                       context.pop();
                     },
                     text: 'Save Changes',
-                    options: FFButtonOptions(
+                    options: GetButtonOptions(
                       width: 190,
                       height: 50,
                       padding: EdgeInsetsDirectional.zero,

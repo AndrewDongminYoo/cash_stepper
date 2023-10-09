@@ -1,8 +1,8 @@
 // 🌎 Project imports:
 import 'lat_lng.dart';
 
-class FFPlace {
-  const FFPlace({
+class GetPlace {
+  const GetPlace({
     this.latLng = const LatLng(0, 0),
     this.name = '',
     this.address = '',
@@ -22,7 +22,7 @@ class FFPlace {
 
   @override
   String toString() => '''
-  FFPlace(
+  GetPlace(
     latLng: $latLng,
     name: $name,
     address: $address,

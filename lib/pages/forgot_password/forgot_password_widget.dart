@@ -138,7 +138,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
             ),
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-              child: FFButtonWidget(
+              child: GetButtonWidget(
                 onPressed: () async {
                   if (_model.emailAddressController.text.isEmpty) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -156,7 +156,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                   );
                 },
                 text: 'Send Reset Link',
-                options: FFButtonOptions(
+                options: GetButtonOptions(
                   width: 190,
                   height: 50,
                   padding: EdgeInsetsDirectional.zero,

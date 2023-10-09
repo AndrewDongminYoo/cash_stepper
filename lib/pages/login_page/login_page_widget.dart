@@ -238,13 +238,13 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     padding:
                                         const EdgeInsetsDirectional.fromSTEB(
                                             0, 24, 0, 24),
-                                    child: FFButtonWidget(
+                                    child: GetButtonWidget(
                                       onPressed: () async {
                                         await context
                                             .pushNamed('forgotPassword');
                                       },
                                       text: 'Forgot Password?',
-                                      options: FFButtonOptions(
+                                      options: GetButtonOptions(
                                         width: 170,
                                         height: 40,
                                         padding: EdgeInsetsDirectional.zero,
@@ -260,7 +260,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       ),
                                     ),
                                   ),
-                                  FFButtonWidget(
+                                  GetButtonWidget(
                                     onPressed: () async {
                                       GoRouter.of(context).prepareAuthEvent();
 
@@ -278,7 +278,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                           'MY_Card', context.mounted);
                                     },
                                     text: 'Login',
-                                    options: FFButtonOptions(
+                                    options: GetButtonOptions(
                                       width: 120,
                                       height: 50,
                                       padding: EdgeInsetsDirectional.zero,
@@ -362,7 +362,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       Padding(
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                        child: FFButtonWidget(
+                        child: GetButtonWidget(
                           onPressed: () async {
                             GoRouter.of(context).prepareAuthEvent();
                             final user =
@@ -380,7 +380,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             context.goNamedAuth('MY_Card', context.mounted);
                           },
                           text: 'Continue as Guest',
-                          options: FFButtonOptions(
+                          options: GetButtonOptions(
                             width: 230,
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,

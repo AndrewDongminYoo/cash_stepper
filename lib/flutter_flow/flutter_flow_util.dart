@@ -27,7 +27,7 @@ export 'package:intl/intl.dart';
 export 'package:cloud_firestore/cloud_firestore.dart'
     show DocumentReference, FirebaseFirestore;
 export 'package:page_transition/page_transition.dart';
-export 'internationalization.dart' show FFLocalizations;
+export 'internationalization.dart' show GetLocalizations;
 export 'nav/nav.dart';
 
 T valueOrDefault<T>(T? value, T defaultValue) =>
@@ -224,7 +224,7 @@ const kTextValidatorEmailRegex =
 const kTextValidatorWebsiteRegex =
     r'(https?:\/\/)?(www\.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)|(https?:\/\/)?(www\.)?(?!ww)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)';
 
-extension FFTextEditingControllerExt on TextEditingController? {
+extension GetTextEditingControllerExt on TextEditingController? {
   String get text => this == null ? '' : this!.text;
   set text(String newText) => this?.text = newText;
 }
@@ -277,7 +277,7 @@ void showSnackbar(
   );
 }
 
-extension FFStringExt on String {
+extension GetStringExt on String {
   String maybeHandleOverflow({int? maxChars, String replacement = ''}) =>
       maxChars != null && length > maxChars
           ? replaceRange(maxChars, null, replacement)

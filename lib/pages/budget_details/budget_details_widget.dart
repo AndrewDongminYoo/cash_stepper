@@ -303,7 +303,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                         height: 250,
                         child: FlutterFlowLineChart(
                           data: [
-                            FFLineChartData(
+                            GetLineChartData(
                               xData: chartTransactionsRecordList,
                               yData: chartTransactionsRecordList,
                               settings: LineChartBarData(
@@ -549,7 +549,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                     'MMMEd',
                                                     transactionListTransactionsRecord
                                                         .transactionTime,
-                                                    locale: FFLocalizations.of(
+                                                    locale: GetLocalizations.of(
                                                             context)
                                                         .languageCode,
                                                   ),

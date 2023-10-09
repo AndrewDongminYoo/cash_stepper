@@ -457,7 +457,7 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                           locale: LocaleType.values.firstWhere(
                             (l) =>
                                 l.name ==
-                                FFLocalizations.of(context).languageCode,
+                                GetLocalizations.of(context).languageCode,
                             orElse: () => LocaleType.en,
                           ),
                         );
@@ -507,7 +507,7 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                                         dateTimeFormat(
                                           'MMMMEEEEd',
                                           _model.datePicked,
-                                          locale: FFLocalizations.of(context)
+                                          locale: GetLocalizations.of(context)
                                               .languageCode,
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -559,12 +559,12 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        FFButtonWidget(
+                        GetButtonWidget(
                           onPressed: () async {
                             context.pop();
                           },
                           text: 'Cancel',
-                          options: FFButtonOptions(
+                          options: GetButtonOptions(
                             width: 100,
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,
@@ -585,7 +585,7 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                           ),
                         ).animateOnPageLoad(
                             animationsMap['buttonOnPageLoadAnimation1']!),
-                        FFButtonWidget(
+                        GetButtonWidget(
                           onPressed: () async {
                             await AppointmentsRecord.collection
                                 .doc()
@@ -601,7 +601,7 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                             context.pop();
                           },
                           text: 'Book Now',
-                          options: FFButtonOptions(
+                          options: GetButtonOptions(
                             width: 150,
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,

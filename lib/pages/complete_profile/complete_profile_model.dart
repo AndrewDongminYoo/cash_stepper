@@ -10,8 +10,8 @@ class CompleteProfileModel extends FlutterFlowModel<CompleteProfileWidget> {
 
   final formKey = GlobalKey<FormState>();
   bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
-      FFUploadedFile(bytes: Uint8List.fromList([]));
+  GetUploadedFile uploadedLocalFile =
+      GetUploadedFile(bytes: Uint8List.fromList([]));
   String uploadedFileUrl = '';
 
   // State field(s) for yourName widget.

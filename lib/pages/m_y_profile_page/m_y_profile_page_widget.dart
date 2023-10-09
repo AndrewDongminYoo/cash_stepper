@@ -575,12 +575,12 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                 if (!(Theme.of(context).brightness == Brightness.dark))
                   Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                    child: FFButtonWidget(
+                    child: GetButtonWidget(
                       onPressed: () async {
                         setDarkModeSetting(context, ThemeMode.dark);
                       },
                       text: 'Dark Mode',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 130,
                         height: 40,
                         padding: EdgeInsetsDirectional.zero,
@@ -602,12 +602,12 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                 if (Theme.of(context).brightness == Brightness.dark)
                   Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                    child: FFButtonWidget(
+                    child: GetButtonWidget(
                       onPressed: () async {
                         setDarkModeSetting(context, ThemeMode.light);
                       },
                       text: 'Light Mode',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 130,
                         height: 40,
                         padding: EdgeInsetsDirectional.zero,

@@ -7,13 +7,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 const _kLocaleStorageKey = '__locale_key__';
 
-class FFLocalizations {
-  FFLocalizations(this.locale);
+class GetLocalizations {
+  GetLocalizations(this.locale);
 
   final Locale locale;
 
-  static FFLocalizations of(BuildContext context) =>
-      Localizations.of<FFLocalizations>(context, FFLocalizations)!;
+  static GetLocalizations of(BuildContext context) =>
+      Localizations.of<GetLocalizations>(context, GetLocalizations)!;
 
   static List<String> languages() => ['en', 'es', 'de', 'ar'];
 
@@ -81,13 +81,13 @@ class FFLocalizations {
   };
 }
 
-class FFLocalizationsDelegate extends LocalizationsDelegate<FFLocalizations> {
-  const FFLocalizationsDelegate();
+class GetLocalizationsDelegate extends LocalizationsDelegate<GetLocalizations> {
+  const GetLocalizationsDelegate();
 
   @override
   bool isSupported(Locale locale) {
     final language = locale.toString();
-    return FFLocalizations.languages().contains(
+    return GetLocalizations.languages().contains(
       language.endsWith('_')
           ? language.substring(0, language.length - 1)
           : language,
@@ -95,11 +95,11 @@ class FFLocalizationsDelegate extends LocalizationsDelegate<FFLocalizations> {
   }
 
   @override
-  Future<FFLocalizations> load(Locale locale) =>
-      SynchronousFuture<FFLocalizations>(FFLocalizations(locale));
+  Future<GetLocalizations> load(Locale locale) =>
+      SynchronousFuture<GetLocalizations>(GetLocalizations(locale));
 
   @override
-  bool shouldReload(FFLocalizationsDelegate old) => false;
+  bool shouldReload(GetLocalizationsDelegate old) => false;
 }
 
 Locale createLocale(String language) => language.contains('_')

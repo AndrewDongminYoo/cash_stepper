@@ -134,7 +134,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   ),
                   Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
-                    child: FFButtonWidget(
+                    child: GetButtonWidget(
                       onPressed: () async {
                         final selectedMedia = await selectMedia(
                           mediaSource: MediaSource.photoGallery,
@@ -143,7 +143,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                             selectedMedia.every((m) =>
                                 validateFileFormat(m.storagePath, context))) {
                           setState(() => _model.isDataUploading = true);
-                          var selectedUploadedFiles = <FFUploadedFile>[];
+                          var selectedUploadedFiles = <GetUploadedFile>[];
 
                           var downloadUrls = <String>[];
                           try {
@@ -153,7 +153,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                               showLoading: true,
                             );
                             selectedUploadedFiles = selectedMedia
-                                .map((m) => FFUploadedFile(
+                                .map((m) => GetUploadedFile(
                                       name: m.storagePath.split('/').last,
                                       bytes: m.bytes,
                                       height: m.dimensions?.height,
@@ -191,7 +191,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         }
                       },
                       text: 'Change Photo',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 140,
                         height: 40,
                         padding: EdgeInsetsDirectional.zero,
@@ -418,7 +418,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   ),
                   Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                    child: FFButtonWidget(
+                    child: GetButtonWidget(
                       onPressed: () async {
                         await editProfileUsersRecord.reference
                             .update(createUsersRecordData(
@@ -434,7 +434,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         context.pop();
                       },
                       text: 'Save Changes',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 230,
                         height: 56,
                         padding: EdgeInsetsDirectional.zero,

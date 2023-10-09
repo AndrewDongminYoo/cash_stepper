@@ -84,7 +84,7 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
             ),
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 70),
-              child: FFButtonWidget(
+              child: GetButtonWidget(
                 onPressed: () async {
                   await context.pushNamed(
                     'MY_Card',
@@ -98,7 +98,7 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
                   );
                 },
                 text: 'Okay',
-                options: FFButtonOptions(
+                options: GetButtonOptions(
                   width: 130,
                   height: 50,
                   padding: EdgeInsetsDirectional.zero,

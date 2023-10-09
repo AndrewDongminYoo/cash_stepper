@@ -360,7 +360,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                               buttonBudgetListRecordList.isNotEmpty
                                   ? buttonBudgetListRecordList.first
                                   : null;
-                          return FFButtonWidget(
+                          return GetButtonWidget(
                             onPressed: () async {
                               await BudgetsRecord.collection
                                   .doc()
@@ -389,7 +389,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                               context.pop();
                             },
                             text: 'Create Budget',
-                            options: FFButtonOptions(
+                            options: GetButtonOptions(
                               width: 300,
                               height: 70,
                               padding: EdgeInsetsDirectional.zero,

@@ -267,7 +267,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                       minTime: DateTime(0, 0, 0),
                       locale: LocaleType.values.firstWhere(
                         (l) =>
-                            l.name == FFLocalizations.of(context).languageCode,
+                            l.name == GetLocalizations.of(context).languageCode,
                         orElse: () => LocaleType.en,
                       ),
                     );
@@ -315,7 +315,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                     dateTimeFormat(
                                       'MMMMEEEEd',
                                       widget.userAppointment!.appointmentTime,
-                                      locale: FFLocalizations.of(context)
+                                      locale: GetLocalizations.of(context)
                                           .languageCode,
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -365,12 +365,12 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    FFButtonWidget(
+                    GetButtonWidget(
                       onPressed: () async {
                         context.pop();
                       },
                       text: 'Cancel',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 100,
                         height: 50,
                         padding: EdgeInsetsDirectional.zero,
@@ -389,7 +389,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    FFButtonWidget(
+                    GetButtonWidget(
                       onPressed: () async {
                         await widget.userAppointment!.reference
                             .update(createAppointmentsRecordData(
@@ -402,7 +402,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                         context.pop();
                       },
                       text: 'Save Changes',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 150,
                         height: 50,
                         padding: EdgeInsetsDirectional.zero,

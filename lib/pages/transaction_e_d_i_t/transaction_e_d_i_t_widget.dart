@@ -544,7 +544,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                   buttonBudgetsRecordList.isNotEmpty
                                       ? buttonBudgetsRecordList.first
                                       : null;
-                              return FFButtonWidget(
+                              return GetButtonWidget(
                                 onPressed: () async {
                                   await transactionEDITTransactionsRecord
                                       .reference
@@ -561,7 +561,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                   context.pop();
                                 },
                                 text: 'Update Transaction',
-                                options: FFButtonOptions(
+                                options: GetButtonOptions(
                                   width: 340,
                                   height: 70,
                                   padding: EdgeInsetsDirectional.zero,

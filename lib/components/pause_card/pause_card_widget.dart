@@ -76,12 +76,12 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  FFButtonWidget(
+                  GetButtonWidget(
                     onPressed: () async {
                       context.pop();
                     },
                     text: 'Nevermind',
-                    options: FFButtonOptions(
+                    options: GetButtonOptions(
                       width: 150,
                       height: 50,
                       padding: EdgeInsetsDirectional.zero,
@@ -95,12 +95,12 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  FFButtonWidget(
+                  GetButtonWidget(
                     onPressed: () async {
                       context.pop();
                     },
                     text: 'Yes, Pause',
-                    options: FFButtonOptions(
+                    options: GetButtonOptions(
                       width: 150,
                       height: 50,
                       padding: EdgeInsetsDirectional.zero,

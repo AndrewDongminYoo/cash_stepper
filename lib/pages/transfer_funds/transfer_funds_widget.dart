@@ -404,12 +404,12 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation']!),
                     ),
-                    FFButtonWidget(
+                    GetButtonWidget(
                       onPressed: () {
                         print('Button pressed ...');
                       },
                       text: 'Change Account',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 150,
                         height: 40,
                         padding: EdgeInsetsDirectional.zero,
@@ -575,7 +575,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
               children: [
                 Row(
                   children: [
-                    FFButtonWidget(
+                    GetButtonWidget(
                       onPressed: () async {
                         await context.pushNamed(
                           'transferComplete',
@@ -589,7 +589,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         );
                       },
                       text: 'Send Transfer',
-                      options: FFButtonOptions(
+                      options: GetButtonOptions(
                         width: 300,
                         height: 70,
                         padding: EdgeInsetsDirectional.zero,

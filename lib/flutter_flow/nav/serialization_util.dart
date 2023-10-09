@@ -17,7 +17,7 @@ String dateTimeRangeToString(DateTimeRange dateTimeRange) {
   return '$startStr|$endStr';
 }
 
-String placeToString(FFPlace place) => jsonEncode({
+String placeToString(GetPlace place) => jsonEncode({
       'latLng': place.latLng.serialize(),
       'name': place.name,
       'address': place.address,
@@ -27,7 +27,7 @@ String placeToString(FFPlace place) => jsonEncode({
       'zipCode': place.zipCode,
     });
 
-String uploadedFileToString(FFUploadedFile uploadedFile) =>
+String uploadedFileToString(GetUploadedFile uploadedFile) =>
     uploadedFile.serialize();
 
 const _kDocIdDelimeter = '|';
@@ -77,10 +77,10 @@ String? serializeParam(
         return (param as LatLng).serialize();
       case ParamType.Color:
         return (param as Color).toCssString();
-      case ParamType.FFPlace:
-        return placeToString(param as FFPlace);
-      case ParamType.FFUploadedFile:
-        return uploadedFileToString(param as FFUploadedFile);
+      case ParamType.GetPlace:
+        return placeToString(param as GetPlace);
+      case ParamType.GetUploadedFile:
+        return uploadedFileToString(param as GetUploadedFile);
       case ParamType.JSON:
         return json.encode(param);
       case ParamType.DocumentReference:
@@ -124,7 +124,7 @@ LatLng? latLngFromString(String latLngStr) {
   );
 }
 
-FFPlace placeFromString(String placeStr) {
+GetPlace placeFromString(String placeStr) {
   final serializedData = jsonDecode(placeStr) as Map<String, dynamic>;
   final data = {
     'latLng': serializedData.containsKey('latLng')
@@ -137,7 +137,7 @@ FFPlace placeFromString(String placeStr) {
     'country': serializedData['country'] ?? '',
     'zipCode': serializedData['zipCode'] ?? '',
   };
-  return FFPlace(
+  return GetPlace(
     latLng: data['latLng'] as LatLng,
     name: data['name'] as String,
     address: data['address'] as String,
@@ -148,8 +148,8 @@ FFPlace placeFromString(String placeStr) {
   );
 }
 
-FFUploadedFile uploadedFileFromString(String uploadedFileStr) =>
-    FFUploadedFile.deserialize(uploadedFileStr);
+GetUploadedFile uploadedFileFromString(String uploadedFileStr) =>
+    GetUploadedFile.deserialize(uploadedFileStr);
 
 DocumentReference _deserializeDocumentReference(
   String refStr,
@@ -172,8 +172,8 @@ enum ParamType {
   DateTimeRange,
   LatLng,
   Color,
-  FFPlace,
-  FFUploadedFile,
+  GetPlace,
+  GetUploadedFile,
   JSON,
   Document,
   DocumentReference,
@@ -223,9 +223,9 @@ dynamic deserializeParam<T>(
         return latLngFromString(param);
       case ParamType.Color:
         return fromCssColor(param);
-      case ParamType.FFPlace:
+      case ParamType.GetPlace:
         return placeFromString(param);
-      case ParamType.FFUploadedFile:
+      case ParamType.GetUploadedFile:
         return uploadedFileFromString(param);
       case ParamType.JSON:
         return json.decode(param);

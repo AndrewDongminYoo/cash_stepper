@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp.router(
       title: 'cashstepper',
       localizationsDelegates: const [
-        FFLocalizationsDelegate(),
+        GetLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,

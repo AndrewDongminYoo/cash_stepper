@@ -18,7 +18,7 @@ class FlutterFlowLineChart extends StatelessWidget {
     this.chartStylingInfo = const ChartStylingInfo(),
   }) : super(key: key);
 
-  final List<FFLineChartData> data;
+  final List<GetLineChartData> data;
   final AxisLabelInfo xAxisLabelInfo;
   final AxisLabelInfo yAxisLabelInfo;
   final AxisBounds axisBounds;
@@ -76,7 +76,7 @@ class FlutterFlowBarChart extends StatelessWidget {
     this.chartStylingInfo = const ChartStylingInfo(),
   }) : super(key: key);
 
-  final List<FFBarChartData> barData;
+  final List<GetBarChartData> barData;
   final List<String> xLabels;
   final AxisLabelInfo xAxisLabelInfo;
   final AxisLabelInfo yAxisLabelInfo;
@@ -202,7 +202,7 @@ class FlutterFlowPieChart extends StatelessWidget {
     this.labelFormatter = const LabelFormatter(),
   }) : super(key: key);
 
-  final FFPieChartData data;
+  final GetPieChartData data;
   final double donutHoleRadius;
   final Color donutHoleColor;
   final PieChartSectionLabelType sectionLabelType;
@@ -395,8 +395,8 @@ class AxisBounds {
   final double? maxY;
 }
 
-class FFLineChartData {
-  const FFLineChartData({
+class GetLineChartData {
+  const GetLineChartData({
     required this.xData,
     required this.yData,
     required this.settings,
@@ -418,8 +418,8 @@ class FFLineChartData {
   }
 }
 
-class FFBarChartData {
-  const FFBarChartData({
+class GetBarChartData {
+  const GetBarChartData({
     required this.yData,
     required this.color,
     this.borderWidth = 0,
@@ -434,8 +434,8 @@ class FFBarChartData {
   List<double> get data => _dataToDouble(yData).map((e) => e ?? 0.0).toList();
 }
 
-class FFPieChartData {
-  const FFPieChartData({
+class GetPieChartData {
+  const GetPieChartData({
     required this.values,
     required this.colors,
     required this.radius,

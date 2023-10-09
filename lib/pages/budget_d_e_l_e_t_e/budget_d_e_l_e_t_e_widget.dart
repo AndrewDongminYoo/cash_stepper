@@ -201,7 +201,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                 buttonBudgetListRecordList.isNotEmpty
                                     ? buttonBudgetListRecordList.first
                                     : null;
-                            return FFButtonWidget(
+                            return GetButtonWidget(
                               onPressed: () async {
                                 await budgetDELETEBudgetsRecord.reference
                                     .delete();
@@ -227,7 +227,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                 );
                               },
                               text: 'Delete Budget',
-                              options: FFButtonOptions(
+                              options: GetButtonOptions(
                                 width: 300,
                                 height: 70,
                                 padding: EdgeInsetsDirectional.zero,
