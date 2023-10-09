@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 // 🌎 Project imports:
-import '../auth_manager.dart';
+import '/auth/auth_manager.dart';
 import '/backend/backend.dart';
 import 'anonymous_auth.dart';
 import 'apple_auth.dart';
@@ -21,7 +21,7 @@ import 'github_auth.dart';
 import 'google_auth.dart';
 import 'jwt_token_auth.dart';
 
-export '../base_auth_user_provider.dart';
+export '/auth/base_auth_user_provider.dart';
 
 class FirebasePhoneAuthManager extends ChangeNotifier {
   bool? _triggerOnCodeSent;

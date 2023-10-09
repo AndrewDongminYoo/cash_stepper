@@ -98,8 +98,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                 children: [
                                   Text(
                                     'Get Started',
-                                    style: CustomTheme.of(context)
-                                        .displaySmall,
+                                    style: CustomTheme.of(context).displaySmall,
                                   ),
                                 ],
                               ),
@@ -110,8 +109,8 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   children: [
                                     Text(
                                       'Create your account below.',
-                                      style: CustomTheme.of(context)
-                                          .titleMedium,
+                                      style:
+                                          CustomTheme.of(context).titleMedium,
                                     ),
                                   ],
                                 ),
@@ -159,8 +158,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         const EdgeInsetsDirectional.fromSTEB(
                                             20, 24, 20, 24),
                                   ),
-                                  style:
-                                      CustomTheme.of(context).bodyMedium,
+                                  style: CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .emailAddressControllerValidator
                                       .asValidator(context),
@@ -225,8 +223,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       ),
                                     ),
                                   ),
-                                  style:
-                                      CustomTheme.of(context).bodyMedium,
+                                  style: CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .passwordCreateControllerValidator
                                       .asValidator(context),
@@ -292,8 +289,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       ),
                                     ),
                                   ),
-                                  style:
-                                      CustomTheme.of(context).bodyMedium,
+                                  style: CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .passwordConfirmControllerValidator
                                       .asValidator(context),
@@ -392,8 +388,8 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         children: [
                                           Icon(
                                             Icons.arrow_back_rounded,
-                                            color: CustomTheme.of(context)
-                                                .primary,
+                                            color:
+                                                CustomTheme.of(context).primary,
                                             size: 24,
                                           ),
                                           Padding(
@@ -401,16 +397,14 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                                 .fromSTEB(4, 0, 24, 0),
                                             child: Text(
                                               'Login',
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Lexend',
-                                                        color:
-                                                            CustomTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                      ),
+                                              style: CustomTheme.of(context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Lexend',
+                                                    color:
+                                                        CustomTheme.of(context)
+                                                            .primary,
+                                                  ),
                                             ),
                                           ),
                                           Text(
@@ -455,12 +449,11 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                             padding: EdgeInsetsDirectional.zero,
                             iconPadding: EdgeInsetsDirectional.zero,
                             color: CustomTheme.of(context).background,
-                            textStyle: CustomTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Lexend',
-                                  color: CustomTheme.of(context).textColor,
-                                ),
+                            textStyle:
+                                CustomTheme.of(context).titleSmall.override(
+                                      fontFamily: 'Lexend',
+                                      color: CustomTheme.of(context).textColor,
+                                    ),
                             elevation: 3,
                             borderSide: const BorderSide(
                               color: Colors.transparent,

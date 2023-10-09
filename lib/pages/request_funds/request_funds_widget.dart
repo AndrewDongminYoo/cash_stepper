@@ -105,21 +105,19 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                       child: TextFormField(
                         controller: _model.textController1,
                         decoration: InputDecoration(
-                          labelStyle: CustomTheme.of(context)
-                              .displaySmall
-                              .override(
-                                fontFamily: 'Lexend',
-                                color: CustomTheme.of(context).grayLight,
-                                fontWeight: FontWeight.w300,
-                              ),
+                          labelStyle:
+                              CustomTheme.of(context).displaySmall.override(
+                                    fontFamily: 'Lexend',
+                                    color: CustomTheme.of(context).grayLight,
+                                    fontWeight: FontWeight.w300,
+                                  ),
                           hintText: r'$ Amount',
-                          hintStyle: CustomTheme.of(context)
-                              .displaySmall
-                              .override(
-                                fontFamily: 'Lexend',
-                                color: CustomTheme.of(context).grayLight,
-                                fontWeight: FontWeight.w300,
-                              ),
+                          hintStyle:
+                              CustomTheme.of(context).displaySmall.override(
+                                    fontFamily: 'Lexend',
+                                    color: CustomTheme.of(context).grayLight,
+                                    fontWeight: FontWeight.w300,
+                                  ),
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                               color: CustomTheme.of(context).alternate,
@@ -179,8 +177,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                           color: CustomTheme.of(context).grayLight,
                           size: 15,
                         ),
-                        fillColor:
-                            CustomTheme.of(context).secondaryBackground,
+                        fillColor: CustomTheme.of(context).secondaryBackground,
                         elevation: 2,
                         borderColor: CustomTheme.of(context).alternate,
                         borderWidth: 2,

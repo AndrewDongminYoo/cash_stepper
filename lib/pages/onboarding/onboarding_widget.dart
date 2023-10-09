@@ -116,9 +116,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               'Create Budgets',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .displaySmall,
+                                              style: CustomTheme.of(context)
+                                                  .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -134,9 +133,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               'Create budgets that you can ti...',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall,
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -178,9 +176,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               'Keep Track of Spending',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .displaySmall,
+                                              style: CustomTheme.of(context)
+                                                  .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -196,9 +193,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               'Easily add transactions and as...',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall,
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -240,9 +236,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               'Budget Analysis',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .displaySmall,
+                                              style: CustomTheme.of(context)
+                                                  .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -258,9 +253,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               'Know where your budgets are an...',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall,
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -331,11 +325,10 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
                         color: CustomTheme.of(context).secondaryBackground,
-                        textStyle:
-                            CustomTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Lexend',
-                                  color: CustomTheme.of(context).primary,
-                                ),
+                        textStyle: CustomTheme.of(context).titleSmall.override(
+                              fontFamily: 'Lexend',
+                              color: CustomTheme.of(context).primary,
+                            ),
                         elevation: 2,
                         borderSide: const BorderSide(
                           color: Colors.transparent,

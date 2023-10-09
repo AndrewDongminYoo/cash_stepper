@@ -119,8 +119,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   children: [
                                     Text(
                                       'Welcome,',
-                                      style: CustomTheme.of(context)
-                                          .headlineSmall,
+                                      style:
+                                          CustomTheme.of(context).headlineSmall,
                                     ),
                                     Padding(
                                       padding:
@@ -132,9 +132,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .headlineSmall
                                             .override(
                                               fontFamily: 'Lexend',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .primary,
+                                              color: CustomTheme.of(context)
+                                                  .primary,
                                             ),
                                       ),
                                     ),
@@ -142,8 +141,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                                 Text(
                                   'Your account Details are below...',
-                                  style:
-                                      CustomTheme.of(context).bodyMedium,
+                                  style: CustomTheme.of(context).bodyMedium,
                                 ),
                               ],
                             ),
@@ -170,12 +168,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         children: [
                           Text(
                             r'$25,202',
-                            style: CustomTheme.of(context)
-                                .displaySmall
-                                .override(
-                                  fontFamily: 'Lexend',
-                                  fontSize: 32,
-                                ),
+                            style:
+                                CustomTheme.of(context).displaySmall.override(
+                                      fontFamily: 'Lexend',
+                                      fontSize: 32,
+                                    ),
                           ),
                         ],
                       ),
@@ -226,8 +223,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   0, 4, 0, 0),
                               child: Text(
                                 'Aug 31, 2021',
-                                style:
-                                    CustomTheme.of(context).headlineSmall,
+                                style: CustomTheme.of(context).headlineSmall,
                               ),
                             ),
                             Padding(
@@ -284,8 +280,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   0, 4, 0, 0),
                               child: Text(
                                 r'$3,402',
-                                style:
-                                    CustomTheme.of(context).headlineSmall,
+                                style: CustomTheme.of(context).headlineSmall,
                               ),
                             ),
                             Padding(
@@ -347,8 +342,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               Container(
                                 width: MediaQuery.sizeOf(context).width * 0.24,
                                 decoration: BoxDecoration(
-                                  color:
-                                      CustomTheme.of(context).background,
+                                  color: CustomTheme.of(context).background,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Padding(
@@ -362,8 +356,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .fromSTEB(0, 0, 0, 12),
                                         child: Icon(
                                           Icons.account_balance_outlined,
-                                          color: CustomTheme.of(context)
-                                              .textColor,
+                                          color:
+                                              CustomTheme.of(context).textColor,
                                           size: 36,
                                         ),
                                       ),
@@ -407,8 +401,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   width:
                                       MediaQuery.sizeOf(context).width * 0.24,
                                   decoration: BoxDecoration(
-                                    color:
-                                        CustomTheme.of(context).background,
+                                    color: CustomTheme.of(context).background,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Padding(
@@ -436,9 +429,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'Transfer',
                                             style: GoogleFonts.getFont(
                                               'Lexend Deca',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .textColor,
+                                              color: CustomTheme.of(context)
+                                                  .textColor,
                                               fontSize: 12,
                                             ),
                                           ),
@@ -460,8 +452,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   width:
                                       MediaQuery.sizeOf(context).width * 0.24,
                                   decoration: BoxDecoration(
-                                    color:
-                                        CustomTheme.of(context).background,
+                                    color: CustomTheme.of(context).background,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Padding(
@@ -489,9 +480,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'Activity',
                                             style: GoogleFonts.getFont(
                                               'Lexend Deca',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .textColor,
+                                              color: CustomTheme.of(context)
+                                                  .textColor,
                                               fontSize: 12,
                                             ),
                                           ),
@@ -538,16 +528,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             0, 0, 8, 0),
                                     child: Icon(
                                       Icons.notifications_sharp,
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                       size: 24,
                                     ),
                                   ),
                                   Expanded(
                                     child: Text(
                                       '1 New Alert',
-                                      style: CustomTheme.of(context)
-                                          .bodySmall,
+                                      style: CustomTheme.of(context).bodySmall,
                                     ),
                                   ),
                                   Text(

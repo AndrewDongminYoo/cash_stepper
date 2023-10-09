@@ -14,7 +14,7 @@ import 'package:timeago/timeago.dart' as timeago;
 import 'package:url_launcher/url_launcher.dart';
 
 // 🌎 Project imports:
-import '/app/view/app.dart';
+import '/app/app.dart';
 
 export 'lat_lng.dart';
 export 'place.dart';

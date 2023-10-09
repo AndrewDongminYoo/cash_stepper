@@ -183,8 +183,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                           width: MediaQuery.sizeOf(context).width * 0.44,
                           height: 140,
                           decoration: BoxDecoration(
-                            color: CustomTheme.of(context)
-                                .secondaryBackground,
+                            color: CustomTheme.of(context).secondaryBackground,
                             boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4,
@@ -216,8 +215,8 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .tertiary,
+                                          color:
+                                              CustomTheme.of(context).tertiary,
                                           fontSize: 32,
                                         ),
                                   ),
@@ -239,15 +238,13 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .tertiary,
+                                              color: CustomTheme.of(context)
+                                                  .tertiary,
                                             ),
                                       ),
                                       Icon(
                                         Icons.trending_up_rounded,
-                                        color: CustomTheme.of(context)
-                                            .tertiary,
+                                        color: CustomTheme.of(context).tertiary,
                                         size: 24,
                                       ),
                                     ],
@@ -262,8 +259,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                           width: MediaQuery.sizeOf(context).width * 0.44,
                           height: 140,
                           decoration: BoxDecoration(
-                            color: CustomTheme.of(context)
-                                .secondaryBackground,
+                            color: CustomTheme.of(context).secondaryBackground,
                             boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4,
@@ -295,8 +291,8 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .errorRed,
+                                          color:
+                                              CustomTheme.of(context).errorRed,
                                           fontSize: 32,
                                         ),
                                   ),
@@ -318,15 +314,13 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .errorRed,
+                                              color: CustomTheme.of(context)
+                                                  .errorRed,
                                             ),
                                       ),
                                       Icon(
                                         Icons.trending_up_rounded,
-                                        color: CustomTheme.of(context)
-                                            .errorRed,
+                                        color: CustomTheme.of(context).errorRed,
                                         size: 24,
                                       ),
                                     ],
@@ -420,22 +414,19 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                           children: [
                                             Text(
                                               listViewBudgetsRecord.budgetName,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall
-                                                      .override(
-                                                        fontFamily: 'Lexend',
-                                                        color:
-                                                            CustomTheme.of(
-                                                                    context)
-                                                                .alternate,
-                                                      ),
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall
+                                                  .override(
+                                                    fontFamily: 'Lexend',
+                                                    color:
+                                                        CustomTheme.of(context)
+                                                            .alternate,
+                                                  ),
                                             ),
                                             Icon(
                                               Icons.arrow_forward_ios_rounded,
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .textColor,
+                                              color: CustomTheme.of(context)
+                                                  .textColor,
                                               size: 16,
                                             ),
                                           ],
@@ -453,9 +444,8 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                             .displaySmall
                                             .override(
                                               fontFamily: 'Lexend',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .textColor,
+                                              color: CustomTheme.of(context)
+                                                  .textColor,
                                             ),
                                       ),
                                       Padding(
@@ -471,16 +461,14 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                                     .budgetTime,
                                                 '4 Days Left',
                                               ),
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall
-                                                      .override(
-                                                        fontFamily: 'Lexend',
-                                                        color:
-                                                            CustomTheme.of(
-                                                                    context)
-                                                                .alternate,
-                                                      ),
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall
+                                                  .override(
+                                                    fontFamily: 'Lexend',
+                                                    color:
+                                                        CustomTheme.of(context)
+                                                            .alternate,
+                                                  ),
                                             ),
                                             Row(
                                               children: [
@@ -517,15 +505,13 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                                     r'$22,000',
                                                   ),
                                                   textAlign: TextAlign.end,
-                                                  style: CustomTheme.of(
-                                                          context)
+                                                  style: CustomTheme.of(context)
                                                       .headlineSmall
                                                       .override(
                                                         fontFamily: 'Lexend',
-                                                        color:
-                                                            CustomTheme.of(
-                                                                    context)
-                                                                .textColor,
+                                                        color: CustomTheme.of(
+                                                                context)
+                                                            .textColor,
                                                       ),
                                                 ),
                                               ],

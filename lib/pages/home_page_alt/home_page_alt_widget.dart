@@ -106,8 +106,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                               children: [
                                 Text(
                                   'Welcome,',
-                                  style: CustomTheme.of(context)
-                                      .headlineSmall,
+                                  style: CustomTheme.of(context).headlineSmall,
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
@@ -118,8 +117,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                         .headlineSmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .tertiary,
+                                          color:
+                                              CustomTheme.of(context).tertiary,
                                         ),
                                   ),
                                 ),
@@ -157,8 +156,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                               width: MediaQuery.sizeOf(context).width * 0.44,
                               height: 230,
                               decoration: BoxDecoration(
-                                color:
-                                    CustomTheme.of(context).darkBackground,
+                                color: CustomTheme.of(context).darkBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Column(
@@ -332,9 +330,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             .headlineSmall
                                             .override(
                                               fontFamily: 'Lexend',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .darkBackground,
+                                              color: CustomTheme.of(context)
+                                                  .darkBackground,
                                             ),
                                       ),
                                     ),
@@ -344,8 +341,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 12, 0, 0),
                                       child: Text(
                                         '4 days left',
-                                        style: CustomTheme.of(context)
-                                            .bodySmall,
+                                        style:
+                                            CustomTheme.of(context).bodySmall,
                                       ),
                                     ),
                                   ],
@@ -374,8 +371,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                       MediaQuery.sizeOf(context).width * 0.44,
                                   height: 230,
                                   decoration: BoxDecoration(
-                                    color: CustomTheme.of(context)
-                                        .darkBackground,
+                                    color:
+                                        CustomTheme.of(context).darkBackground,
                                     boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 2,
@@ -407,15 +404,14 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             children: [
                                               Text(
                                                 '1 New Alert',
-                                                style:
-                                                    CustomTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          fontFamily: 'Lexend',
-                                                          color: CustomTheme
-                                                                  .of(context)
-                                                              .textColor,
-                                                        ),
+                                                style: CustomTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      fontFamily: 'Lexend',
+                                                      color: CustomTheme.of(
+                                                              context)
+                                                          .textColor,
+                                                    ),
                                               ),
                                             ],
                                           ),
@@ -432,9 +428,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .fromSTEB(12, 0, 0, 0),
                                               child: Icon(
                                                 Icons.circle_notifications,
-                                                color:
-                                                    CustomTheme.of(context)
-                                                        .tertiary,
+                                                color: CustomTheme.of(context)
+                                                    .tertiary,
                                                 size: 24,
                                               ),
                                             ),
@@ -444,9 +439,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .fromSTEB(12, 0, 0, 0),
                                               child: Text(
                                                 'Fraud Alert',
-                                                style:
-                                                    CustomTheme.of(context)
-                                                        .bodySmall,
+                                                style: CustomTheme.of(context)
+                                                    .bodySmall,
                                               ),
                                             ),
                                           ],
@@ -461,15 +455,14 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .fromSTEB(12, 12, 12, 0),
                                               child: Text(
                                                 'We noticed a small charge that...',
-                                                style:
-                                                    CustomTheme.of(context)
-                                                        .bodySmall
-                                                        .override(
-                                                          fontFamily: 'Lexend',
-                                                          color: const Color(
-                                                              0x98FFFFFF),
-                                                          fontSize: 12,
-                                                        ),
+                                                style: CustomTheme.of(context)
+                                                    .bodySmall
+                                                    .override(
+                                                      fontFamily: 'Lexend',
+                                                      color: const Color(
+                                                          0x98FFFFFF),
+                                                      fontSize: 12,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -486,15 +479,14 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .fromSTEB(12, 0, 0, 0),
                                               child: Text(
                                                 'View Now',
-                                                style:
-                                                    CustomTheme.of(context)
-                                                        .bodySmall
-                                                        .override(
-                                                          fontFamily: 'Lexend',
-                                                          color: CustomTheme
-                                                                  .of(context)
-                                                              .tertiary,
-                                                        ),
+                                                style: CustomTheme.of(context)
+                                                    .bodySmall
+                                                    .override(
+                                                      fontFamily: 'Lexend',
+                                                      color: CustomTheme.of(
+                                                              context)
+                                                          .tertiary,
+                                                    ),
                                               ),
                                             ),
                                           ],
@@ -576,9 +568,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             .displaySmall
                                             .override(
                                               fontFamily: 'Lexend',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .errorRed,
+                                              color: CustomTheme.of(context)
+                                                  .errorRed,
                                             ),
                                       ),
                                     ),
@@ -588,8 +579,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 12, 0, 0),
                                       child: Text(
                                         '4 days left',
-                                        style: CustomTheme.of(context)
-                                            .bodySmall,
+                                        style:
+                                            CustomTheme.of(context).bodySmall,
                                       ),
                                     ),
                                   ],
@@ -662,9 +653,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               .titleMedium
                                               .override(
                                                 fontFamily: 'Lexend Deca',
-                                                color:
-                                                    CustomTheme.of(context)
-                                                        .textColor,
+                                                color: CustomTheme.of(context)
+                                                    .textColor,
                                                 fontSize: 18,
                                                 fontWeight: FontWeight.w500,
                                               ),
@@ -677,16 +667,14 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             child: Text(
                                               r'$5,000',
                                               textAlign: TextAlign.end,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily: 'Lexend',
-                                                        color:
-                                                            CustomTheme.of(
-                                                                    context)
-                                                                .tertiary,
-                                                      ),
+                                              style: CustomTheme.of(context)
+                                                  .titleSmall
+                                                  .override(
+                                                    fontFamily: 'Lexend',
+                                                    color:
+                                                        CustomTheme.of(context)
+                                                            .tertiary,
+                                                  ),
                                             ),
                                           ),
                                         ),
@@ -722,9 +710,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               '[Time Stamp]',
                                               textAlign: TextAlign.end,
                                               style: TextStyle(
-                                                color:
-                                                    CustomTheme.of(context)
-                                                        .grayLight,
+                                                color: CustomTheme.of(context)
+                                                    .grayLight,
                                                 fontWeight: FontWeight.w500,
                                                 fontSize: 10,
                                               ),

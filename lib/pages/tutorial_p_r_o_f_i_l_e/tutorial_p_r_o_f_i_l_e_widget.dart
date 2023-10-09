@@ -140,9 +140,8 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               'Create Budgets',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .displaySmall,
+                                              style: CustomTheme.of(context)
+                                                  .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -158,9 +157,8 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               'Create budgets that you can ti...',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall,
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -202,9 +200,8 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               'Keep Track of Spending',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .displaySmall,
+                                              style: CustomTheme.of(context)
+                                                  .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -220,9 +217,8 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               'Easily add transactions and as...',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall,
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -264,9 +260,8 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               'Budget Analysis',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .displaySmall,
+                                              style: CustomTheme.of(context)
+                                                  .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -282,9 +277,8 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               'Know where your budgets are an...',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodySmall,
+                                              style: CustomTheme.of(context)
+                                                  .bodySmall,
                                             ),
                                           ),
                                         ],

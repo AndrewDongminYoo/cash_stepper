@@ -150,8 +150,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                             children: [
                               Text(
                                 'Welcome,',
-                                style:
-                                    CustomTheme.of(context).headlineSmall,
+                                style: CustomTheme.of(context).headlineSmall,
                               ),
                               Padding(
                                 padding: const EdgeInsetsDirectional.fromSTEB(
@@ -162,8 +161,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       .headlineSmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .tertiary,
+                                        color: CustomTheme.of(context).tertiary,
                                       ),
                                 ),
                               ),
@@ -234,8 +232,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                       ),
                                 ),
                               ],
@@ -252,8 +250,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                         fontSize: 32,
                                       ),
                                 ),
@@ -272,8 +270,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                       ),
                                 ),
                                 Text(
@@ -282,8 +280,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                       ),
                                 ),
                               ],
@@ -337,8 +335,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               width: 110,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: CustomTheme.of(context)
-                                    .primaryBackground,
+                                color:
+                                    CustomTheme.of(context).primaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Column(
@@ -346,8 +344,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 children: [
                                   Icon(
                                     Icons.swap_horiz_rounded,
-                                    color: CustomTheme.of(context)
-                                        .primaryText,
+                                    color: CustomTheme.of(context).primaryText,
                                     size: 40,
                                   ),
                                   Padding(
@@ -356,8 +353,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Transfer',
-                                      style: CustomTheme.of(context)
-                                          .bodyMedium,
+                                      style: CustomTheme.of(context).bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -367,8 +363,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               width: 110,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: CustomTheme.of(context)
-                                    .primaryBackground,
+                                color:
+                                    CustomTheme.of(context).primaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Column(
@@ -376,8 +372,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 children: [
                                   Icon(
                                     Icons.stacked_line_chart_rounded,
-                                    color: CustomTheme.of(context)
-                                        .primaryText,
+                                    color: CustomTheme.of(context).primaryText,
                                     size: 40,
                                   ),
                                   Padding(
@@ -386,8 +381,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Activity',
-                                      style: CustomTheme.of(context)
-                                          .bodyMedium,
+                                      style: CustomTheme.of(context).bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -397,8 +391,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               width: 110,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: CustomTheme.of(context)
-                                    .primaryBackground,
+                                color:
+                                    CustomTheme.of(context).primaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Column(
@@ -406,8 +400,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 children: [
                                   Icon(
                                     Icons.account_balance_outlined,
-                                    color: CustomTheme.of(context)
-                                        .primaryText,
+                                    color: CustomTheme.of(context).primaryText,
                                     size: 40,
                                   ),
                                   Padding(
@@ -416,8 +409,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'My Bank',
-                                      style: CustomTheme.of(context)
-                                          .bodyMedium,
+                                      style: CustomTheme.of(context).bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -445,8 +437,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           width: MediaQuery.sizeOf(context).width * 0.92,
                           height: 70,
                           decoration: BoxDecoration(
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -466,8 +457,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             8, 8, 8, 8),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color:
-                                          CustomTheme.of(context).tertiary,
+                                      color: CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),
@@ -547,8 +537,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           width: MediaQuery.sizeOf(context).width * 0.92,
                           height: 70,
                           decoration: BoxDecoration(
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -568,8 +557,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             8, 8, 8, 8),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color:
-                                          CustomTheme.of(context).tertiary,
+                                      color: CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),
@@ -649,8 +637,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           width: MediaQuery.sizeOf(context).width * 0.92,
                           height: 70,
                           decoration: BoxDecoration(
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -670,8 +657,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             8, 8, 8, 8),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color:
-                                          CustomTheme.of(context).tertiary,
+                                      color: CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),
@@ -751,8 +737,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           width: MediaQuery.sizeOf(context).width * 0.92,
                           height: 70,
                           decoration: BoxDecoration(
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -772,8 +757,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             8, 8, 8, 8),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color:
-                                          CustomTheme.of(context).tertiary,
+                                      color: CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),

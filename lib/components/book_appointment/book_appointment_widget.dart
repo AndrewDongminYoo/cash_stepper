@@ -365,11 +365,10 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                           setState(() => _model.dropDownValue = val),
                       width: MediaQuery.sizeOf(context).width * 0.9,
                       height: 60,
-                      textStyle:
-                          CustomTheme.of(context).titleSmall.override(
-                                fontFamily: 'Lexend',
-                                color: CustomTheme.of(context).textColor,
-                              ),
+                      textStyle: CustomTheme.of(context).titleSmall.override(
+                            fontFamily: 'Lexend',
+                            color: CustomTheme.of(context).textColor,
+                          ),
                       icon: Icon(
                         Icons.keyboard_arrow_down_rounded,
                         color: CustomTheme.of(context).grayLight,
@@ -514,9 +513,8 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                                             .bodySmall
                                             .override(
                                               fontFamily: 'Lexend',
-                                              color:
-                                                  CustomTheme.of(context)
-                                                      .tertiary,
+                                              color: CustomTheme.of(context)
+                                                  .tertiary,
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
@@ -536,8 +534,8 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                                       buttonSize: 46,
                                       icon: Icon(
                                         Icons.date_range_outlined,
-                                        color: CustomTheme.of(context)
-                                            .grayLight,
+                                        color:
+                                            CustomTheme.of(context).grayLight,
                                         size: 20,
                                       ),
                                       onPressed: () {
@@ -570,13 +568,12 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                             padding: EdgeInsetsDirectional.zero,
                             iconPadding: EdgeInsetsDirectional.zero,
                             color: CustomTheme.of(context).background,
-                            textStyle: CustomTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Lexend',
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                ),
+                            textStyle:
+                                CustomTheme.of(context).titleSmall.override(
+                                      fontFamily: 'Lexend',
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                             elevation: 0,
                             borderSide: const BorderSide(
                               color: Colors.transparent,
@@ -607,13 +604,12 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget>
                             padding: EdgeInsetsDirectional.zero,
                             iconPadding: EdgeInsetsDirectional.zero,
                             color: CustomTheme.of(context).primary,
-                            textStyle: CustomTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Lexend',
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                ),
+                            textStyle:
+                                CustomTheme.of(context).titleSmall.override(
+                                      fontFamily: 'Lexend',
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                             elevation: 3,
                             borderSide: const BorderSide(
                               color: Colors.transparent,

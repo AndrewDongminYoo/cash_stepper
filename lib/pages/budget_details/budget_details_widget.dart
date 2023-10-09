@@ -157,8 +157,8 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .textColor,
+                                          color:
+                                              CustomTheme.of(context).textColor,
                                         ),
                                   ),
                                 ),
@@ -187,8 +187,8 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                         fontSize: 36,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -257,8 +257,8 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                         .headlineSmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .textColor,
+                                          color:
+                                              CustomTheme.of(context).textColor,
                                         ),
                                   ),
                                 ],
@@ -322,25 +322,22 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                             enableTooltip: true,
                             tooltipBackgroundColor:
                                 CustomTheme.of(context).alternate,
-                            backgroundColor:
-                                CustomTheme.of(context).primary,
+                            backgroundColor: CustomTheme.of(context).primary,
                             showBorder: false,
                           ),
                           axisBounds: const AxisBounds(),
                           xAxisLabelInfo: AxisLabelInfo(
                             showLabels: true,
-                            labelTextStyle: CustomTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Lexend',
-                                  fontSize: 12,
-                                ),
+                            labelTextStyle:
+                                CustomTheme.of(context).bodyMedium.override(
+                                      fontFamily: 'Lexend',
+                                      fontSize: 12,
+                                    ),
                             labelInterval: 10,
                           ),
                           yAxisLabelInfo: AxisLabelInfo(
                             showLabels: true,
-                            labelTextStyle:
-                                CustomTheme.of(context).bodyMedium,
+                            labelTextStyle: CustomTheme.of(context).bodyMedium,
                             labelInterval: 10,
                           ),
                         ),
@@ -475,9 +472,8 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                       .fromSTEB(8, 8, 8, 8),
                                               child: Icon(
                                                 Icons.monetization_on_rounded,
-                                                color:
-                                                    CustomTheme.of(context)
-                                                        .tertiary,
+                                                color: CustomTheme.of(context)
+                                                    .tertiary,
                                                 size: 24,
                                               ),
                                             ),
@@ -497,9 +493,9 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                   child: Text(
                                                     transactionListTransactionsRecord
                                                         .transactionName,
-                                                    style: CustomTheme.of(
-                                                            context)
-                                                        .headlineSmall,
+                                                    style:
+                                                        CustomTheme.of(context)
+                                                            .headlineSmall,
                                                   ),
                                                 ),
                                                 Padding(
@@ -508,9 +504,9 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                           .fromSTEB(0, 4, 0, 0),
                                                   child: Text(
                                                     'Income',
-                                                    style: CustomTheme.of(
-                                                            context)
-                                                        .bodyMedium,
+                                                    style:
+                                                        CustomTheme.of(context)
+                                                            .bodyMedium,
                                                   ),
                                                 ),
                                               ],
@@ -530,15 +526,14 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                 transactionListTransactionsRecord
                                                     .transactionAmount,
                                                 textAlign: TextAlign.end,
-                                                style:
-                                                    CustomTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          fontFamily: 'Lexend',
-                                                          color: CustomTheme
-                                                                  .of(context)
-                                                              .tertiary,
-                                                        ),
+                                                style: CustomTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      fontFamily: 'Lexend',
+                                                      color: CustomTheme.of(
+                                                              context)
+                                                          .tertiary,
+                                                    ),
                                               ),
                                               Padding(
                                                 padding:
@@ -554,8 +549,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                         .languageCode,
                                                   ),
                                                   textAlign: TextAlign.end,
-                                                  style: CustomTheme.of(
-                                                          context)
+                                                  style: CustomTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Lexend',

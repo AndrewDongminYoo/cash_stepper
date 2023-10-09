@@ -343,8 +343,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .textColor,
+                                          color:
+                                              CustomTheme.of(context).textColor,
                                         ),
                                   ),
                                 ],
@@ -361,8 +361,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .textColor,
+                                          color:
+                                              CustomTheme.of(context).textColor,
                                           fontSize: 32,
                                         ),
                                   ),
@@ -382,8 +382,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Roboto Mono',
-                                          color: CustomTheme.of(context)
-                                              .textColor,
+                                          color:
+                                              CustomTheme.of(context).textColor,
                                         ),
                                   ),
                                   Text(
@@ -392,8 +392,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Roboto Mono',
-                                          color: CustomTheme.of(context)
-                                              .textColor,
+                                          color:
+                                              CustomTheme.of(context).textColor,
                                         ),
                                   ),
                                 ],
@@ -446,8 +446,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                           color: CustomTheme.of(context).grayLight,
                           size: 15,
                         ),
-                        fillColor:
-                            CustomTheme.of(context).secondaryBackground,
+                        fillColor: CustomTheme.of(context).secondaryBackground,
                         elevation: 2,
                         borderColor: CustomTheme.of(context).alternate,
                         borderWidth: 2,
@@ -481,8 +480,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                           color: CustomTheme.of(context).grayLight,
                           size: 15,
                         ),
-                        fillColor:
-                            CustomTheme.of(context).secondaryBackground,
+                        fillColor: CustomTheme.of(context).secondaryBackground,
                         elevation: 2,
                         borderColor: CustomTheme.of(context).alternate,
                         borderWidth: 2,
@@ -500,13 +498,12 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         controller: _model.textController,
                         decoration: InputDecoration(
                           labelText: r'$ Amount',
-                          labelStyle: CustomTheme.of(context)
-                              .displaySmall
-                              .override(
-                                fontFamily: 'Lexend',
-                                color: CustomTheme.of(context).grayLight,
-                                fontWeight: FontWeight.w300,
-                              ),
+                          labelStyle:
+                              CustomTheme.of(context).displaySmall.override(
+                                    fontFamily: 'Lexend',
+                                    color: CustomTheme.of(context).grayLight,
+                                    fontWeight: FontWeight.w300,
+                                  ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: CustomTheme.of(context).alternate,

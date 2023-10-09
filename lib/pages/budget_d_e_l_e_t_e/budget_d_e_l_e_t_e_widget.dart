@@ -101,8 +101,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                           children: [
                             Card(
                               clipBehavior: Clip.antiAliasWithSaveLayer,
-                              color: CustomTheme.of(context)
-                                  .primaryBackground,
+                              color: CustomTheme.of(context).primaryBackground,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30),
                               ),
@@ -112,8 +111,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                 buttonSize: 48,
                                 icon: Icon(
                                   Icons.close_rounded,
-                                  color: CustomTheme.of(context)
-                                      .secondaryText,
+                                  color: CustomTheme.of(context).secondaryText,
                                   size: 30,
                                 ),
                                 onPressed: () async {
@@ -237,8 +235,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                     ),
                                 elevation: 0,
                                 borderSide: const BorderSide(

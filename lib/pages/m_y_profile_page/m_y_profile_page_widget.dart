@@ -185,8 +185,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                     .headlineSmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                     ),
                               ),
                             ],
@@ -202,13 +201,12 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                   mYProfilePageUsersRecord.userTitle,
                                   'Badass Busybody',
                                 ),
-                                style: CustomTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Lexend',
-                                      color: const Color(0xB3FFFFFF),
-                                      fontWeight: FontWeight.w500,
-                                    ),
+                                style:
+                                    CustomTheme.of(context).bodyMedium.override(
+                                          fontFamily: 'Lexend',
+                                          color: const Color(0xB3FFFFFF),
+                                          fontWeight: FontWeight.w500,
+                                        ),
                               ),
                             ),
                             Padding(
@@ -220,8 +218,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                       fontWeight: FontWeight.w500,
                                     ),
                               ),
@@ -276,8 +273,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                           width: MediaQuery.sizeOf(context).width * 0.9,
                           height: 60,
                           decoration: BoxDecoration(
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
                               color: CustomTheme.of(context).alternate,
@@ -292,8 +288,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                               children: [
                                 Text(
                                   'Edit Profile',
-                                  style:
-                                      CustomTheme.of(context).bodyMedium,
+                                  style: CustomTheme.of(context).bodyMedium,
                                 ),
                                 CustomIconButton(
                                   borderColor: Colors.transparent,
@@ -338,8 +333,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60,
                             decoration: BoxDecoration(
-                              color: CustomTheme.of(context)
-                                  .primaryBackground,
+                              color: CustomTheme.of(context).primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(
                                 color: CustomTheme.of(context).alternate,
@@ -355,8 +349,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     'Change Password',
-                                    style:
-                                        CustomTheme.of(context).bodyMedium,
+                                    style: CustomTheme.of(context).bodyMedium,
                                   ),
                                   CustomIconButton(
                                     borderColor: Colors.transparent,
@@ -402,8 +395,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60,
                             decoration: BoxDecoration(
-                              color: CustomTheme.of(context)
-                                  .primaryBackground,
+                              color: CustomTheme.of(context).primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(
                                 color: CustomTheme.of(context).alternate,
@@ -419,8 +411,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     'Notification Settings',
-                                    style:
-                                        CustomTheme.of(context).bodyMedium,
+                                    style: CustomTheme.of(context).bodyMedium,
                                   ),
                                   CustomIconButton(
                                     borderColor: Colors.transparent,
@@ -466,8 +457,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60,
                             decoration: BoxDecoration(
-                              color: CustomTheme.of(context)
-                                  .primaryBackground,
+                              color: CustomTheme.of(context).primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(
                                 color: CustomTheme.of(context).alternate,
@@ -483,8 +473,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     'Tutorial',
-                                    style:
-                                        CustomTheme.of(context).bodyMedium,
+                                    style: CustomTheme.of(context).bodyMedium,
                                   ),
                                   CustomIconButton(
                                     borderColor: Colors.transparent,
@@ -530,8 +519,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60,
                             decoration: BoxDecoration(
-                              color: CustomTheme.of(context)
-                                  .primaryBackground,
+                              color: CustomTheme.of(context).primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(
                                 color: CustomTheme.of(context).alternate,
@@ -547,8 +535,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     'Privacy Policy',
-                                    style:
-                                        CustomTheme.of(context).bodyMedium,
+                                    style: CustomTheme.of(context).bodyMedium,
                                   ),
                                   CustomIconButton(
                                     borderColor: Colors.transparent,
@@ -586,11 +573,10 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
                         color: CustomTheme.of(context).secondary,
-                        textStyle:
-                            CustomTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Lexend',
-                                  color: Colors.white,
-                                ),
+                        textStyle: CustomTheme.of(context).titleSmall.override(
+                              fontFamily: 'Lexend',
+                              color: Colors.white,
+                            ),
                         elevation: 2,
                         borderSide: const BorderSide(
                           color: Colors.transparent,
@@ -613,11 +599,10 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
                         color: CustomTheme.of(context).secondary,
-                        textStyle:
-                            CustomTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Lexend',
-                                  color: Colors.white,
-                                ),
+                        textStyle: CustomTheme.of(context).titleSmall.override(
+                              fontFamily: 'Lexend',
+                              color: Colors.white,
+                            ),
                         elevation: 2,
                         borderSide: const BorderSide(
                           color: Colors.transparent,

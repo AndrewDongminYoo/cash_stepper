@@ -204,8 +204,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                           ),
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -215,8 +214,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                               buttonSize: 48,
                               icon: Icon(
                                 Icons.close_rounded,
-                                color:
-                                    CustomTheme.of(context).secondaryText,
+                                color: CustomTheme.of(context).secondaryText,
                                 size: 30,
                               ),
                               onPressed: () async {
@@ -243,8 +241,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               hintText: 'Amount',
@@ -252,8 +249,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               enabledBorder: UnderlineInputBorder(
@@ -391,19 +387,17 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                   setState(() => _model.budgetValue = val),
                               width: MediaQuery.sizeOf(context).width * 0.9,
                               height: 60,
-                              textStyle:
-                                  CustomTheme.of(context).bodyMedium,
+                              textStyle: CustomTheme.of(context).bodyMedium,
                               hintText: 'Select Budget',
                               icon: Icon(
                                 Icons.keyboard_arrow_down_rounded,
                                 color: CustomTheme.of(context).grayLight,
                                 size: 15,
                               ),
-                              fillColor: CustomTheme.of(context)
-                                  .secondaryBackground,
+                              fillColor:
+                                  CustomTheme.of(context).secondaryBackground,
                               elevation: 2,
-                              borderColor:
-                                  CustomTheme.of(context).alternate,
+                              borderColor: CustomTheme.of(context).alternate,
                               borderWidth: 2,
                               borderRadius: 8,
                               margin: const EdgeInsetsDirectional.fromSTEB(
@@ -539,8 +533,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).textColor,
+                                    color: CustomTheme.of(context).textColor,
                                   ),
                               elevation: 0,
                               borderSide: const BorderSide(

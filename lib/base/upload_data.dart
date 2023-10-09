@@ -15,7 +15,7 @@ import 'package:mime_type/mime_type.dart';
 import 'package:video_player/video_player.dart';
 
 // 🌎 Project imports:
-import '../auth/firebase_auth/auth_util.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import 'custom_theme.dart';
 import 'custom_util.dart';
 

@@ -125,8 +125,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                           ),
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -136,8 +135,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                               buttonSize: 48,
                               icon: Icon(
                                 Icons.close_rounded,
-                                color:
-                                    CustomTheme.of(context).secondaryText,
+                                color: CustomTheme.of(context).secondaryText,
                                 size: 30,
                               ),
                               onPressed: () async {
@@ -164,8 +162,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               hintText: 'Amount',
@@ -173,8 +170,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               enabledBorder: UnderlineInputBorder(
@@ -230,8 +226,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                           controller: _model.budgetNameController,
                           decoration: InputDecoration(
                             labelText: 'Budget Name',
-                            labelStyle:
-                                CustomTheme.of(context).titleMedium,
+                            labelStyle: CustomTheme.of(context).titleMedium,
                             hintStyle: CustomTheme.of(context).bodyMedium,
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -311,9 +306,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                 const EdgeInsetsDirectional.fromSTEB(
                                     20, 40, 24, 0),
                           ),
-                          style: CustomTheme.of(context)
-                              .bodyMedium
-                              .override(
+                          style: CustomTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Lexend',
                                 color: CustomTheme.of(context).textColor,
                               ),
@@ -406,8 +399,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).textColor,
+                                    color: CustomTheme.of(context).textColor,
                                   ),
                               elevation: 0,
                               borderSide: const BorderSide(

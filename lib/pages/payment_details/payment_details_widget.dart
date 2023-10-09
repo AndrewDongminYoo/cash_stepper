@@ -143,8 +143,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                     ),
                               ),
                             ),
@@ -163,8 +162,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                     .headlineMedium
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                       fontSize: 36,
                                     ),
                               ),
@@ -195,9 +193,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           paymentDetailsTransactionsRecord.transactionName,
-                          style: CustomTheme.of(context)
-                              .headlineSmall
-                              .override(
+                          style: CustomTheme.of(context).headlineSmall.override(
                                 fontFamily: 'Lexend',
                                 fontWeight: FontWeight.w500,
                               ),
@@ -240,9 +236,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                             paymentDetailsTransactionsRecord.transactionTime,
                             locale: GetLocalizations.of(context).languageCode,
                           ),
-                          style: CustomTheme.of(context)
-                              .bodySmall
-                              .override(
+                          style: CustomTheme.of(context).bodySmall.override(
                                 fontFamily: 'Lexend',
                                 color: CustomTheme.of(context).tertiary,
                               ),
@@ -325,8 +319,8 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                               width: MediaQuery.sizeOf(context).width * 0.9,
                               height: 60,
                               decoration: BoxDecoration(
-                                color: CustomTheme.of(context)
-                                    .secondaryBackground,
+                                color:
+                                    CustomTheme.of(context).secondaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Padding(
@@ -336,8 +330,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                   children: [
                                     Card(
                                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      color:
-                                          CustomTheme.of(context).primary,
+                                      color: CustomTheme.of(context).primary,
                                       elevation: 2,
                                       shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(40),
@@ -379,9 +372,8 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                               Text(
                                                 containerUsersRecord
                                                     .displayName,
-                                                style:
-                                                    CustomTheme.of(context)
-                                                        .headlineSmall,
+                                                style: CustomTheme.of(context)
+                                                    .headlineSmall,
                                               ),
                                             ],
                                           ),
@@ -391,8 +383,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Lexend',
-                                                  color: CustomTheme.of(
-                                                          context)
+                                                  color: CustomTheme.of(context)
                                                       .primary,
                                                 ),
                                           ),

@@ -284,8 +284,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           await selectMediaWithSourceBottomSheet(
                         context: context,
                         allowPhoto: true,
-                        backgroundColor:
-                            CustomTheme.of(context).darkBackground,
+                        backgroundColor: CustomTheme.of(context).darkBackground,
                         textColor: CustomTheme.of(context).textColor,
                         pickerFontFamily: 'Lexend Deca',
                       );
@@ -394,8 +393,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor:
-                          CustomTheme.of(context).secondaryBackground,
+                      fillColor: CustomTheme.of(context).secondaryBackground,
                       contentPadding:
                           const EdgeInsetsDirectional.fromSTEB(20, 24, 20, 24),
                     ),
@@ -439,8 +437,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor:
-                          CustomTheme.of(context).secondaryBackground,
+                      fillColor: CustomTheme.of(context).secondaryBackground,
                       contentPadding:
                           const EdgeInsetsDirectional.fromSTEB(20, 24, 20, 24),
                     ),
@@ -485,8 +482,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor:
-                          CustomTheme.of(context).secondaryBackground,
+                      fillColor: CustomTheme.of(context).secondaryBackground,
                       contentPadding:
                           const EdgeInsetsDirectional.fromSTEB(20, 24, 20, 24),
                     ),
@@ -534,12 +530,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           padding: EdgeInsetsDirectional.zero,
                           iconPadding: EdgeInsetsDirectional.zero,
                           color: CustomTheme.of(context).primary,
-                          textStyle: CustomTheme.of(context)
-                              .titleSmall
-                              .override(
-                                fontFamily: 'Lexend',
-                                color: CustomTheme.of(context).textColor,
-                              ),
+                          textStyle:
+                              CustomTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Lexend',
+                                    color: CustomTheme.of(context).textColor,
+                                  ),
                           elevation: 3,
                           borderSide: const BorderSide(
                             color: Colors.transparent,
@@ -580,14 +575,12 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           height: 50,
                           padding: EdgeInsetsDirectional.zero,
                           iconPadding: EdgeInsetsDirectional.zero,
-                          color:
-                              CustomTheme.of(context).secondaryBackground,
-                          textStyle: CustomTheme.of(context)
-                              .titleSmall
-                              .override(
-                                fontFamily: 'Lexend',
-                                color: CustomTheme.of(context).primaryText,
-                              ),
+                          color: CustomTheme.of(context).secondaryBackground,
+                          textStyle:
+                              CustomTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Lexend',
+                                    color: CustomTheme.of(context).primaryText,
+                                  ),
                           elevation: 0,
                           borderSide: const BorderSide(
                             color: Colors.transparent,

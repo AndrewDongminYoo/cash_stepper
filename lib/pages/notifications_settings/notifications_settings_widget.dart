@@ -193,11 +193,10 @@ class _NotificationsSettingsWidgetState
                       padding: EdgeInsetsDirectional.zero,
                       iconPadding: EdgeInsetsDirectional.zero,
                       color: CustomTheme.of(context).primary,
-                      textStyle:
-                          CustomTheme.of(context).titleSmall.override(
-                                fontFamily: 'Lexend',
-                                color: CustomTheme.of(context).textColor,
-                              ),
+                      textStyle: CustomTheme.of(context).titleSmall.override(
+                            fontFamily: 'Lexend',
+                            color: CustomTheme.of(context).textColor,
+                          ),
                       elevation: 3,
                       borderSide: const BorderSide(
                         color: Colors.transparent,

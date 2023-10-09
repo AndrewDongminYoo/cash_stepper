@@ -8,8 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 // 🌎 Project imports:
-import '../../auth/base_auth_user_provider.dart';
-import '/app/view/app.dart';
+import '/app/app.dart';
+import '/auth/base_auth_user_provider.dart';
 import '/base/custom_util.dart';
 import '/pages/pages.dart';
 

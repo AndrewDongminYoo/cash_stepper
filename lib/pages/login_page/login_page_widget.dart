@@ -96,8 +96,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 children: [
                                   Text(
                                     'Welcome back',
-                                    style: CustomTheme.of(context)
-                                        .displaySmall,
+                                    style: CustomTheme.of(context).displaySmall,
                                   ),
                                 ],
                               ),
@@ -108,8 +107,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   children: [
                                     Text(
                                       'Login to access your account b...',
-                                      style: CustomTheme.of(context)
-                                          .titleMedium,
+                                      style:
+                                          CustomTheme.of(context).titleMedium,
                                     ),
                                   ],
                                 ),
@@ -158,8 +157,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         const EdgeInsetsDirectional.fromSTEB(
                                             20, 24, 20, 24),
                                   ),
-                                  style:
-                                      CustomTheme.of(context).bodyMedium,
+                                  style: CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .emailAddressLoginControllerValidator
                                       .asValidator(context),
@@ -223,8 +221,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       ),
                                     ),
                                   ),
-                                  style:
-                                      CustomTheme.of(context).bodyMedium,
+                                  style: CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .passwordLoginControllerValidator
                                       .asValidator(context),
@@ -250,8 +247,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         padding: EdgeInsetsDirectional.zero,
                                         iconPadding: EdgeInsetsDirectional.zero,
                                         color: const Color(0x001A1F24),
-                                        textStyle: CustomTheme.of(context)
-                                            .bodySmall,
+                                        textStyle:
+                                            CustomTheme.of(context).bodySmall,
                                         elevation: 0,
                                         borderSide: const BorderSide(
                                           color: Colors.transparent,
@@ -283,10 +280,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       height: 50,
                                       padding: EdgeInsetsDirectional.zero,
                                       iconPadding: EdgeInsetsDirectional.zero,
-                                      color:
-                                          CustomTheme.of(context).primary,
-                                      textStyle: CustomTheme.of(context)
-                                          .titleSmall,
+                                      color: CustomTheme.of(context).primary,
+                                      textStyle:
+                                          CustomTheme.of(context).titleSmall,
                                       elevation: 3,
                                       borderSide: const BorderSide(
                                         color: Colors.transparent,
@@ -331,22 +327,20 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                 .fromSTEB(24, 0, 4, 0),
                                             child: Text(
                                               'Create',
-                                              style:
-                                                  CustomTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Lexend',
-                                                        color:
-                                                            CustomTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                      ),
+                                              style: CustomTheme.of(context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Lexend',
+                                                    color:
+                                                        CustomTheme.of(context)
+                                                            .primary,
+                                                  ),
                                             ),
                                           ),
                                           Icon(
                                             Icons.arrow_forward_rounded,
-                                            color: CustomTheme.of(context)
-                                                .primary,
+                                            color:
+                                                CustomTheme.of(context).primary,
                                             size: 24,
                                           ),
                                         ],
@@ -385,14 +379,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,
                             iconPadding: EdgeInsetsDirectional.zero,
-                            color: CustomTheme.of(context)
-                                .secondaryBackground,
+                            color: CustomTheme.of(context).secondaryBackground,
                             textStyle: CustomTheme.of(context)
                                 .titleSmall
                                 .override(
                                   fontFamily: 'Lexend',
-                                  color:
-                                      CustomTheme.of(context).primaryText,
+                                  color: CustomTheme.of(context).primaryText,
                                 ),
                             elevation: 3,
                             borderSide: const BorderSide(

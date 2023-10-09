@@ -3,9 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:rxdart/rxdart.dart';
 
 // 🌎 Project imports:
-import '../base_auth_user_provider.dart';
+import '/auth/base_auth_user_provider.dart';
 
-export '../base_auth_user_provider.dart';
+export '/auth/base_auth_user_provider.dart';
 
 class CashStepperFirebaseUser extends BaseAuthUser {
   CashStepperFirebaseUser(this.user);

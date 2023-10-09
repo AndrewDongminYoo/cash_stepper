@@ -223,13 +223,12 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                             children: [
                               Text(
                                 'Edit Transaction',
-                                style:
-                                    CustomTheme.of(context).displaySmall,
+                                style: CustomTheme.of(context).displaySmall,
                               ),
                               Card(
                                 clipBehavior: Clip.antiAliasWithSaveLayer,
-                                color: CustomTheme.of(context)
-                                    .primaryBackground,
+                                color:
+                                    CustomTheme.of(context).primaryBackground,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30),
                                 ),
@@ -239,8 +238,8 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                   buttonSize: 48,
                                   icon: Icon(
                                     Icons.close_rounded,
-                                    color: CustomTheme.of(context)
-                                        .secondaryText,
+                                    color:
+                                        CustomTheme.of(context).secondaryText,
                                     size: 30,
                                   ),
                                   onPressed: () async {
@@ -264,8 +263,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: CustomTheme.of(context)
-                                          .grayLight,
+                                      color: CustomTheme.of(context).grayLight,
                                       fontWeight: FontWeight.w300,
                                     ),
                                 hintText: 'Amount',
@@ -273,14 +271,12 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: CustomTheme.of(context)
-                                          .grayLight,
+                                      color: CustomTheme.of(context).grayLight,
                                       fontWeight: FontWeight.w300,
                                     ),
                                 enabledBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(
-                                    color:
-                                        CustomTheme.of(context).alternate,
+                                    color: CustomTheme.of(context).alternate,
                                     width: 2,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -334,12 +330,10 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                               ),
                               decoration: InputDecoration(
                                 labelText: 'Spent At',
-                                labelStyle:
-                                    CustomTheme.of(context).bodySmall,
+                                labelStyle: CustomTheme.of(context).bodySmall,
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
-                                    color:
-                                        CustomTheme.of(context).alternate,
+                                    color: CustomTheme.of(context).alternate,
                                     width: 2,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -395,8 +389,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                       width: 40,
                                       height: 40,
                                       child: SpinKitPumpingHeart(
-                                        color: CustomTheme.of(context)
-                                            .primary,
+                                        color: CustomTheme.of(context).primary,
                                         size: 40,
                                       ),
                                     ),
@@ -420,13 +413,11 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                       setState(() => _model.budgetValue = val),
                                   width: MediaQuery.sizeOf(context).width * 0.9,
                                   height: 60,
-                                  textStyle:
-                                      CustomTheme.of(context).bodyMedium,
+                                  textStyle: CustomTheme.of(context).bodyMedium,
                                   hintText: 'Select Budget',
                                   icon: Icon(
                                     Icons.keyboard_arrow_down_rounded,
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     size: 15,
                                   ),
                                   fillColor: CustomTheme.of(context)
@@ -454,15 +445,12 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     .transactionReason,
                               ),
                               decoration: InputDecoration(
-                                labelStyle:
-                                    CustomTheme.of(context).bodySmall,
+                                labelStyle: CustomTheme.of(context).bodySmall,
                                 hintText: 'Reason',
-                                hintStyle:
-                                    CustomTheme.of(context).bodySmall,
+                                hintStyle: CustomTheme.of(context).bodySmall,
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
-                                    color:
-                                        CustomTheme.of(context).alternate,
+                                    color: CustomTheme.of(context).alternate,
                                     width: 2,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -528,8 +516,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     width: 40,
                                     height: 40,
                                     child: SpinKitPumpingHeart(
-                                      color:
-                                          CustomTheme.of(context).primary,
+                                      color: CustomTheme.of(context).primary,
                                       size: 40,
                                     ),
                                   ),
@@ -571,8 +558,8 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                       ),
                                   elevation: 0,
                                   borderSide: const BorderSide(

@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 // 🌎 Project imports:
-import '../auth/firebase_auth/auth_util.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import '/base/custom_util.dart';
 import 'schema/appointments_record.dart';
 import 'schema/budget_list_record.dart';

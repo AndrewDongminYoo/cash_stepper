@@ -124,8 +124,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                           ),
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                            color:
-                                CustomTheme.of(context).primaryBackground,
+                            color: CustomTheme.of(context).primaryBackground,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -135,8 +134,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                               buttonSize: 48,
                               icon: Icon(
                                 Icons.close_rounded,
-                                color:
-                                    CustomTheme.of(context).secondaryText,
+                                color: CustomTheme.of(context).secondaryText,
                                 size: 30,
                               ),
                               onPressed: () async {
@@ -163,8 +161,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               hintText: 'Amount',
@@ -172,8 +169,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               enabledBorder: UnderlineInputBorder(
@@ -229,8 +225,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                           controller: _model.budgetNameController,
                           decoration: InputDecoration(
                             labelText: 'Budget Name',
-                            labelStyle:
-                                CustomTheme.of(context).titleMedium,
+                            labelStyle: CustomTheme.of(context).titleMedium,
                             hintStyle: CustomTheme.of(context).bodyMedium,
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -399,8 +394,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
-                                    color:
-                                        CustomTheme.of(context).textColor,
+                                    color: CustomTheme.of(context).textColor,
                                   ),
                               elevation: 0,
                               borderSide: const BorderSide(

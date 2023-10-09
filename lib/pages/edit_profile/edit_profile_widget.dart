@@ -249,8 +249,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor:
-                            CustomTheme.of(context).secondaryBackground,
+                        fillColor: CustomTheme.of(context).secondaryBackground,
                         contentPadding: const EdgeInsetsDirectional.fromSTEB(
                             20, 24, 20, 24),
                       ),
@@ -301,8 +300,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor:
-                            CustomTheme.of(context).secondaryBackground,
+                        fillColor: CustomTheme.of(context).secondaryBackground,
                         contentPadding: const EdgeInsetsDirectional.fromSTEB(
                             20, 24, 20, 24),
                       ),
@@ -354,8 +352,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor:
-                            CustomTheme.of(context).secondaryBackground,
+                        fillColor: CustomTheme.of(context).secondaryBackground,
                         contentPadding: const EdgeInsetsDirectional.fromSTEB(
                             20, 24, 20, 24),
                       ),
@@ -406,8 +403,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor:
-                            CustomTheme.of(context).secondaryBackground,
+                        fillColor: CustomTheme.of(context).secondaryBackground,
                         contentPadding: const EdgeInsetsDirectional.fromSTEB(
                             20, 24, 20, 24),
                       ),
@@ -440,11 +436,10 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
                         color: CustomTheme.of(context).primary,
-                        textStyle:
-                            CustomTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Lexend',
-                                  color: CustomTheme.of(context).textColor,
-                                ),
+                        textStyle: CustomTheme.of(context).titleSmall.override(
+                              fontFamily: 'Lexend',
+                              color: CustomTheme.of(context).textColor,
+                            ),
                         elevation: 3,
                         borderSide: const BorderSide(
                           color: Colors.transparent,

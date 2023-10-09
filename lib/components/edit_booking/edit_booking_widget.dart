@@ -322,8 +322,8 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .tertiary,
+                                          color:
+                                              CustomTheme.of(context).tertiary,
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
@@ -343,8 +343,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                   buttonSize: 46,
                                   icon: Icon(
                                     Icons.date_range_outlined,
-                                    color:
-                                        CustomTheme.of(context).grayLight,
+                                    color: CustomTheme.of(context).grayLight,
                                     size: 20,
                                   ),
                                   onPressed: () {
@@ -376,12 +375,11 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
                         color: CustomTheme.of(context).background,
-                        textStyle:
-                            CustomTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Lexend',
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                ),
+                        textStyle: CustomTheme.of(context).titleSmall.override(
+                              fontFamily: 'Lexend',
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
                         elevation: 0,
                         borderSide: const BorderSide(
                           color: Colors.transparent,
@@ -408,12 +406,11 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
                         color: CustomTheme.of(context).primary,
-                        textStyle:
-                            CustomTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Lexend',
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                ),
+                        textStyle: CustomTheme.of(context).titleSmall.override(
+                              fontFamily: 'Lexend',
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
                         elevation: 3,
                         borderSide: const BorderSide(
                           color: Colors.transparent,

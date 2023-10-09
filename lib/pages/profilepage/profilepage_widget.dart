@@ -211,8 +211,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                       0, 0, 0, 12),
                                   child: Icon(
                                     Icons.account_balance_outlined,
-                                    color:
-                                        CustomTheme.of(context).textColor,
+                                    color: CustomTheme.of(context).textColor,
                                     size: 36,
                                   ),
                                 ),
@@ -224,8 +223,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.getFont(
                                       'Lexend Deca',
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                       fontSize: 12,
                                     ),
                                   ),
@@ -261,8 +259,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.24,
                             decoration: BoxDecoration(
-                              color:
-                                  CustomTheme.of(context).darkBackground,
+                              color: CustomTheme.of(context).darkBackground,
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Padding(
@@ -277,8 +274,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                             0, 0, 0, 12),
                                     child: Icon(
                                       Icons.swap_horiz_outlined,
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                       size: 36,
                                     ),
                                   ),
@@ -290,8 +286,8 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                       'Transfer',
                                       style: GoogleFonts.getFont(
                                         'Lexend Deca',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                         fontSize: 12,
                                       ),
                                     ),
@@ -318,8 +314,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.24,
                             decoration: BoxDecoration(
-                              color:
-                                  CustomTheme.of(context).darkBackground,
+                              color: CustomTheme.of(context).darkBackground,
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Padding(
@@ -334,8 +329,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                             0, 0, 0, 12),
                                     child: Icon(
                                       Icons.stacked_line_chart_rounded,
-                                      color: CustomTheme.of(context)
-                                          .textColor,
+                                      color: CustomTheme.of(context).textColor,
                                       size: 36,
                                     ),
                                   ),
@@ -347,8 +341,8 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                       'Activity',
                                       style: GoogleFonts.getFont(
                                         'Lexend Deca',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                         fontSize: 12,
                                       ),
                                     ),
@@ -397,18 +391,16 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                   0, 8, 0, 0),
                               child: Text(
                                 r'$7,302',
-                                style:
-                                    CustomTheme.of(context).displaySmall,
+                                style: CustomTheme.of(context).displaySmall,
                               ),
                             ),
                             Text(
                               '32% of portfolio',
-                              style: CustomTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Lexend',
-                                    color: const Color(0x7DEEEEEE),
-                                  ),
+                              style:
+                                  CustomTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Lexend',
+                                        color: const Color(0x7DEEEEEE),
+                                      ),
                             ),
                           ],
                         ),
@@ -432,8 +424,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .primary,
+                                        color: CustomTheme.of(context).primary,
                                       ),
                                 ),
                                 barRadius: const Radius.circular(40),
@@ -482,18 +473,16 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                   0, 8, 0, 0),
                               child: Text(
                                 r'$7,302',
-                                style:
-                                    CustomTheme.of(context).displaySmall,
+                                style: CustomTheme.of(context).displaySmall,
                               ),
                             ),
                             Text(
                               '40% of portfolio',
-                              style: CustomTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Lexend',
-                                    color: const Color(0x7DEEEEEE),
-                                  ),
+                              style:
+                                  CustomTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Lexend',
+                                        color: const Color(0x7DEEEEEE),
+                                      ),
                             ),
                           ],
                         ),
@@ -517,8 +506,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .primary,
+                                        color: CustomTheme.of(context).primary,
                                       ),
                                 ),
                                 barRadius: const Radius.circular(40),
@@ -567,18 +555,16 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                   0, 8, 0, 0),
                               child: Text(
                                 r'$7,302',
-                                style:
-                                    CustomTheme.of(context).displaySmall,
+                                style: CustomTheme.of(context).displaySmall,
                               ),
                             ),
                             Text(
                               '40% of portfolio',
-                              style: CustomTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Lexend',
-                                    color: const Color(0x7DEEEEEE),
-                                  ),
+                              style:
+                                  CustomTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Lexend',
+                                        color: const Color(0x7DEEEEEE),
+                                      ),
                             ),
                           ],
                         ),
@@ -602,8 +588,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .primary,
+                                        color: CustomTheme.of(context).primary,
                                       ),
                                 ),
                                 barRadius: const Radius.circular(40),

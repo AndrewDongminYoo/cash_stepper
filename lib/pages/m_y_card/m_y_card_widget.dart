@@ -8,10 +8,10 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 // 🌎 Project imports:
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/components/pause_card/pause_card_widget.dart';
 import '/base/custom_animations.dart';
 import '/base/custom_theme.dart';
 import '/base/custom_util.dart';
+import '/components/pause_card/pause_card_widget.dart';
 import 'm_y_card_model.dart';
 
 export 'm_y_card_model.dart';
@@ -247,8 +247,8 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                       ),
                                 ),
                               ],
@@ -265,8 +265,8 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                         fontSize: 32,
                                       ),
                                 ),
@@ -285,8 +285,8 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                       ),
                                 ),
                                 Text(
@@ -295,8 +295,8 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: CustomTheme.of(context)
-                                            .textColor,
+                                        color:
+                                            CustomTheme.of(context).textColor,
                                       ),
                                 ),
                               ],
@@ -348,8 +348,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color:
-                                          CustomTheme.of(context).tertiary,
+                                      color: CustomTheme.of(context).tertiary,
                                       fontSize: 32,
                                     ),
                               ),
@@ -371,14 +370,13 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .tertiary,
+                                          color:
+                                              CustomTheme.of(context).tertiary,
                                         ),
                                   ),
                                   Icon(
                                     Icons.trending_up_rounded,
-                                    color:
-                                        CustomTheme.of(context).tertiary,
+                                    color: CustomTheme.of(context).tertiary,
                                     size: 24,
                                   ),
                                 ],
@@ -424,8 +422,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color:
-                                          CustomTheme.of(context).errorRed,
+                                      color: CustomTheme.of(context).errorRed,
                                       fontSize: 32,
                                     ),
                               ),
@@ -447,14 +444,13 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: CustomTheme.of(context)
-                                              .errorRed,
+                                          color:
+                                              CustomTheme.of(context).errorRed,
                                         ),
                                   ),
                                   Icon(
                                     Icons.trending_up_rounded,
-                                    color:
-                                        CustomTheme.of(context).errorRed,
+                                    color: CustomTheme.of(context).errorRed,
                                     size: 24,
                                   ),
                                 ],
@@ -501,8 +497,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             width: MediaQuery.sizeOf(context).width * 0.44,
                             height: 100,
                             decoration: BoxDecoration(
-                              color: CustomTheme.of(context)
-                                  .primaryBackground,
+                              color: CustomTheme.of(context).primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: InkWell(
@@ -528,8 +523,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 children: [
                                   Icon(
                                     Icons.swap_horiz_rounded,
-                                    color: CustomTheme.of(context)
-                                        .primaryText,
+                                    color: CustomTheme.of(context).primaryText,
                                     size: 40,
                                   ),
                                   Padding(
@@ -538,8 +532,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Transfer',
-                                      style: CustomTheme.of(context)
-                                          .bodyMedium,
+                                      style: CustomTheme.of(context).bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -550,8 +543,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             width: MediaQuery.sizeOf(context).width * 0.44,
                             height: 100,
                             decoration: BoxDecoration(
-                              color: CustomTheme.of(context)
-                                  .primaryBackground,
+                              color: CustomTheme.of(context).primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: InkWell(
@@ -581,8 +573,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 children: [
                                   Icon(
                                     Icons.pause_rounded,
-                                    color: CustomTheme.of(context)
-                                        .primaryText,
+                                    color: CustomTheme.of(context).primaryText,
                                     size: 40,
                                   ),
                                   Padding(
@@ -591,8 +582,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Pause Card',
-                                      style: CustomTheme.of(context)
-                                          .bodyMedium,
+                                      style: CustomTheme.of(context).bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -713,9 +703,8 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                       .fromSTEB(8, 8, 8, 8),
                                               child: Icon(
                                                 Icons.monetization_on_rounded,
-                                                color:
-                                                    CustomTheme.of(context)
-                                                        .tertiary,
+                                                color: CustomTheme.of(context)
+                                                    .tertiary,
                                                 size: 24,
                                               ),
                                             ),
@@ -734,15 +723,13 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                 Text(
                                                   transactionListTransactionsRecord
                                                       .transactionName,
-                                                  style: CustomTheme.of(
-                                                          context)
+                                                  style: CustomTheme.of(context)
                                                       .titleMedium
                                                       .override(
                                                         fontFamily: 'Lexend',
-                                                        color:
-                                                            CustomTheme.of(
-                                                                    context)
-                                                                .primaryText,
+                                                        color: CustomTheme.of(
+                                                                context)
+                                                            .primaryText,
                                                       ),
                                                 ),
                                                 Padding(
@@ -751,9 +738,9 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                           .fromSTEB(0, 4, 0, 0),
                                                   child: Text(
                                                     'Income',
-                                                    style: CustomTheme.of(
-                                                            context)
-                                                        .bodyMedium,
+                                                    style:
+                                                        CustomTheme.of(context)
+                                                            .bodyMedium,
                                                   ),
                                                 ),
                                               ],
@@ -773,15 +760,14 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                 transactionListTransactionsRecord
                                                     .transactionAmount,
                                                 textAlign: TextAlign.end,
-                                                style:
-                                                    CustomTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          fontFamily: 'Lexend',
-                                                          color: CustomTheme
-                                                                  .of(context)
-                                                              .tertiary,
-                                                        ),
+                                                style: CustomTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      fontFamily: 'Lexend',
+                                                      color: CustomTheme.of(
+                                                              context)
+                                                          .tertiary,
+                                                    ),
                                               ),
                                               Padding(
                                                 padding:
@@ -797,8 +783,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                         .languageCode,
                                                   ),
                                                   textAlign: TextAlign.end,
-                                                  style: CustomTheme.of(
-                                                          context)
+                                                  style: CustomTheme.of(context)
                                                       .bodyMedium,
                                                 ),
                                               ),

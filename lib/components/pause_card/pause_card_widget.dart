@@ -106,11 +106,10 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                       padding: EdgeInsetsDirectional.zero,
                       iconPadding: EdgeInsetsDirectional.zero,
                       color: CustomTheme.of(context).primary,
-                      textStyle:
-                          CustomTheme.of(context).titleSmall.override(
-                                fontFamily: 'Lexend',
-                                color: Colors.white,
-                              ),
+                      textStyle: CustomTheme.of(context).titleSmall.override(
+                            fontFamily: 'Lexend',
+                            color: Colors.white,
+                          ),
                       elevation: 2,
                       borderSide: const BorderSide(
                         color: Colors.transparent,
