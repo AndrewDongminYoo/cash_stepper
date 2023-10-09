@@ -39,9 +39,9 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: CustomTheme.of(context).secondaryBackground,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        backgroundColor: CustomTheme.of(context).secondaryBackground,
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -53,13 +53,13 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.of(context).grayLight,
+            color: CustomTheme.of(context).grayLight,
             size: 32,
           ),
         ),
         title: Text(
           'Tutorial',
-          style: FlutterFlowTheme.of(context).headlineSmall,
+          style: CustomTheme.of(context).headlineSmall,
         ),
         actions: const [],
         centerTitle: false,
@@ -141,7 +141,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                               'Create Budgets',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .displaySmall,
                                             ),
                                           ),
@@ -159,7 +159,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                               'Create budgets that you can ti...',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall,
                                             ),
                                           ),
@@ -203,7 +203,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                               'Keep Track of Spending',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .displaySmall,
                                             ),
                                           ),
@@ -221,7 +221,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                               'Easily add transactions and as...',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall,
                                             ),
                                           ),
@@ -265,7 +265,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                               'Budget Analysis',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .displaySmall,
                                             ),
                                           ),
@@ -283,7 +283,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                               'Know where your budgets are an...',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall,
                                             ),
                                           ),
@@ -317,7 +317,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                 dotHeight: 4,
                                 dotColor: const Color(0x8AC6CAD4),
                                 activeDotColor:
-                                    FlutterFlowTheme.of(context).primaryText,
+                                    CustomTheme.of(context).primaryText,
                               ),
                             ),
                           ),

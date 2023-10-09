@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'booking_old_widget.dart' show BookingOldWidget;
 
-class BookingOldModel extends FlutterFlowModel<BookingOldWidget> {
+class BookingOldModel extends CustomModel<BookingOldWidget> {
   ///  State fields for stateful widgets in this component.
 
   // State field(s) for email widget.

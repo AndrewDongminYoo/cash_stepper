@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'transfer_complete_widget.dart' show TransferCompleteWidget;
 
-class TransferCompleteModel extends FlutterFlowModel<TransferCompleteWidget> {
+class TransferCompleteModel extends CustomModel<TransferCompleteWidget> {
   /// Initialization and disposal methods.
 
   @override

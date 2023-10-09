@@ -8,8 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:intl/intl.dart';
 
-class FlutterFlowLineChart extends StatelessWidget {
-  const FlutterFlowLineChart({
+class CustomLineChart extends StatelessWidget {
+  const CustomLineChart({
     Key? key,
     required this.data,
     required this.xAxisLabelInfo,
@@ -59,8 +59,8 @@ class FlutterFlowLineChart extends StatelessWidget {
       );
 }
 
-class FlutterFlowBarChart extends StatelessWidget {
-  const FlutterFlowBarChart({
+class CustomBarChart extends StatelessWidget {
+  const CustomBarChart({
     Key? key,
     required this.barData,
     required this.xLabels,
@@ -191,8 +191,8 @@ enum PieChartSectionLabelType {
   percent,
 }
 
-class FlutterFlowPieChart extends StatelessWidget {
-  const FlutterFlowPieChart({
+class CustomPieChart extends StatelessWidget {
+  const CustomPieChart({
     Key? key,
     required this.data,
     this.donutHoleRadius = 0,
@@ -261,8 +261,8 @@ class FlutterFlowPieChart extends StatelessWidget {
       );
 }
 
-class FlutterFlowChartLegendWidget extends StatelessWidget {
-  const FlutterFlowChartLegendWidget({
+class CustomChartLegendWidget extends StatelessWidget {
+  const CustomChartLegendWidget({
     Key? key,
     required this.entries,
     this.width,

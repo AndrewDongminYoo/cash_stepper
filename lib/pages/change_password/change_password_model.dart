@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'change_password_widget.dart' show ChangePasswordWidget;
 
-class ChangePasswordModel extends FlutterFlowModel<ChangePasswordWidget> {
+class ChangePasswordModel extends CustomModel<ChangePasswordWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for emailAddress widget.

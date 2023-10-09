@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'transaction_a_d_d_widget.dart' show TransactionADDWidget;
 
-class TransactionADDModel extends FlutterFlowModel<TransactionADDWidget> {
+class TransactionADDModel extends CustomModel<TransactionADDWidget> {
   ///  State fields for stateful widgets in this page.
 
   final formKey = GlobalKey<FormState>();

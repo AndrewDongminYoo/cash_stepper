@@ -160,7 +160,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: CustomTheme.of(context).primaryBackground,
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await context.pushNamed(
@@ -174,20 +174,20 @@ class _MYCardWidgetState extends State<MYCardWidget>
             },
           );
         },
-        backgroundColor: FlutterFlowTheme.of(context).tertiary,
+        backgroundColor: CustomTheme.of(context).tertiary,
         elevation: 8,
         child: Icon(
           Icons.add_rounded,
-          color: FlutterFlowTheme.of(context).textColor,
+          color: CustomTheme.of(context).textColor,
           size: 36,
         ),
       ),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: CustomTheme.of(context).primaryBackground,
         automaticallyImplyLeading: false,
         title: Text(
           'My Card',
-          style: FlutterFlowTheme.of(context).displaySmall,
+          style: CustomTheme.of(context).displaySmall,
         ),
         actions: const [],
         centerTitle: false,
@@ -243,11 +243,11 @@ class _MYCardWidgetState extends State<MYCardWidget>
                               children: [
                                 Text(
                                   'Balance',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                       ),
                                 ),
@@ -261,11 +261,11 @@ class _MYCardWidgetState extends State<MYCardWidget>
                               children: [
                                 Text(
                                   r'$7,630',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                         fontSize: 32,
                                       ),
@@ -281,21 +281,21 @@ class _MYCardWidgetState extends State<MYCardWidget>
                               children: [
                                 Text(
                                   '**** 0149',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                       ),
                                 ),
                                 Text(
                                   '05/25',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                       ),
                                 ),
@@ -316,7 +316,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: CustomTheme.of(context).secondaryBackground,
                         boxShadow: const [
                           BoxShadow(
                             blurRadius: 4,
@@ -336,7 +336,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             Text(
                               'Income',
                               textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context).bodySmall,
+                              style: CustomTheme.of(context).bodySmall,
                             ),
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
@@ -344,12 +344,12 @@ class _MYCardWidgetState extends State<MYCardWidget>
                               child: Text(
                                 r'+$12,402',
                                 textAlign: TextAlign.start,
-                                style: FlutterFlowTheme.of(context)
+                                style: CustomTheme.of(context)
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
                                       color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                          CustomTheme.of(context).tertiary,
                                       fontSize: 32,
                                     ),
                               ),
@@ -367,18 +367,18 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                   Text(
                                     '4.5% ',
                                     textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .tertiary,
                                         ),
                                   ),
                                   Icon(
                                     Icons.trending_up_rounded,
                                     color:
-                                        FlutterFlowTheme.of(context).tertiary,
+                                        CustomTheme.of(context).tertiary,
                                     size: 24,
                                   ),
                                 ],
@@ -392,7 +392,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: CustomTheme.of(context).secondaryBackground,
                         boxShadow: const [
                           BoxShadow(
                             blurRadius: 4,
@@ -412,7 +412,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             Text(
                               'Spending',
                               textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context).bodySmall,
+                              style: CustomTheme.of(context).bodySmall,
                             ),
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
@@ -420,12 +420,12 @@ class _MYCardWidgetState extends State<MYCardWidget>
                               child: Text(
                                 r'-$8,392',
                                 textAlign: TextAlign.start,
-                                style: FlutterFlowTheme.of(context)
+                                style: CustomTheme.of(context)
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
                                       color:
-                                          FlutterFlowTheme.of(context).errorRed,
+                                          CustomTheme.of(context).errorRed,
                                       fontSize: 32,
                                     ),
                               ),
@@ -443,18 +443,18 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                   Text(
                                     '4.5% ',
                                     textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .errorRed,
                                         ),
                                   ),
                                   Icon(
                                     Icons.trending_up_rounded,
                                     color:
-                                        FlutterFlowTheme.of(context).errorRed,
+                                        CustomTheme.of(context).errorRed,
                                     size: 24,
                                   ),
                                 ],
@@ -471,7 +471,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
               Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  color: CustomTheme.of(context).secondaryBackground,
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
@@ -486,7 +486,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                         children: [
                           Text(
                             'Quick Service',
-                            style: FlutterFlowTheme.of(context).bodySmall,
+                            style: CustomTheme.of(context).bodySmall,
                           ),
                         ],
                       ),
@@ -501,7 +501,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             width: MediaQuery.sizeOf(context).width * 0.44,
                             height: 100,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
+                              color: CustomTheme.of(context)
                                   .primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                             ),
@@ -528,7 +528,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 children: [
                                   Icon(
                                     Icons.swap_horiz_rounded,
-                                    color: FlutterFlowTheme.of(context)
+                                    color: CustomTheme.of(context)
                                         .primaryText,
                                     size: 40,
                                   ),
@@ -538,7 +538,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Transfer',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodyMedium,
                                     ),
                                   ),
@@ -550,7 +550,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             width: MediaQuery.sizeOf(context).width * 0.44,
                             height: 100,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
+                              color: CustomTheme.of(context)
                                   .primaryBackground,
                               borderRadius: BorderRadius.circular(8),
                             ),
@@ -581,7 +581,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 children: [
                                   Icon(
                                     Icons.pause_rounded,
-                                    color: FlutterFlowTheme.of(context)
+                                    color: CustomTheme.of(context)
                                         .primaryText,
                                     size: 40,
                                   ),
@@ -591,7 +591,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Pause Card',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodyMedium,
                                     ),
                                   ),
@@ -609,7 +609,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                         children: [
                           Text(
                             'Transaction',
-                            style: FlutterFlowTheme.of(context).bodySmall,
+                            style: CustomTheme.of(context).bodySmall,
                           ),
                         ],
                       ),
@@ -635,7 +635,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 width: 40,
                                 height: 40,
                                 child: SpinKitPumpingHeart(
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: CustomTheme.of(context).primary,
                                   size: 40,
                                 ),
                               ),
@@ -690,7 +690,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                         MediaQuery.sizeOf(context).width * 0.92,
                                     height: 70,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .secondaryBackground,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
@@ -714,7 +714,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                               child: Icon(
                                                 Icons.monetization_on_rounded,
                                                 color:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .tertiary,
                                                 size: 24,
                                               ),
@@ -734,13 +734,13 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                 Text(
                                                   transactionListTransactionsRecord
                                                       .transactionName,
-                                                  style: FlutterFlowTheme.of(
+                                                  style: CustomTheme.of(
                                                           context)
                                                       .titleMedium
                                                       .override(
                                                         fontFamily: 'Lexend',
                                                         color:
-                                                            FlutterFlowTheme.of(
+                                                            CustomTheme.of(
                                                                     context)
                                                                 .primaryText,
                                                       ),
@@ -751,7 +751,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                           .fromSTEB(0, 4, 0, 0),
                                                   child: Text(
                                                     'Income',
-                                                    style: FlutterFlowTheme.of(
+                                                    style: CustomTheme.of(
                                                             context)
                                                         .bodyMedium,
                                                   ),
@@ -774,11 +774,11 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                     .transactionAmount,
                                                 textAlign: TextAlign.end,
                                                 style:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .titleSmall
                                                         .override(
                                                           fontFamily: 'Lexend',
-                                                          color: FlutterFlowTheme
+                                                          color: CustomTheme
                                                                   .of(context)
                                                               .tertiary,
                                                         ),
@@ -797,7 +797,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                         .languageCode,
                                                   ),
                                                   textAlign: TextAlign.end,
-                                                  style: FlutterFlowTheme.of(
+                                                  style: CustomTheme.of(
                                                           context)
                                                       .bodyMedium,
                                                 ),

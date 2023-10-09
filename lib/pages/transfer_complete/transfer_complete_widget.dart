@@ -38,7 +38,7 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: CustomTheme.of(context).tertiary,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,9 +58,9 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
               padding: const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
               child: Text(
                 'Transfer Complete',
-                style: FlutterFlowTheme.of(context).displaySmall.override(
+                style: CustomTheme.of(context).displaySmall.override(
                       fontFamily: 'Lexend',
-                      color: FlutterFlowTheme.of(context).textColor,
+                      color: CustomTheme.of(context).textColor,
                     ),
               ),
             ),
@@ -73,7 +73,7 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
                     child: Text(
                       'Great work, you successfully t...',
                       textAlign: TextAlign.center,
-                      style: FlutterFlowTheme.of(context).bodySmall.override(
+                      style: CustomTheme.of(context).bodySmall.override(
                             fontFamily: 'Lexend',
                             color: const Color(0xB3FFFFFF),
                           ),
@@ -103,8 +103,8 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
                   height: 50,
                   padding: EdgeInsetsDirectional.zero,
                   iconPadding: EdgeInsetsDirectional.zero,
-                  color: FlutterFlowTheme.of(context).primary,
-                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                  color: CustomTheme.of(context).primary,
+                  textStyle: CustomTheme.of(context).titleSmall.override(
                         fontFamily: 'Lexend',
                         color: Colors.white,
                       ),

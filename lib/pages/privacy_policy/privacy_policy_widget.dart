@@ -42,9 +42,9 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: CustomTheme.of(context).primaryBackground,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: CustomTheme.of(context).primaryBackground,
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -56,13 +56,13 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.of(context).grayLight,
+            color: CustomTheme.of(context).grayLight,
             size: 32,
           ),
         ),
         title: Text(
           'Privacy Policy',
-          style: FlutterFlowTheme.of(context).headlineSmall,
+          style: CustomTheme.of(context).headlineSmall,
         ),
         actions: const [],
         centerTitle: false,
@@ -78,7 +78,7 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                 width: 40,
                 height: 40,
                 child: SpinKitPumpingHeart(
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: CustomTheme.of(context).primary,
                   size: 40,
                 ),
               ),
@@ -95,7 +95,7 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                       Expanded(
                         child: Text(
                           'How we use your data',
-                          style: FlutterFlowTheme.of(context).displaySmall,
+                          style: CustomTheme.of(context).displaySmall,
                         ),
                       ),
                     ],
@@ -108,7 +108,7 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                       Expanded(
                         child: Text(
                           'Lorem ipsum dolor sit amet, co...',
-                          style: FlutterFlowTheme.of(context).bodySmall,
+                          style: CustomTheme.of(context).bodySmall,
                         ),
                       ),
                     ],

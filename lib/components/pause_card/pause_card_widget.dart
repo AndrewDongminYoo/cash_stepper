@@ -44,7 +44,7 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
       width: double.infinity,
       height: double.infinity,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).darkBackground,
+        color: CustomTheme.of(context).darkBackground,
       ),
       child: Padding(
         padding: const EdgeInsetsDirectional.fromSTEB(24, 24, 24, 24),
@@ -54,7 +54,7 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
               children: [
                 Text(
                   'Pause Card',
-                  style: FlutterFlowTheme.of(context).displaySmall,
+                  style: CustomTheme.of(context).displaySmall,
                 ),
               ],
             ),
@@ -65,7 +65,7 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                   Expanded(
                     child: Text(
                       'Are you sure you want to pause...',
-                      style: FlutterFlowTheme.of(context).bodyMedium,
+                      style: CustomTheme.of(context).bodyMedium,
                     ),
                   ),
                 ],
@@ -86,8 +86,8 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                       height: 50,
                       padding: EdgeInsetsDirectional.zero,
                       iconPadding: EdgeInsetsDirectional.zero,
-                      color: FlutterFlowTheme.of(context).background,
-                      textStyle: FlutterFlowTheme.of(context).bodySmall,
+                      color: CustomTheme.of(context).background,
+                      textStyle: CustomTheme.of(context).bodySmall,
                       elevation: 2,
                       borderSide: const BorderSide(
                         color: Colors.transparent,
@@ -105,9 +105,9 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                       height: 50,
                       padding: EdgeInsetsDirectional.zero,
                       iconPadding: EdgeInsetsDirectional.zero,
-                      color: FlutterFlowTheme.of(context).primary,
+                      color: CustomTheme.of(context).primary,
                       textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
+                          CustomTheme.of(context).titleSmall.override(
                                 fontFamily: 'Lexend',
                                 color: Colors.white,
                               ),

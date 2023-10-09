@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'complete_profile_widget.dart' show CompleteProfileWidget;
 
-class CompleteProfileModel extends FlutterFlowModel<CompleteProfileWidget> {
+class CompleteProfileModel extends CustomModel<CompleteProfileWidget> {
   ///  State fields for stateful widgets in this page.
 
   final formKey = GlobalKey<FormState>();

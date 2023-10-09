@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'transaction_e_d_i_t_widget.dart' show TransactionEDITWidget;
 
-class TransactionEDITModel extends FlutterFlowModel<TransactionEDITWidget> {
+class TransactionEDITModel extends CustomModel<TransactionEDITWidget> {
   ///  State fields for stateful widgets in this page.
 
   final formKey = GlobalKey<FormState>();

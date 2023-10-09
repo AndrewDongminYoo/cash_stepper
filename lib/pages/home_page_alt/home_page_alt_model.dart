@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'home_page_alt_widget.dart' show HomePageAltWidget;
 
-class HomePageAltModel extends FlutterFlowModel<HomePageAltWidget> {
+class HomePageAltModel extends CustomModel<HomePageAltWidget> {
   /// Initialization and disposal methods.
 
   @override

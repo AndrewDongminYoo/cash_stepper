@@ -172,13 +172,13 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).tertiary,
+            backgroundColor: CustomTheme.of(context).tertiary,
             body: Center(
               child: SizedBox(
                 width: 40,
                 height: 40,
                 child: SpinKitPumpingHeart(
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: CustomTheme.of(context).primary,
                   size: 40,
                 ),
               ),
@@ -188,7 +188,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
         final transactionEDITTransactionsRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).tertiary,
+          backgroundColor: CustomTheme.of(context).tertiary,
           body: Form(
             key: _model.formKey,
             autovalidateMode: AutovalidateMode.disabled,
@@ -207,7 +207,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: MediaQuery.sizeOf(context).height * 0.8,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: CustomTheme.of(context).secondaryBackground,
                       borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(16),
                         bottomRight: Radius.circular(16),
@@ -224,22 +224,22 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                               Text(
                                 'Edit Transaction',
                                 style:
-                                    FlutterFlowTheme.of(context).displaySmall,
+                                    CustomTheme.of(context).displaySmall,
                               ),
                               Card(
                                 clipBehavior: Clip.antiAliasWithSaveLayer,
-                                color: FlutterFlowTheme.of(context)
+                                color: CustomTheme.of(context)
                                     .primaryBackground,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30),
                                 ),
-                                child: FlutterFlowIconButton(
+                                child: CustomIconButton(
                                   borderColor: Colors.transparent,
                                   borderRadius: 30,
                                   buttonSize: 48,
                                   icon: Icon(
                                     Icons.close_rounded,
-                                    color: FlutterFlowTheme.of(context)
+                                    color: CustomTheme.of(context)
                                         .secondaryText,
                                     size: 30,
                                   ),
@@ -260,27 +260,27 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     .transactionAmount,
                               ),
                               decoration: InputDecoration(
-                                labelStyle: FlutterFlowTheme.of(context)
+                                labelStyle: CustomTheme.of(context)
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .grayLight,
                                       fontWeight: FontWeight.w300,
                                     ),
                                 hintText: 'Amount',
-                                hintStyle: FlutterFlowTheme.of(context)
+                                hintStyle: CustomTheme.of(context)
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .grayLight,
                                       fontWeight: FontWeight.w300,
                                     ),
                                 enabledBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                     color:
-                                        FlutterFlowTheme.of(context).alternate,
+                                        CustomTheme.of(context).alternate,
                                     width: 2,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -311,11 +311,11 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                         20, 24, 24, 24),
                                 prefixIcon: Icon(
                                   Icons.attach_money_rounded,
-                                  color: FlutterFlowTheme.of(context).textColor,
+                                  color: CustomTheme.of(context).textColor,
                                   size: 32,
                                 ),
                               ),
-                              style: FlutterFlowTheme.of(context).displaySmall,
+                              style: CustomTheme.of(context).displaySmall,
                               textAlign: TextAlign.center,
                               keyboardType: TextInputType.number,
                               validator: _model.textController1Validator
@@ -335,11 +335,11 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                               decoration: InputDecoration(
                                 labelText: 'Spent At',
                                 labelStyle:
-                                    FlutterFlowTheme.of(context).bodySmall,
+                                    CustomTheme.of(context).bodySmall,
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color:
-                                        FlutterFlowTheme.of(context).alternate,
+                                        CustomTheme.of(context).alternate,
                                     width: 2,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -369,7 +369,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     const EdgeInsetsDirectional.fromSTEB(
                                         20, 24, 24, 24),
                               ),
-                              style: FlutterFlowTheme.of(context).bodyMedium,
+                              style: CustomTheme.of(context).bodyMedium,
                               validator: _model.spentAtControllerValidator
                                   .asValidator(context),
                             ).animateOnPageLoad(animationsMap[
@@ -395,7 +395,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                       width: 40,
                                       height: 40,
                                       child: SpinKitPumpingHeart(
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .primary,
                                         size: 40,
                                       ),
@@ -412,7 +412,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     budgetBudgetListRecordList.isNotEmpty
                                         ? budgetBudgetListRecordList.first
                                         : null;
-                                return FlutterFlowDropDown<String>(
+                                return CustomDropDown<String>(
                                   controller: _model.budgetValueController ??=
                                       FormFieldController<String>(null),
                                   options: budgetBudgetListRecord!.budget,
@@ -421,19 +421,19 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                   width: MediaQuery.sizeOf(context).width * 0.9,
                                   height: 60,
                                   textStyle:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                      CustomTheme.of(context).bodyMedium,
                                   hintText: 'Select Budget',
                                   icon: Icon(
                                     Icons.keyboard_arrow_down_rounded,
                                     color:
-                                        FlutterFlowTheme.of(context).grayLight,
+                                        CustomTheme.of(context).grayLight,
                                     size: 15,
                                   ),
-                                  fillColor: FlutterFlowTheme.of(context)
+                                  fillColor: CustomTheme.of(context)
                                       .secondaryBackground,
                                   elevation: 2,
                                   borderColor:
-                                      FlutterFlowTheme.of(context).alternate,
+                                      CustomTheme.of(context).alternate,
                                   borderWidth: 2,
                                   borderRadius: 8,
                                   margin: const EdgeInsetsDirectional.fromSTEB(
@@ -455,14 +455,14 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                               ),
                               decoration: InputDecoration(
                                 labelStyle:
-                                    FlutterFlowTheme.of(context).bodySmall,
+                                    CustomTheme.of(context).bodySmall,
                                 hintText: 'Reason',
                                 hintStyle:
-                                    FlutterFlowTheme.of(context).bodySmall,
+                                    CustomTheme.of(context).bodySmall,
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color:
-                                        FlutterFlowTheme.of(context).alternate,
+                                        CustomTheme.of(context).alternate,
                                     width: 2,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
@@ -492,7 +492,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     const EdgeInsetsDirectional.fromSTEB(
                                         20, 40, 24, 0),
                               ),
-                              style: FlutterFlowTheme.of(context).bodyMedium,
+                              style: CustomTheme.of(context).bodyMedium,
                               maxLines: 4,
                               validator: _model.reasonControllerValidator
                                   .asValidator(context),
@@ -529,7 +529,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     height: 40,
                                     child: SpinKitPumpingHeart(
                                       color:
-                                          FlutterFlowTheme.of(context).primary,
+                                          CustomTheme.of(context).primary,
                                       size: 40,
                                     ),
                                   ),
@@ -566,12 +566,12 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                   height: 70,
                                   padding: EdgeInsetsDirectional.zero,
                                   iconPadding: EdgeInsetsDirectional.zero,
-                                  color: FlutterFlowTheme.of(context).tertiary,
-                                  textStyle: FlutterFlowTheme.of(context)
+                                  color: CustomTheme.of(context).tertiary,
+                                  textStyle: CustomTheme.of(context)
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                       ),
                                   elevation: 0,
@@ -590,7 +590,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                 ),
                 Text(
                   'Tap above to save your changes...',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                  style: CustomTheme.of(context).bodyMedium.override(
                         fontFamily: 'Lexend',
                         color: const Color(0x43000000),
                       ),

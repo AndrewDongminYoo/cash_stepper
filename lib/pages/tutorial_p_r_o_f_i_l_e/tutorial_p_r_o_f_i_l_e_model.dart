@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'tutorial_p_r_o_f_i_l_e_widget.dart' show TutorialPROFILEWidget;
 
-class TutorialPROFILEModel extends FlutterFlowModel<TutorialPROFILEWidget> {
+class TutorialPROFILEModel extends CustomModel<TutorialPROFILEWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for PageView widget.

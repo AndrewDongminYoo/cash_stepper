@@ -48,13 +48,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).background,
+            backgroundColor: CustomTheme.of(context).background,
             body: Center(
               child: SizedBox(
                 width: 40,
                 height: 40,
                 child: SpinKitPumpingHeart(
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: CustomTheme.of(context).primary,
                   size: 40,
                 ),
               ),
@@ -71,13 +71,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             : null;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).background,
+          backgroundColor: CustomTheme.of(context).background,
           body: Column(
             children: [
               Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).darkBackground,
+                  color: CustomTheme.of(context).darkBackground,
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Column(
@@ -89,7 +89,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         children: [
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                            color: FlutterFlowTheme.of(context).primary,
+                            color: CustomTheme.of(context).primary,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40),
                             ),
@@ -119,7 +119,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   children: [
                                     Text(
                                       'Welcome,',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .headlineSmall,
                                     ),
                                     Padding(
@@ -128,12 +128,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               4, 0, 0, 0),
                                       child: Text(
                                         homePageUsersRecord!.displayName,
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .headlineSmall
                                             .override(
                                               fontFamily: 'Lexend',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .primary,
                                             ),
                                       ),
@@ -143,7 +143,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 Text(
                                   'Your account Details are below...',
                                   style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                      CustomTheme.of(context).bodyMedium,
                                 ),
                               ],
                             ),
@@ -158,7 +158,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         children: [
                           Text(
                             'Total Balance',
-                            style: FlutterFlowTheme.of(context).bodyMedium,
+                            style: CustomTheme.of(context).bodyMedium,
                           ),
                         ],
                       ),
@@ -170,7 +170,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         children: [
                           Text(
                             r'$25,202',
-                            style: FlutterFlowTheme.of(context)
+                            style: CustomTheme.of(context)
                                 .displaySmall
                                 .override(
                                   fontFamily: 'Lexend',
@@ -191,7 +191,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).tertiary,
+                        color: CustomTheme.of(context).tertiary,
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -203,11 +203,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           children: [
                             Text(
                               'Payroll Due',
-                              style: FlutterFlowTheme.of(context).bodySmall,
+                              style: CustomTheme.of(context).bodySmall,
                             ),
                             Text(
                               r'$12,245',
-                              style: FlutterFlowTheme.of(context).displaySmall,
+                              style: CustomTheme.of(context).displaySmall,
                             ),
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
@@ -227,7 +227,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               child: Text(
                                 'Aug 31, 2021',
                                 style:
-                                    FlutterFlowTheme.of(context).headlineSmall,
+                                    CustomTheme.of(context).headlineSmall,
                               ),
                             ),
                             Padding(
@@ -237,7 +237,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 '4 Days Left',
                                 style: GoogleFonts.getFont(
                                   'Lexend Deca',
-                                  color: FlutterFlowTheme.of(context).textColor,
+                                  color: CustomTheme.of(context).textColor,
                                   fontSize: 12,
                                 ),
                               ),
@@ -249,7 +249,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primary,
+                        color: CustomTheme.of(context).primary,
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -261,11 +261,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           children: [
                             Text(
                               'Marketing Budget',
-                              style: FlutterFlowTheme.of(context).bodySmall,
+                              style: CustomTheme.of(context).bodySmall,
                             ),
                             Text(
                               r'$4,000',
-                              style: FlutterFlowTheme.of(context).displaySmall,
+                              style: CustomTheme.of(context).displaySmall,
                             ),
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
@@ -285,7 +285,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               child: Text(
                                 r'$3,402',
                                 style:
-                                    FlutterFlowTheme.of(context).headlineSmall,
+                                    CustomTheme.of(context).headlineSmall,
                               ),
                             ),
                             Padding(
@@ -295,7 +295,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 '4 Days Left',
                                 style: GoogleFonts.getFont(
                                   'Lexend Deca',
-                                  color: FlutterFlowTheme.of(context).textColor,
+                                  color: CustomTheme.of(context).textColor,
                                   fontSize: 12,
                                 ),
                               ),
@@ -312,7 +312,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 0.92,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).darkBackground,
+                    color: CustomTheme.of(context).darkBackground,
                     boxShadow: const [
                       BoxShadow(
                         blurRadius: 5,
@@ -333,7 +333,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             children: [
                               Text(
                                 'Quick Services',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                style: CustomTheme.of(context).bodyMedium,
                               ),
                             ],
                           ),
@@ -348,7 +348,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 width: MediaQuery.sizeOf(context).width * 0.24,
                                 decoration: BoxDecoration(
                                   color:
-                                      FlutterFlowTheme.of(context).background,
+                                      CustomTheme.of(context).background,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Padding(
@@ -362,7 +362,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .fromSTEB(0, 0, 0, 12),
                                         child: Icon(
                                           Icons.account_balance_outlined,
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .textColor,
                                           size: 36,
                                         ),
@@ -375,7 +375,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           textAlign: TextAlign.center,
                                           style: GoogleFonts.getFont(
                                             'Lexend Deca',
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .textColor,
                                             fontSize: 12,
                                           ),
@@ -408,7 +408,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       MediaQuery.sizeOf(context).width * 0.24,
                                   decoration: BoxDecoration(
                                     color:
-                                        FlutterFlowTheme.of(context).background,
+                                        CustomTheme.of(context).background,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Padding(
@@ -424,7 +424,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               .fromSTEB(0, 0, 0, 12),
                                           child: Icon(
                                             Icons.swap_horiz_outlined,
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .textColor,
                                             size: 36,
                                           ),
@@ -437,7 +437,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             style: GoogleFonts.getFont(
                                               'Lexend Deca',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .textColor,
                                               fontSize: 12,
                                             ),
@@ -461,7 +461,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       MediaQuery.sizeOf(context).width * 0.24,
                                   decoration: BoxDecoration(
                                     color:
-                                        FlutterFlowTheme.of(context).background,
+                                        CustomTheme.of(context).background,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Padding(
@@ -477,7 +477,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               .fromSTEB(0, 0, 0, 12),
                                           child: Icon(
                                             Icons.stacked_line_chart_rounded,
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .textColor,
                                             size: 36,
                                           ),
@@ -490,7 +490,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             style: GoogleFonts.getFont(
                                               'Lexend Deca',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .textColor,
                                               fontSize: 12,
                                             ),
@@ -517,7 +517,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.92,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondary,
+                        color: CustomTheme.of(context).secondary,
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -538,7 +538,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             0, 0, 8, 0),
                                     child: Icon(
                                       Icons.notifications_sharp,
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .textColor,
                                       size: 24,
                                     ),
@@ -546,17 +546,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   Expanded(
                                     child: Text(
                                       '1 New Alert',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodySmall,
                                     ),
                                   ),
                                   Text(
                                     'View Now',
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .background,
                                         ),
                                   ),

@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'notifications_settings_widget.dart' show NotificationsSettingsWidget;
 
 class NotificationsSettingsModel
-    extends FlutterFlowModel<NotificationsSettingsWidget> {
+    extends CustomModel<NotificationsSettingsWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for SwitchListTile widget.

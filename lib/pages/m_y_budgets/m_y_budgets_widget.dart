@@ -133,7 +133,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: CustomTheme.of(context).primaryBackground,
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await context.pushNamed(
@@ -147,20 +147,20 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
             },
           );
         },
-        backgroundColor: FlutterFlowTheme.of(context).tertiary,
+        backgroundColor: CustomTheme.of(context).tertiary,
         elevation: 8,
         child: Icon(
           Icons.post_add_rounded,
-          color: FlutterFlowTheme.of(context).textColor,
+          color: CustomTheme.of(context).textColor,
           size: 32,
         ),
       ),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: CustomTheme.of(context).primaryBackground,
         automaticallyImplyLeading: false,
         title: Text(
           'My Budget',
-          style: FlutterFlowTheme.of(context).displaySmall,
+          style: CustomTheme.of(context).displaySmall,
         ),
         actions: const [],
         centerTitle: false,
@@ -183,7 +183,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                           width: MediaQuery.sizeOf(context).width * 0.44,
                           height: 140,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
+                            color: CustomTheme.of(context)
                                 .secondaryBackground,
                             boxShadow: const [
                               BoxShadow(
@@ -204,7 +204,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                 Text(
                                   'Income',
                                   textAlign: TextAlign.start,
-                                  style: FlutterFlowTheme.of(context).bodySmall,
+                                  style: CustomTheme.of(context).bodySmall,
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
@@ -212,11 +212,11 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                   child: Text(
                                     r'+$12,402',
                                     textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .tertiary,
                                           fontSize: 32,
                                         ),
@@ -235,18 +235,18 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                       Text(
                                         '4.5% ',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .tertiary,
                                             ),
                                       ),
                                       Icon(
                                         Icons.trending_up_rounded,
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .tertiary,
                                         size: 24,
                                       ),
@@ -262,7 +262,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                           width: MediaQuery.sizeOf(context).width * 0.44,
                           height: 140,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
+                            color: CustomTheme.of(context)
                                 .secondaryBackground,
                             boxShadow: const [
                               BoxShadow(
@@ -283,7 +283,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                 Text(
                                   'Spending',
                                   textAlign: TextAlign.start,
-                                  style: FlutterFlowTheme.of(context).bodySmall,
+                                  style: CustomTheme.of(context).bodySmall,
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
@@ -291,11 +291,11 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                   child: Text(
                                     r'-$8,392',
                                     textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .errorRed,
                                           fontSize: 32,
                                         ),
@@ -314,18 +314,18 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                       Text(
                                         '4.5% ',
                                         textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .errorRed,
                                             ),
                                       ),
                                       Icon(
                                         Icons.trending_up_rounded,
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .errorRed,
                                         size: 24,
                                       ),
@@ -355,7 +355,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                             width: 40,
                             height: 40,
                             child: SpinKitPumpingHeart(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: CustomTheme.of(context).primary,
                               size: 40,
                             ),
                           ),
@@ -400,7 +400,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                               child: Container(
                                 width: 100,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: CustomTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Padding(
@@ -421,12 +421,12 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                             Text(
                                               listViewBudgetsRecord.budgetName,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Lexend',
                                                         color:
-                                                            FlutterFlowTheme.of(
+                                                            CustomTheme.of(
                                                                     context)
                                                                 .alternate,
                                                       ),
@@ -434,7 +434,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                             Icon(
                                               Icons.arrow_forward_ios_rounded,
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .textColor,
                                               size: 16,
                                             ),
@@ -449,12 +449,12 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                           decimalType: DecimalType.automatic,
                                           currency: r'$',
                                         ),
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .displaySmall
                                             .override(
                                               fontFamily: 'Lexend',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .textColor,
                                             ),
                                       ),
@@ -472,12 +472,12 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                                 '4 Days Left',
                                               ),
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Lexend',
                                                         color:
-                                                            FlutterFlowTheme.of(
+                                                            CustomTheme.of(
                                                                     context)
                                                                 .alternate,
                                                       ),
@@ -491,7 +491,7 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                                   child: Text(
                                                     'Total Spent',
                                                     textAlign: TextAlign.end,
-                                                    style: FlutterFlowTheme.of(
+                                                    style: CustomTheme.of(
                                                             context)
                                                         .bodySmall
                                                         .override(
@@ -517,13 +517,13 @@ class _MYBudgetsWidgetState extends State<MYBudgetsWidget>
                                                     r'$22,000',
                                                   ),
                                                   textAlign: TextAlign.end,
-                                                  style: FlutterFlowTheme.of(
+                                                  style: CustomTheme.of(
                                                           context)
                                                       .headlineSmall
                                                       .override(
                                                         fontFamily: 'Lexend',
                                                         color:
-                                                            FlutterFlowTheme.of(
+                                                            CustomTheme.of(
                                                                     context)
                                                                 .textColor,
                                                       ),

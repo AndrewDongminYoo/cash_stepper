@@ -40,7 +40,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: CustomTheme.of(context).primaryBackground,
       body: SafeArea(
         child: Column(
           children: [
@@ -117,7 +117,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               'Create Budgets',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .displaySmall,
                                             ),
                                           ),
@@ -135,7 +135,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               'Create budgets that you can ti...',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall,
                                             ),
                                           ),
@@ -179,7 +179,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               'Keep Track of Spending',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .displaySmall,
                                             ),
                                           ),
@@ -197,7 +197,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               'Easily add transactions and as...',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall,
                                             ),
                                           ),
@@ -241,7 +241,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               'Budget Analysis',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .displaySmall,
                                             ),
                                           ),
@@ -259,7 +259,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               'Know where your budgets are an...',
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodySmall,
                                             ),
                                           ),
@@ -293,7 +293,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                 dotHeight: 4,
                                 dotColor: const Color(0x8AC6CAD4),
                                 activeDotColor:
-                                    FlutterFlowTheme.of(context).primaryText,
+                                    CustomTheme.of(context).primaryText,
                               ),
                             ),
                           ),
@@ -330,11 +330,11 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         height: 50,
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: CustomTheme.of(context).secondaryBackground,
                         textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
+                            CustomTheme.of(context).titleSmall.override(
                                   fontFamily: 'Lexend',
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: CustomTheme.of(context).primary,
                                 ),
                         elevation: 2,
                         borderSide: const BorderSide(

@@ -44,7 +44,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: CustomTheme.of(context).tertiary,
       body: Column(
         children: [
           Material(
@@ -60,7 +60,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
               width: MediaQuery.sizeOf(context).width * 1.0,
               height: MediaQuery.sizeOf(context).height * 0.8,
               decoration: BoxDecoration(
-                color: FlutterFlowTheme.of(context).secondaryBackground,
+                color: CustomTheme.of(context).secondaryBackground,
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(16),
                   bottomRight: Radius.circular(16),
@@ -75,21 +75,21 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                       children: [
                         Text(
                           'Request Funds',
-                          style: FlutterFlowTheme.of(context).displaySmall,
+                          style: CustomTheme.of(context).displaySmall,
                         ),
                         Card(
                           clipBehavior: Clip.antiAliasWithSaveLayer,
-                          color: FlutterFlowTheme.of(context).primaryBackground,
+                          color: CustomTheme.of(context).primaryBackground,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
-                          child: FlutterFlowIconButton(
+                          child: CustomIconButton(
                             borderColor: Colors.transparent,
                             borderRadius: 30,
                             buttonSize: 48,
                             icon: Icon(
                               Icons.close_rounded,
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: CustomTheme.of(context).secondaryText,
                               size: 30,
                             ),
                             onPressed: () async {
@@ -105,24 +105,24 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                       child: TextFormField(
                         controller: _model.textController1,
                         decoration: InputDecoration(
-                          labelStyle: FlutterFlowTheme.of(context)
+                          labelStyle: CustomTheme.of(context)
                               .displaySmall
                               .override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).grayLight,
+                                color: CustomTheme.of(context).grayLight,
                                 fontWeight: FontWeight.w300,
                               ),
                           hintText: r'$ Amount',
-                          hintStyle: FlutterFlowTheme.of(context)
+                          hintStyle: CustomTheme.of(context)
                               .displaySmall
                               .override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).grayLight,
+                                color: CustomTheme.of(context).grayLight,
                                 fontWeight: FontWeight.w300,
                               ),
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).alternate,
+                              color: CustomTheme.of(context).alternate,
                               width: 2,
                             ),
                             borderRadius: BorderRadius.circular(8),
@@ -151,7 +151,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                           contentPadding: const EdgeInsetsDirectional.fromSTEB(
                               20, 24, 24, 24),
                         ),
-                        style: FlutterFlowTheme.of(context).displaySmall,
+                        style: CustomTheme.of(context).displaySmall,
                         textAlign: TextAlign.center,
                         validator: _model.textController1Validator
                             .asValidator(context),
@@ -160,7 +160,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
-                      child: FlutterFlowDropDown<String>(
+                      child: CustomDropDown<String>(
                         controller: _model.dropDownValueController ??=
                             FormFieldController<String>(null),
                         options: const [
@@ -172,17 +172,17 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                             setState(() => _model.dropDownValue = val),
                         width: MediaQuery.sizeOf(context).width * 0.9,
                         height: 60,
-                        textStyle: FlutterFlowTheme.of(context).bodyMedium,
+                        textStyle: CustomTheme.of(context).bodyMedium,
                         hintText: 'Select Transfer',
                         icon: Icon(
                           Icons.keyboard_arrow_down_rounded,
-                          color: FlutterFlowTheme.of(context).grayLight,
+                          color: CustomTheme.of(context).grayLight,
                           size: 15,
                         ),
                         fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                            CustomTheme.of(context).secondaryBackground,
                         elevation: 2,
-                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderColor: CustomTheme.of(context).alternate,
                         borderWidth: 2,
                         borderRadius: 8,
                         margin: const EdgeInsetsDirectional.fromSTEB(
@@ -196,12 +196,12 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                       child: TextFormField(
                         controller: _model.textController2,
                         decoration: InputDecoration(
-                          labelStyle: FlutterFlowTheme.of(context).bodyMedium,
+                          labelStyle: CustomTheme.of(context).bodyMedium,
                           hintText: 'Reason',
-                          hintStyle: FlutterFlowTheme.of(context).bodyMedium,
+                          hintStyle: CustomTheme.of(context).bodyMedium,
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).alternate,
+                              color: CustomTheme.of(context).alternate,
                               width: 2,
                             ),
                             borderRadius: BorderRadius.circular(8),
@@ -230,7 +230,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                           contentPadding: const EdgeInsetsDirectional.fromSTEB(
                               20, 32, 24, 0),
                         ),
-                        style: FlutterFlowTheme.of(context).bodyMedium,
+                        style: CustomTheme.of(context).bodyMedium,
                         maxLines: 4,
                         validator: _model.textController2Validator
                             .asValidator(context),
@@ -267,11 +267,11 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                         height: 70,
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
-                        color: FlutterFlowTheme.of(context).tertiary,
+                        color: CustomTheme.of(context).tertiary,
                         textStyle:
-                            FlutterFlowTheme.of(context).displaySmall.override(
+                            CustomTheme.of(context).displaySmall.override(
                                   fontFamily: 'Lexend',
-                                  color: FlutterFlowTheme.of(context).textColor,
+                                  color: CustomTheme.of(context).textColor,
                                 ),
                         elevation: 0,
                         borderSide: const BorderSide(
@@ -287,7 +287,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
           ),
           Text(
             'Tap above to complete request',
-            style: FlutterFlowTheme.of(context).bodyMedium.override(
+            style: CustomTheme.of(context).bodyMedium.override(
                   fontFamily: 'Lexend',
                   color: const Color(0x43000000),
                 ),

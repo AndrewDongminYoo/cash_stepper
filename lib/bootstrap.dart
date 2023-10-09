@@ -24,7 +24,7 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
-  await FlutterFlowTheme.initialize();
+  await CustomTheme.initialize();
   usePathUrlStrategy();
 
   runApp(await builder());

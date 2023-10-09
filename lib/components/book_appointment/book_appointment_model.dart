@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'book_appointment_widget.dart' show BookAppointmentWidget;
 
-class BookAppointmentModel extends FlutterFlowModel<BookAppointmentWidget> {
+class BookAppointmentModel extends CustomModel<BookAppointmentWidget> {
   ///  State fields for stateful widgets in this component.
 
   // State field(s) for personsName widget.

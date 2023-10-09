@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'onboarding_widget.dart' show OnboardingWidget;
 
-class OnboardingModel extends FlutterFlowModel<OnboardingWidget> {
+class OnboardingModel extends CustomModel<OnboardingWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for PageView widget.

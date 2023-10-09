@@ -243,13 +243,13 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: CustomTheme.of(context).primaryBackground,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: CustomTheme.of(context).primaryBackground,
         automaticallyImplyLeading: false,
         title: Text(
           'Complete Profile',
-          style: FlutterFlowTheme.of(context).headlineSmall,
+          style: CustomTheme.of(context).headlineSmall,
         ),
         actions: const [],
         centerTitle: false,
@@ -285,8 +285,8 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         context: context,
                         allowPhoto: true,
                         backgroundColor:
-                            FlutterFlowTheme.of(context).darkBackground,
-                        textColor: FlutterFlowTheme.of(context).textColor,
+                            CustomTheme.of(context).darkBackground,
+                        textColor: CustomTheme.of(context).textColor,
                         pickerFontFamily: 'Lexend Deca',
                       );
                       if (selectedMedia != null &&
@@ -359,7 +359,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                 ),
                 Text(
                   'Upload a photo for us to easil...',
-                  style: FlutterFlowTheme.of(context).bodyMedium,
+                  style: CustomTheme.of(context).bodyMedium,
                 ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation']!),
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
@@ -367,8 +367,8 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     controller: _model.yourNameController,
                     decoration: InputDecoration(
                       labelText: 'Your Name',
-                      labelStyle: FlutterFlowTheme.of(context).bodySmall,
-                      hintStyle: FlutterFlowTheme.of(context).bodySmall,
+                      labelStyle: CustomTheme.of(context).bodySmall,
+                      hintStyle: CustomTheme.of(context).bodySmall,
                       enabledBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0x00000000),
@@ -395,11 +395,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       ),
                       filled: true,
                       fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                          CustomTheme.of(context).secondaryBackground,
                       contentPadding:
                           const EdgeInsetsDirectional.fromSTEB(20, 24, 20, 24),
                     ),
-                    style: FlutterFlowTheme.of(context).bodyMedium,
+                    style: CustomTheme.of(context).bodyMedium,
                     validator:
                         _model.yourNameControllerValidator.asValidator(context),
                   ).animateOnPageLoad(
@@ -411,9 +411,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     controller: _model.yourAgeController,
                     decoration: InputDecoration(
                       labelText: 'Your Age',
-                      labelStyle: FlutterFlowTheme.of(context).bodySmall,
+                      labelStyle: CustomTheme.of(context).bodySmall,
                       hintText: 'i.e. 34',
-                      hintStyle: FlutterFlowTheme.of(context).bodySmall,
+                      hintStyle: CustomTheme.of(context).bodySmall,
                       enabledBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0x00000000),
@@ -440,11 +440,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       ),
                       filled: true,
                       fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                          CustomTheme.of(context).secondaryBackground,
                       contentPadding:
                           const EdgeInsetsDirectional.fromSTEB(20, 24, 20, 24),
                     ),
-                    style: FlutterFlowTheme.of(context).bodyMedium,
+                    style: CustomTheme.of(context).bodyMedium,
                     keyboardType: TextInputType.number,
                     validator:
                         _model.yourAgeControllerValidator.asValidator(context),
@@ -457,9 +457,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     controller: _model.yourTitleController,
                     decoration: InputDecoration(
                       labelText: 'Your Title',
-                      labelStyle: FlutterFlowTheme.of(context).bodySmall,
+                      labelStyle: CustomTheme.of(context).bodySmall,
                       hintText: 'What is your position?',
-                      hintStyle: FlutterFlowTheme.of(context).bodySmall,
+                      hintStyle: CustomTheme.of(context).bodySmall,
                       enabledBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0x00000000),
@@ -486,11 +486,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       ),
                       filled: true,
                       fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                          CustomTheme.of(context).secondaryBackground,
                       contentPadding:
                           const EdgeInsetsDirectional.fromSTEB(20, 24, 20, 24),
                     ),
-                    style: FlutterFlowTheme.of(context).bodyMedium,
+                    style: CustomTheme.of(context).bodyMedium,
                     validator: _model.yourTitleControllerValidator
                         .asValidator(context),
                   ).animateOnPageLoad(
@@ -508,7 +508,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             width: 40,
                             height: 40,
                             child: SpinKitPumpingHeart(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: CustomTheme.of(context).primary,
                               size: 40,
                             ),
                           ),
@@ -533,12 +533,12 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           height: 50,
                           padding: EdgeInsetsDirectional.zero,
                           iconPadding: EdgeInsetsDirectional.zero,
-                          color: FlutterFlowTheme.of(context).primary,
-                          textStyle: FlutterFlowTheme.of(context)
+                          color: CustomTheme.of(context).primary,
+                          textStyle: CustomTheme.of(context)
                               .titleSmall
                               .override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).textColor,
+                                color: CustomTheme.of(context).textColor,
                               ),
                           elevation: 3,
                           borderSide: const BorderSide(
@@ -563,7 +563,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             width: 40,
                             height: 40,
                             child: SpinKitPumpingHeart(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: CustomTheme.of(context).primary,
                               size: 40,
                             ),
                           ),
@@ -581,12 +581,12 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           padding: EdgeInsetsDirectional.zero,
                           iconPadding: EdgeInsetsDirectional.zero,
                           color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          textStyle: FlutterFlowTheme.of(context)
+                              CustomTheme.of(context).secondaryBackground,
+                          textStyle: CustomTheme.of(context)
                               .titleSmall
                               .override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                color: CustomTheme.of(context).primaryText,
                               ),
                           elevation: 0,
                           borderSide: const BorderSide(

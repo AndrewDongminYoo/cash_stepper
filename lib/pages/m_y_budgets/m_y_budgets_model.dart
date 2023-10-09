@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'm_y_budgets_widget.dart' show MYBudgetsWidget;
 
-class MYBudgetsModel extends FlutterFlowModel<MYBudgetsWidget> {
+class MYBudgetsModel extends CustomModel<MYBudgetsWidget> {
   /// Initialization and disposal methods.
 
   @override

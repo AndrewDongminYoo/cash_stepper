@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'payment_details_widget.dart' show PaymentDetailsWidget;
 
-class PaymentDetailsModel extends FlutterFlowModel<PaymentDetailsWidget> {
+class PaymentDetailsModel extends CustomModel<PaymentDetailsWidget> {
   /// Initialization and disposal methods.
 
   @override

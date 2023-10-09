@@ -29,7 +29,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   Locale? _locale;
-  ThemeMode _themeMode = FlutterFlowTheme.themeMode;
+  ThemeMode _themeMode = CustomTheme.themeMode;
 
   late Stream<BaseAuthUser> userStream;
 
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
 
   void setThemeMode(ThemeMode mode) => setState(() {
         _themeMode = mode;
-        FlutterFlowTheme.saveThemeMode(mode);
+        CustomTheme.saveThemeMode(mode);
       });
 
   @override
@@ -139,9 +139,9 @@ class _NavBarPageState extends State<NavBarPage> {
           _currentPage = null;
           _currentPageName = tabs.keys.toList()[i];
         }),
-        backgroundColor: FlutterFlowTheme.of(context).darkBackground,
-        selectedItemColor: FlutterFlowTheme.of(context).primary,
-        unselectedItemColor: FlutterFlowTheme.of(context).grayLight,
+        backgroundColor: CustomTheme.of(context).darkBackground,
+        selectedItemColor: CustomTheme.of(context).primary,
+        unselectedItemColor: CustomTheme.of(context).grayLight,
         showSelectedLabels: true,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,

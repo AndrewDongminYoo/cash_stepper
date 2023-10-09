@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'home_page_widget.dart' show HomePageWidget;
 
-class HomePageModel extends FlutterFlowModel<HomePageWidget> {
+class HomePageModel extends CustomModel<HomePageWidget> {
   /// Initialization and disposal methods.
 
   @override

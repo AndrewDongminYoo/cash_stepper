@@ -104,7 +104,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: CustomTheme.of(context).primaryBackground,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -118,7 +118,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                       children: [
                         Card(
                           clipBehavior: Clip.antiAliasWithSaveLayer,
-                          color: FlutterFlowTheme.of(context).tertiary,
+                          color: CustomTheme.of(context).tertiary,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40),
                           ),
@@ -151,18 +151,18 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               Text(
                                 'Welcome,',
                                 style:
-                                    FlutterFlowTheme.of(context).headlineSmall,
+                                    CustomTheme.of(context).headlineSmall,
                               ),
                               Padding(
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     4, 0, 0, 0),
                                 child: Text(
                                   'Andrew',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .headlineSmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .tertiary,
                                       ),
                                 ),
@@ -174,7 +174,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 0, 4, 0, 0),
                             child: Text(
                               'Your latest updates are below.',
-                              style: FlutterFlowTheme.of(context).bodySmall,
+                              style: CustomTheme.of(context).bodySmall,
                             ),
                           ),
                         ],
@@ -230,11 +230,11 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               children: [
                                 Text(
                                   'Balance',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                       ),
                                 ),
@@ -248,11 +248,11 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               children: [
                                 Text(
                                   r'$7,630',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Lexend',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                         fontSize: 32,
                                       ),
@@ -268,21 +268,21 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               children: [
                                 Text(
                                   '**** 0149',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                       ),
                                 ),
                                 Text(
                                   '05/25',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .textColor,
                                       ),
                                 ),
@@ -300,7 +300,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 1.0,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: CustomTheme.of(context).secondaryBackground,
                     boxShadow: const [
                       BoxShadow(
                         blurRadius: 4,
@@ -322,7 +322,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           children: [
                             Text(
                               'Quick Service',
-                              style: FlutterFlowTheme.of(context).bodySmall,
+                              style: CustomTheme.of(context).bodySmall,
                             ),
                           ],
                         ),
@@ -337,7 +337,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               width: 110,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
+                                color: CustomTheme.of(context)
                                     .primaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
@@ -346,7 +346,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 children: [
                                   Icon(
                                     Icons.swap_horiz_rounded,
-                                    color: FlutterFlowTheme.of(context)
+                                    color: CustomTheme.of(context)
                                         .primaryText,
                                     size: 40,
                                   ),
@@ -356,7 +356,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Transfer',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodyMedium,
                                     ),
                                   ),
@@ -367,7 +367,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               width: 110,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
+                                color: CustomTheme.of(context)
                                     .primaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
@@ -376,7 +376,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 children: [
                                   Icon(
                                     Icons.stacked_line_chart_rounded,
-                                    color: FlutterFlowTheme.of(context)
+                                    color: CustomTheme.of(context)
                                         .primaryText,
                                     size: 40,
                                   ),
@@ -386,7 +386,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'Activity',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodyMedium,
                                     ),
                                   ),
@@ -397,7 +397,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               width: 110,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
+                                color: CustomTheme.of(context)
                                     .primaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
@@ -406,7 +406,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 children: [
                                   Icon(
                                     Icons.account_balance_outlined,
-                                    color: FlutterFlowTheme.of(context)
+                                    color: CustomTheme.of(context)
                                         .primaryText,
                                     size: 40,
                                   ),
@@ -416,7 +416,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             0, 8, 0, 0),
                                     child: Text(
                                       'My Bank',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodyMedium,
                                     ),
                                   ),
@@ -433,7 +433,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           children: [
                             Text(
                               'Transaction',
-                              style: FlutterFlowTheme.of(context).bodySmall,
+                              style: CustomTheme.of(context).bodySmall,
                             ),
                           ],
                         ),
@@ -446,7 +446,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           height: 70,
                           decoration: BoxDecoration(
                             color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                                CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -467,7 +467,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     child: Icon(
                                       Icons.monetization_on_rounded,
                                       color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                          CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),
@@ -484,7 +484,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     children: [
                                       Text(
                                         'Go Far Rewards',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .headlineSmall,
                                       ),
                                       Padding(
@@ -492,7 +492,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Income',
-                                          style: FlutterFlowTheme.of(context)
+                                          style: CustomTheme.of(context)
                                               .bodyMedium,
                                         ),
                                       ),
@@ -510,11 +510,11 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     Text(
                                       r'$50.00',
                                       textAlign: TextAlign.end,
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .titleSmall
                                           .override(
                                             fontFamily: 'Lexend',
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .tertiary,
                                           ),
                                     ),
@@ -525,7 +525,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       child: Text(
                                         'Hello World',
                                         textAlign: TextAlign.end,
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',
@@ -548,7 +548,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           height: 70,
                           decoration: BoxDecoration(
                             color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                                CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -569,7 +569,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     child: Icon(
                                       Icons.monetization_on_rounded,
                                       color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                          CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),
@@ -586,7 +586,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     children: [
                                       Text(
                                         'Go Far Rewards',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .headlineSmall,
                                       ),
                                       Padding(
@@ -594,7 +594,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Income',
-                                          style: FlutterFlowTheme.of(context)
+                                          style: CustomTheme.of(context)
                                               .bodyMedium,
                                         ),
                                       ),
@@ -612,11 +612,11 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     Text(
                                       r'$50.00',
                                       textAlign: TextAlign.end,
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .titleSmall
                                           .override(
                                             fontFamily: 'Lexend',
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .tertiary,
                                           ),
                                     ),
@@ -627,7 +627,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       child: Text(
                                         'Hello World',
                                         textAlign: TextAlign.end,
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',
@@ -650,7 +650,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           height: 70,
                           decoration: BoxDecoration(
                             color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                                CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -671,7 +671,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     child: Icon(
                                       Icons.monetization_on_rounded,
                                       color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                          CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),
@@ -688,7 +688,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     children: [
                                       Text(
                                         'Go Far Rewards',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .headlineSmall,
                                       ),
                                       Padding(
@@ -696,7 +696,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Income',
-                                          style: FlutterFlowTheme.of(context)
+                                          style: CustomTheme.of(context)
                                               .bodyMedium,
                                         ),
                                       ),
@@ -714,11 +714,11 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     Text(
                                       r'$50.00',
                                       textAlign: TextAlign.end,
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .titleSmall
                                           .override(
                                             fontFamily: 'Lexend',
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .tertiary,
                                           ),
                                     ),
@@ -729,7 +729,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       child: Text(
                                         'Hello World',
                                         textAlign: TextAlign.end,
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',
@@ -752,7 +752,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                           height: 70,
                           decoration: BoxDecoration(
                             color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                                CustomTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
@@ -773,7 +773,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     child: Icon(
                                       Icons.monetization_on_rounded,
                                       color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                          CustomTheme.of(context).tertiary,
                                       size: 24,
                                     ),
                                   ),
@@ -790,7 +790,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     children: [
                                       Text(
                                         'Go Far Rewards',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .headlineSmall,
                                       ),
                                       Padding(
@@ -798,7 +798,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             .fromSTEB(0, 4, 0, 0),
                                         child: Text(
                                           'Income',
-                                          style: FlutterFlowTheme.of(context)
+                                          style: CustomTheme.of(context)
                                               .bodyMedium,
                                         ),
                                       ),
@@ -816,11 +816,11 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     Text(
                                       r'$50.00',
                                       textAlign: TextAlign.end,
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .titleSmall
                                           .override(
                                             fontFamily: 'Lexend',
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .tertiary,
                                           ),
                                     ),
@@ -831,7 +831,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       child: Text(
                                         'Hello World',
                                         textAlign: TextAlign.end,
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Lexend',

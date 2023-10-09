@@ -54,13 +54,13 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: CustomTheme.of(context).primaryBackground,
             body: Center(
               child: SizedBox(
                 width: 40,
                 height: 40,
                 child: SpinKitPumpingHeart(
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: CustomTheme.of(context).primary,
                   size: 40,
                 ),
               ),
@@ -70,9 +70,9 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
         final paymentDetailsTransactionsRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: CustomTheme.of(context).primaryBackground,
           appBar: AppBar(
-            backgroundColor: FlutterFlowTheme.of(context).primary,
+            backgroundColor: CustomTheme.of(context).primary,
             automaticallyImplyLeading: false,
             leading: InkWell(
               splashColor: Colors.transparent,
@@ -84,24 +84,24 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
               },
               child: Icon(
                 Icons.chevron_left_rounded,
-                color: FlutterFlowTheme.of(context).textColor,
+                color: CustomTheme.of(context).textColor,
                 size: 32,
               ),
             ),
             title: Text(
               'Details',
-              style: FlutterFlowTheme.of(context).titleSmall,
+              style: CustomTheme.of(context).titleSmall,
             ),
             actions: [
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
-                child: FlutterFlowIconButton(
+                child: CustomIconButton(
                   borderColor: Colors.transparent,
                   borderRadius: 30,
                   buttonSize: 46,
                   icon: Icon(
                     Icons.edit_outlined,
-                    color: FlutterFlowTheme.of(context).textColor,
+                    color: CustomTheme.of(context).textColor,
                     size: 24,
                   ),
                   onPressed: () async {
@@ -127,7 +127,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primary,
+                    color: CustomTheme.of(context).primary,
                   ),
                   child: Column(
                     children: [
@@ -139,11 +139,11 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                             Expanded(
                               child: Text(
                                 'Amount',
-                                style: FlutterFlowTheme.of(context)
+                                style: CustomTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .textColor,
                                     ),
                               ),
@@ -159,11 +159,11 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                             Expanded(
                               child: Text(
                                 '\$${paymentDetailsTransactionsRecord.transactionAmount}',
-                                style: FlutterFlowTheme.of(context)
+                                style: CustomTheme.of(context)
                                     .headlineMedium
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .textColor,
                                       fontSize: 36,
                                     ),
@@ -182,7 +182,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           'Vendor',
-                          style: FlutterFlowTheme.of(context).bodyMedium,
+                          style: CustomTheme.of(context).bodyMedium,
                         ),
                       ),
                     ],
@@ -195,7 +195,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           paymentDetailsTransactionsRecord.transactionName,
-                          style: FlutterFlowTheme.of(context)
+                          style: CustomTheme.of(context)
                               .headlineSmall
                               .override(
                                 fontFamily: 'Lexend',
@@ -213,7 +213,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           'When',
-                          style: FlutterFlowTheme.of(context).bodyMedium,
+                          style: CustomTheme.of(context).bodyMedium,
                         ),
                       ),
                     ],
@@ -229,7 +229,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                           paymentDetailsTransactionsRecord.transactionTime,
                           locale: GetLocalizations.of(context).languageCode,
                         ),
-                        style: FlutterFlowTheme.of(context).bodySmall,
+                        style: CustomTheme.of(context).bodySmall,
                       ),
                       Padding(
                         padding:
@@ -240,11 +240,11 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                             paymentDetailsTransactionsRecord.transactionTime,
                             locale: GetLocalizations.of(context).languageCode,
                           ),
-                          style: FlutterFlowTheme.of(context)
+                          style: CustomTheme.of(context)
                               .bodySmall
                               .override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).tertiary,
+                                color: CustomTheme.of(context).tertiary,
                               ),
                         ),
                       ),
@@ -261,7 +261,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                               const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
                           child: Text(
                             'Reason',
-                            style: FlutterFlowTheme.of(context).bodyMedium,
+                            style: CustomTheme.of(context).bodyMedium,
                           ),
                         ),
                       ),
@@ -275,7 +275,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           paymentDetailsTransactionsRecord.transactionReason,
-                          style: FlutterFlowTheme.of(context).bodySmall,
+                          style: CustomTheme.of(context).bodySmall,
                         ),
                       ),
                     ],
@@ -288,7 +288,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           'Spent by',
-                          style: FlutterFlowTheme.of(context).bodyMedium,
+                          style: CustomTheme.of(context).bodyMedium,
                         ),
                       ),
                     ],
@@ -308,7 +308,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                 width: 40,
                                 height: 40,
                                 child: SpinKitPumpingHeart(
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: CustomTheme.of(context).primary,
                                   size: 40,
                                 ),
                               ),
@@ -325,7 +325,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                               width: MediaQuery.sizeOf(context).width * 0.9,
                               height: 60,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
+                                color: CustomTheme.of(context)
                                     .secondaryBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
@@ -337,7 +337,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                     Card(
                                       clipBehavior: Clip.antiAliasWithSaveLayer,
                                       color:
-                                          FlutterFlowTheme.of(context).primary,
+                                          CustomTheme.of(context).primary,
                                       elevation: 2,
                                       shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(40),
@@ -380,18 +380,18 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                                 containerUsersRecord
                                                     .displayName,
                                                 style:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .headlineSmall,
                                               ),
                                             ],
                                           ),
                                           Text(
                                             containerUsersRecord.email,
-                                            style: FlutterFlowTheme.of(context)
+                                            style: CustomTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Lexend',
-                                                  color: FlutterFlowTheme.of(
+                                                  color: CustomTheme.of(
                                                           context)
                                                       .primary,
                                                 ),

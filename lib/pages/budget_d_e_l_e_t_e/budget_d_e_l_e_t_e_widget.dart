@@ -53,13 +53,13 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).errorRed,
+            backgroundColor: CustomTheme.of(context).errorRed,
             body: Center(
               child: SizedBox(
                 width: 40,
                 height: 40,
                 child: SpinKitPumpingHeart(
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: CustomTheme.of(context).primary,
                   size: 40,
                 ),
               ),
@@ -69,7 +69,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
         final budgetDELETEBudgetsRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).errorRed,
+          backgroundColor: CustomTheme.of(context).errorRed,
           body: Column(
             children: [
               Material(
@@ -85,7 +85,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                   width: MediaQuery.sizeOf(context).width * 1.0,
                   height: MediaQuery.sizeOf(context).height * 0.8,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: CustomTheme.of(context).secondaryBackground,
                     borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(16),
                       bottomRight: Radius.circular(16),
@@ -101,18 +101,18 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                           children: [
                             Card(
                               clipBehavior: Clip.antiAliasWithSaveLayer,
-                              color: FlutterFlowTheme.of(context)
+                              color: CustomTheme.of(context)
                                   .primaryBackground,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30),
                               ),
-                              child: FlutterFlowIconButton(
+                              child: CustomIconButton(
                                 borderColor: Colors.transparent,
                                 borderRadius: 30,
                                 buttonSize: 48,
                                 icon: Icon(
                                   Icons.close_rounded,
-                                  color: FlutterFlowTheme.of(context)
+                                  color: CustomTheme.of(context)
                                       .secondaryText,
                                   size: 30,
                                 ),
@@ -138,7 +138,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                               const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
                           child: Text(
                             'Delete Budget',
-                            style: FlutterFlowTheme.of(context).displaySmall,
+                            style: CustomTheme.of(context).displaySmall,
                           ),
                         ),
                         Padding(
@@ -151,7 +151,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                 child: Text(
                                   'If you delete this budget, you...',
                                   textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context).bodySmall,
+                                  style: CustomTheme.of(context).bodySmall,
                                 ),
                               ),
                             ],
@@ -186,7 +186,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                   width: 40,
                                   height: 40,
                                   child: SpinKitPumpingHeart(
-                                    color: FlutterFlowTheme.of(context).primary,
+                                    color: CustomTheme.of(context).primary,
                                     size: 40,
                                   ),
                                 ),
@@ -232,12 +232,12 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
                                 height: 70,
                                 padding: EdgeInsetsDirectional.zero,
                                 iconPadding: EdgeInsetsDirectional.zero,
-                                color: FlutterFlowTheme.of(context).errorRed,
-                                textStyle: FlutterFlowTheme.of(context)
+                                color: CustomTheme.of(context).errorRed,
+                                textStyle: CustomTheme.of(context)
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Lexend',
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .textColor,
                                     ),
                                 elevation: 0,
@@ -256,7 +256,7 @@ class _BudgetDELETEWidgetState extends State<BudgetDELETEWidget> {
               ),
               Text(
                 'Tap above to remove this bude',
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                style: CustomTheme.of(context).bodyMedium.override(
                       fontFamily: 'Lexend',
                       color: const Color(0x43000000),
                     ),

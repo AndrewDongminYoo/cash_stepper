@@ -251,7 +251,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: CustomTheme.of(context).tertiary,
       body: Column(
         children: [
           Material(
@@ -270,7 +270,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                 maxHeight: MediaQuery.sizeOf(context).height * 0.84,
               ),
               decoration: BoxDecoration(
-                color: FlutterFlowTheme.of(context).secondaryBackground,
+                color: CustomTheme.of(context).secondaryBackground,
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(16),
                   bottomRight: Radius.circular(16),
@@ -285,21 +285,21 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                       children: [
                         Text(
                           'Transfer Funds',
-                          style: FlutterFlowTheme.of(context).displaySmall,
+                          style: CustomTheme.of(context).displaySmall,
                         ),
                         Card(
                           clipBehavior: Clip.antiAliasWithSaveLayer,
-                          color: FlutterFlowTheme.of(context).primaryBackground,
+                          color: CustomTheme.of(context).primaryBackground,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
-                          child: FlutterFlowIconButton(
+                          child: CustomIconButton(
                             borderColor: Colors.transparent,
                             borderRadius: 30,
                             buttonSize: 48,
                             icon: Icon(
                               Icons.close_rounded,
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: CustomTheme.of(context).secondaryText,
                               size: 30,
                             ),
                             onPressed: () async {
@@ -339,11 +339,11 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                 children: [
                                   Text(
                                     'Balance',
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .textColor,
                                         ),
                                   ),
@@ -357,11 +357,11 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                 children: [
                                   Text(
                                     r'$7,630',
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .textColor,
                                           fontSize: 32,
                                         ),
@@ -378,21 +378,21 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                 children: [
                                   Text(
                                     '**** 0149',
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Roboto Mono',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .textColor,
                                         ),
                                   ),
                                   Text(
                                     '05/25',
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Roboto Mono',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .textColor,
                                         ),
                                   ),
@@ -414,8 +414,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         height: 40,
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
-                        color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context).bodySmall,
+                        color: CustomTheme.of(context).primaryBackground,
+                        textStyle: CustomTheme.of(context).bodySmall,
                         elevation: 2,
                         borderSide: const BorderSide(
                           color: Colors.transparent,
@@ -427,7 +427,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
-                      child: FlutterFlowDropDown<String>(
+                      child: CustomDropDown<String>(
                         controller: _model.dropDownValueController1 ??=
                             FormFieldController<String>(null),
                         options: const [
@@ -439,17 +439,17 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                             setState(() => _model.dropDownValue1 = val),
                         width: MediaQuery.sizeOf(context).width * 0.9,
                         height: 60,
-                        textStyle: FlutterFlowTheme.of(context).bodyMedium,
+                        textStyle: CustomTheme.of(context).bodyMedium,
                         hintText: 'Transfer Type',
                         icon: Icon(
                           Icons.keyboard_arrow_down_rounded,
-                          color: FlutterFlowTheme.of(context).grayLight,
+                          color: CustomTheme.of(context).grayLight,
                           size: 15,
                         ),
                         fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                            CustomTheme.of(context).secondaryBackground,
                         elevation: 2,
-                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderColor: CustomTheme.of(context).alternate,
                         borderWidth: 2,
                         borderRadius: 8,
                         margin: const EdgeInsetsDirectional.fromSTEB(
@@ -461,7 +461,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
-                      child: FlutterFlowDropDown<String>(
+                      child: CustomDropDown<String>(
                         controller: _model.dropDownValueController2 ??=
                             FormFieldController<String>(null),
                         options: const [
@@ -474,17 +474,17 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                             setState(() => _model.dropDownValue2 = val),
                         width: MediaQuery.sizeOf(context).width * 0.9,
                         height: 60,
-                        textStyle: FlutterFlowTheme.of(context).bodyMedium,
+                        textStyle: CustomTheme.of(context).bodyMedium,
                         hintText: 'Choose an Account',
                         icon: Icon(
                           Icons.keyboard_arrow_down_rounded,
-                          color: FlutterFlowTheme.of(context).grayLight,
+                          color: CustomTheme.of(context).grayLight,
                           size: 15,
                         ),
                         fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                            CustomTheme.of(context).secondaryBackground,
                         elevation: 2,
-                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderColor: CustomTheme.of(context).alternate,
                         borderWidth: 2,
                         borderRadius: 8,
                         margin: const EdgeInsetsDirectional.fromSTEB(
@@ -500,16 +500,16 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         controller: _model.textController,
                         decoration: InputDecoration(
                           labelText: r'$ Amount',
-                          labelStyle: FlutterFlowTheme.of(context)
+                          labelStyle: CustomTheme.of(context)
                               .displaySmall
                               .override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).grayLight,
+                                color: CustomTheme.of(context).grayLight,
                                 fontWeight: FontWeight.w300,
                               ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).alternate,
+                              color: CustomTheme.of(context).alternate,
                               width: 2,
                             ),
                             borderRadius: BorderRadius.circular(8),
@@ -538,7 +538,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                           contentPadding: const EdgeInsetsDirectional.fromSTEB(
                               20, 24, 24, 24),
                         ),
-                        style: FlutterFlowTheme.of(context).displaySmall,
+                        style: CustomTheme.of(context).displaySmall,
                         validator:
                             _model.textControllerValidator.asValidator(context),
                       ).animateOnPageLoad(
@@ -552,12 +552,12 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         children: [
                           Text(
                             'Your new account balance is:',
-                            style: FlutterFlowTheme.of(context).bodySmall,
+                            style: CustomTheme.of(context).bodySmall,
                           ),
                           Text(
                             r'$7,630',
                             textAlign: TextAlign.end,
-                            style: FlutterFlowTheme.of(context).headlineSmall,
+                            style: CustomTheme.of(context).headlineSmall,
                           ),
                         ],
                       ).animateOnPageLoad(
@@ -594,11 +594,11 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         height: 70,
                         padding: EdgeInsetsDirectional.zero,
                         iconPadding: EdgeInsetsDirectional.zero,
-                        color: FlutterFlowTheme.of(context).tertiary,
+                        color: CustomTheme.of(context).tertiary,
                         textStyle:
-                            FlutterFlowTheme.of(context).displaySmall.override(
+                            CustomTheme.of(context).displaySmall.override(
                                   fontFamily: 'Lexend',
-                                  color: FlutterFlowTheme.of(context).textColor,
+                                  color: CustomTheme.of(context).textColor,
                                 ),
                         elevation: 0,
                         borderSide: const BorderSide(
@@ -614,7 +614,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
           ),
           Text(
             'Tap above to complete transfer',
-            style: FlutterFlowTheme.of(context).bodyMedium.override(
+            style: CustomTheme.of(context).bodyMedium.override(
                   fontFamily: 'Lexend',
                   color: const Color(0x43000000),
                 ),

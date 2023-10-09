@@ -44,7 +44,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: CustomTheme.of(context).primaryBackground,
       body: Column(
         children: [
           Row(
@@ -98,7 +98,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                 children: [
                                   Text(
                                     'Get Started',
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .displaySmall,
                                   ),
                                 ],
@@ -110,7 +110,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   children: [
                                     Text(
                                       'Create your account below.',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .titleMedium,
                                     ),
                                   ],
@@ -124,10 +124,10 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   decoration: InputDecoration(
                                     labelText: 'Email Address',
                                     labelStyle:
-                                        FlutterFlowTheme.of(context).bodySmall,
+                                        CustomTheme.of(context).bodySmall,
                                     hintText: 'Enter your email...',
                                     hintStyle:
-                                        FlutterFlowTheme.of(context).bodySmall,
+                                        CustomTheme.of(context).bodySmall,
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: const BorderSide(
                                         color: Color(0x00000000),
@@ -153,14 +153,14 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
+                                    fillColor: CustomTheme.of(context)
                                         .secondaryBackground,
                                     contentPadding:
                                         const EdgeInsetsDirectional.fromSTEB(
                                             20, 24, 20, 24),
                                   ),
                                   style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                      CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .emailAddressControllerValidator
                                       .asValidator(context),
@@ -175,10 +175,10 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   decoration: InputDecoration(
                                     labelText: 'Password',
                                     labelStyle:
-                                        FlutterFlowTheme.of(context).bodySmall,
+                                        CustomTheme.of(context).bodySmall,
                                     hintText: 'Enter your password...',
                                     hintStyle:
-                                        FlutterFlowTheme.of(context).bodySmall,
+                                        CustomTheme.of(context).bodySmall,
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: const BorderSide(
                                         color: Color(0x00000000),
@@ -204,7 +204,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
+                                    fillColor: CustomTheme.of(context)
                                         .secondaryBackground,
                                     contentPadding:
                                         const EdgeInsetsDirectional.fromSTEB(
@@ -219,14 +219,14 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         _model.passwordCreateVisibility
                                             ? Icons.visibility_outlined
                                             : Icons.visibility_off_outlined,
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .secondaryText,
                                         size: 20,
                                       ),
                                     ),
                                   ),
                                   style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                      CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .passwordCreateControllerValidator
                                       .asValidator(context),
@@ -242,10 +242,10 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   decoration: InputDecoration(
                                     labelText: 'Confirm Password',
                                     labelStyle:
-                                        FlutterFlowTheme.of(context).bodySmall,
+                                        CustomTheme.of(context).bodySmall,
                                     hintText: 'Enter your password...',
                                     hintStyle:
-                                        FlutterFlowTheme.of(context).bodySmall,
+                                        CustomTheme.of(context).bodySmall,
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: const BorderSide(
                                         color: Color(0x00000000),
@@ -271,7 +271,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
+                                    fillColor: CustomTheme.of(context)
                                         .secondaryBackground,
                                     contentPadding:
                                         const EdgeInsetsDirectional.fromSTEB(
@@ -286,14 +286,14 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         _model.passwordConfirmVisibility
                                             ? Icons.visibility_outlined
                                             : Icons.visibility_off_outlined,
-                                        color: FlutterFlowTheme.of(context)
+                                        color: CustomTheme.of(context)
                                             .secondaryText,
                                         size: 20,
                                       ),
                                     ),
                                   ),
                                   style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                      CustomTheme.of(context).bodyMedium,
                                   validator: _model
                                       .passwordConfirmControllerValidator
                                       .asValidator(context),
@@ -343,9 +343,9 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                     height: 50,
                                     padding: EdgeInsetsDirectional.zero,
                                     iconPadding: EdgeInsetsDirectional.zero,
-                                    color: FlutterFlowTheme.of(context).primary,
+                                    color: CustomTheme.of(context).primary,
                                     textStyle:
-                                        FlutterFlowTheme.of(context).titleSmall,
+                                        CustomTheme.of(context).titleSmall,
                                     elevation: 3,
                                     borderSide: const BorderSide(
                                       color: Colors.transparent,
@@ -362,7 +362,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         MediaQuery.sizeOf(context).width * 0.8,
                                     height: 44,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
+                                      color: CustomTheme.of(context)
                                           .secondaryBackground,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
@@ -392,7 +392,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         children: [
                                           Icon(
                                             Icons.arrow_back_rounded,
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .primary,
                                             size: 24,
                                           ),
@@ -402,12 +402,12 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                             child: Text(
                                               'Login',
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Lexend',
                                                         color:
-                                                            FlutterFlowTheme.of(
+                                                            CustomTheme.of(
                                                                     context)
                                                                 .primary,
                                                       ),
@@ -415,7 +415,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                           ),
                                           Text(
                                             'Already have an account?',
-                                            style: FlutterFlowTheme.of(context)
+                                            style: CustomTheme.of(context)
                                                 .bodyMedium,
                                           ),
                                         ],
@@ -454,12 +454,12 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                             height: 50,
                             padding: EdgeInsetsDirectional.zero,
                             iconPadding: EdgeInsetsDirectional.zero,
-                            color: FlutterFlowTheme.of(context).background,
-                            textStyle: FlutterFlowTheme.of(context)
+                            color: CustomTheme.of(context).background,
+                            textStyle: CustomTheme.of(context)
                                 .titleSmall
                                 .override(
                                   fontFamily: 'Lexend',
-                                  color: FlutterFlowTheme.of(context).textColor,
+                                  color: CustomTheme.of(context).textColor,
                                 ),
                             elevation: 3,
                             borderSide: const BorderSide(

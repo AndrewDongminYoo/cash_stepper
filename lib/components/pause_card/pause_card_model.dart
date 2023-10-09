@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'pause_card_widget.dart' show PauseCardWidget;
 
-class PauseCardModel extends FlutterFlowModel<PauseCardWidget> {
+class PauseCardModel extends CustomModel<PauseCardWidget> {
   /// Initialization and disposal methods.
 
   @override

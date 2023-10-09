@@ -87,7 +87,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: CustomTheme.of(context).tertiary,
       body: Form(
         key: _model.formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -106,7 +106,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 height: MediaQuery.sizeOf(context).height * 0.8,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  color: CustomTheme.of(context).secondaryBackground,
                   borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(16),
                     bottomRight: Radius.circular(16),
@@ -121,23 +121,23 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                         children: [
                           Text(
                             'Create Budget',
-                            style: FlutterFlowTheme.of(context).displaySmall,
+                            style: CustomTheme.of(context).displaySmall,
                           ),
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
                             color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                                CustomTheme.of(context).primaryBackground,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            child: FlutterFlowIconButton(
+                            child: CustomIconButton(
                               borderColor: Colors.transparent,
                               borderRadius: 30,
                               buttonSize: 48,
                               icon: Icon(
                                 Icons.close_rounded,
                                 color:
-                                    FlutterFlowTheme.of(context).secondaryText,
+                                    CustomTheme.of(context).secondaryText,
                                 size: 30,
                               ),
                               onPressed: () async {
@@ -160,26 +160,26 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                           child: TextFormField(
                             controller: _model.textController1,
                             decoration: InputDecoration(
-                              labelStyle: FlutterFlowTheme.of(context)
+                              labelStyle: CustomTheme.of(context)
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
                                     color:
-                                        FlutterFlowTheme.of(context).grayLight,
+                                        CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               hintText: 'Amount',
-                              hintStyle: FlutterFlowTheme.of(context)
+                              hintStyle: CustomTheme.of(context)
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
                                     color:
-                                        FlutterFlowTheme.of(context).grayLight,
+                                        CustomTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                   ),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).alternate,
+                                  color: CustomTheme.of(context).alternate,
                                   width: 2,
                                 ),
                                 borderRadius: BorderRadius.circular(8),
@@ -210,11 +210,11 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                       20, 24, 24, 24),
                               prefixIcon: Icon(
                                 Icons.attach_money_rounded,
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                color: CustomTheme.of(context).primaryText,
                                 size: 32,
                               ),
                             ),
-                            style: FlutterFlowTheme.of(context).displaySmall,
+                            style: CustomTheme.of(context).displaySmall,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
                             validator: _model.textController1Validator
@@ -231,11 +231,11 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                           decoration: InputDecoration(
                             labelText: 'Budget Name',
                             labelStyle:
-                                FlutterFlowTheme.of(context).titleMedium,
-                            hintStyle: FlutterFlowTheme.of(context).bodyMedium,
+                                CustomTheme.of(context).titleMedium,
+                            hintStyle: CustomTheme.of(context).bodyMedium,
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).alternate,
+                                color: CustomTheme.of(context).alternate,
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(8),
@@ -265,7 +265,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                 const EdgeInsetsDirectional.fromSTEB(
                                     20, 32, 24, 32),
                           ),
-                          style: FlutterFlowTheme.of(context).headlineSmall,
+                          style: CustomTheme.of(context).headlineSmall,
                           validator: _model.budgetNameControllerValidator
                               .asValidator(context),
                         ),
@@ -276,12 +276,12 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                         child: TextFormField(
                           controller: _model.textController3,
                           decoration: InputDecoration(
-                            labelStyle: FlutterFlowTheme.of(context).bodyMedium,
+                            labelStyle: CustomTheme.of(context).bodyMedium,
                             hintText: 'Description',
-                            hintStyle: FlutterFlowTheme.of(context).bodyMedium,
+                            hintStyle: CustomTheme.of(context).bodyMedium,
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).alternate,
+                                color: CustomTheme.of(context).alternate,
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(8),
@@ -311,11 +311,11 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                 const EdgeInsetsDirectional.fromSTEB(
                                     20, 40, 24, 0),
                           ),
-                          style: FlutterFlowTheme.of(context)
+                          style: CustomTheme.of(context)
                               .bodyMedium
                               .override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).textColor,
+                                color: CustomTheme.of(context).textColor,
                               ),
                           maxLines: 4,
                           validator: _model.textController3Validator
@@ -351,7 +351,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                 width: 40,
                                 height: 40,
                                 child: SpinKitPumpingHeart(
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: CustomTheme.of(context).primary,
                                   size: 40,
                                 ),
                               ),
@@ -401,13 +401,13 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                               height: 70,
                               padding: EdgeInsetsDirectional.zero,
                               iconPadding: EdgeInsetsDirectional.zero,
-                              color: FlutterFlowTheme.of(context).tertiary,
-                              textStyle: FlutterFlowTheme.of(context)
+                              color: CustomTheme.of(context).tertiary,
+                              textStyle: CustomTheme.of(context)
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Lexend',
                                     color:
-                                        FlutterFlowTheme.of(context).textColor,
+                                        CustomTheme.of(context).textColor,
                                   ),
                               elevation: 0,
                               borderSide: const BorderSide(
@@ -425,7 +425,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
             ),
             Text(
               'Tap above to complete request',
-              style: FlutterFlowTheme.of(context).bodyMedium.override(
+              style: CustomTheme.of(context).bodyMedium.override(
                     fontFamily: 'Lexend',
                     color: const Color(0x43000000),
                   ),

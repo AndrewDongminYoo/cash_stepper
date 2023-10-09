@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'privacy_policy_widget.dart' show PrivacyPolicyWidget;
 
-class PrivacyPolicyModel extends FlutterFlowModel<PrivacyPolicyWidget> {
+class PrivacyPolicyModel extends CustomModel<PrivacyPolicyWidget> {
   /// Initialization and disposal methods.
 
   @override

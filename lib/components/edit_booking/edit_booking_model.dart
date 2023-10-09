@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'edit_booking_widget.dart' show EditBookingWidget;
 
-class EditBookingModel extends FlutterFlowModel<EditBookingWidget> {
+class EditBookingModel extends CustomModel<EditBookingWidget> {
   ///  State fields for stateful widgets in this component.
 
   // State field(s) for personsName widget.

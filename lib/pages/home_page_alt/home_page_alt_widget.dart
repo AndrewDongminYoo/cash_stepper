@@ -46,13 +46,13 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).background,
+            backgroundColor: CustomTheme.of(context).background,
             body: Center(
               child: SizedBox(
                 width: 40,
                 height: 40,
                 child: SpinKitPumpingHeart(
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: CustomTheme.of(context).primary,
                   size: 40,
                 ),
               ),
@@ -62,7 +62,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
         // final homePageAltUsersRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).background,
+          backgroundColor: CustomTheme.of(context).background,
           body: SafeArea(
             child: Column(
               children: [
@@ -74,7 +74,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                         children: [
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                            color: FlutterFlowTheme.of(context).tertiary,
+                            color: CustomTheme.of(context).tertiary,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40),
                             ),
@@ -106,7 +106,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                               children: [
                                 Text(
                                   'Welcome,',
-                                  style: FlutterFlowTheme.of(context)
+                                  style: CustomTheme.of(context)
                                       .headlineSmall,
                                 ),
                                 Padding(
@@ -114,11 +114,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                       4, 0, 0, 0),
                                   child: Text(
                                     'Andrew',
-                                    style: FlutterFlowTheme.of(context)
+                                    style: CustomTheme.of(context)
                                         .headlineSmall
                                         .override(
                                           fontFamily: 'Lexend',
-                                          color: FlutterFlowTheme.of(context)
+                                          color: CustomTheme.of(context)
                                               .tertiary,
                                         ),
                                   ),
@@ -130,7 +130,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                   0, 4, 0, 0),
                               child: Text(
                                 'Your latest updates are below.',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                style: CustomTheme.of(context).bodyMedium,
                               ),
                             ),
                           ],
@@ -158,7 +158,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                               height: 230,
                               decoration: BoxDecoration(
                                 color:
-                                    FlutterFlowTheme.of(context).darkBackground,
+                                    CustomTheme.of(context).darkBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Column(
@@ -171,7 +171,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             12, 0, 0, 0),
                                     child: Text(
                                       'Total Balance',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodySmall
                                           .override(
                                             fontFamily: 'Lexend',
@@ -186,7 +186,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             12, 4, 0, 0),
                                     child: Text(
                                       r'$25,281',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .displaySmall
                                           .override(
                                             fontFamily: 'Lexend',
@@ -200,7 +200,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             12, 12, 0, 0),
                                     child: Text(
                                       'Total Balance',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodySmall
                                           .override(
                                             fontFamily: 'Lexend',
@@ -215,11 +215,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             12, 4, 0, 0),
                                     child: Text(
                                       r'$25,281',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .displaySmall
                                           .override(
                                             fontFamily: 'Lexend',
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .tertiary,
                                           ),
                                     ),
@@ -230,7 +230,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             12, 12, 0, 0),
                                     child: Text(
                                       'Total Balance',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .bodySmall
                                           .override(
                                             fontFamily: 'Lexend',
@@ -245,11 +245,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             12, 4, 0, 0),
                                     child: Text(
                                       r'$25,281',
-                                      style: FlutterFlowTheme.of(context)
+                                      style: CustomTheme.of(context)
                                           .displaySmall
                                           .override(
                                             fontFamily: 'Lexend',
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .errorRed,
                                           ),
                                     ),
@@ -271,7 +271,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                 width: MediaQuery.sizeOf(context).width * 0.44,
                                 height: 180,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).secondary,
+                                  color: CustomTheme.of(context).secondary,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Column(
@@ -284,7 +284,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 0, 0, 0),
                                       child: Text(
                                         'Next Payroll',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodySmall
                                             .override(
                                               fontFamily: 'Lexend',
@@ -299,7 +299,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 4, 0, 0),
                                       child: Text(
                                         r'$25,281',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .displaySmall
                                             .override(
                                               fontFamily: 'Lexend',
@@ -313,7 +313,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 12, 0, 0),
                                       child: Text(
                                         'Debit Date',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodySmall
                                             .override(
                                               fontFamily: 'Lexend',
@@ -328,12 +328,12 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 4, 0, 0),
                                       child: Text(
                                         'Aug 31, 2021',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .headlineSmall
                                             .override(
                                               fontFamily: 'Lexend',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .darkBackground,
                                             ),
                                       ),
@@ -344,7 +344,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 12, 0, 0),
                                       child: Text(
                                         '4 days left',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodySmall,
                                       ),
                                     ),
@@ -374,7 +374,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                       MediaQuery.sizeOf(context).width * 0.44,
                                   height: 230,
                                   decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
+                                    color: CustomTheme.of(context)
                                         .darkBackground,
                                     boxShadow: const [
                                       BoxShadow(
@@ -396,7 +396,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           width: double.infinity,
                                           height: 60,
                                           decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
+                                            color: CustomTheme.of(context)
                                                 .background,
                                             borderRadius:
                                                 BorderRadius.circular(8),
@@ -408,11 +408,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               Text(
                                                 '1 New Alert',
                                                 style:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .titleSmall
                                                         .override(
                                                           fontFamily: 'Lexend',
-                                                          color: FlutterFlowTheme
+                                                          color: CustomTheme
                                                                   .of(context)
                                                               .textColor,
                                                         ),
@@ -433,7 +433,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               child: Icon(
                                                 Icons.circle_notifications,
                                                 color:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .tertiary,
                                                 size: 24,
                                               ),
@@ -445,7 +445,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               child: Text(
                                                 'Fraud Alert',
                                                 style:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .bodySmall,
                                               ),
                                             ),
@@ -462,7 +462,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               child: Text(
                                                 'We noticed a small charge that...',
                                                 style:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .bodySmall
                                                         .override(
                                                           fontFamily: 'Lexend',
@@ -487,11 +487,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               child: Text(
                                                 'View Now',
                                                 style:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .bodySmall
                                                         .override(
                                                           fontFamily: 'Lexend',
-                                                          color: FlutterFlowTheme
+                                                          color: CustomTheme
                                                                   .of(context)
                                                               .tertiary,
                                                         ),
@@ -515,7 +515,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                 width: MediaQuery.sizeOf(context).width * 0.44,
                                 height: 180,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: CustomTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Column(
@@ -528,7 +528,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 0, 0, 0),
                                       child: Text(
                                         'Marketing Budget',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodySmall
                                             .override(
                                               fontFamily: 'Lexend',
@@ -543,7 +543,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 4, 0, 0),
                                       child: Text(
                                         r'$3,000',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .displaySmall
                                             .override(
                                               fontFamily: 'Lexend',
@@ -557,7 +557,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 12, 0, 0),
                                       child: Text(
                                         'Total Spent',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodySmall
                                             .override(
                                               fontFamily: 'Lexend',
@@ -572,12 +572,12 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 4, 0, 0),
                                       child: Text(
                                         r'$2,502',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .displaySmall
                                             .override(
                                               fontFamily: 'Lexend',
                                               color:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .errorRed,
                                             ),
                                       ),
@@ -588,7 +588,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               12, 12, 0, 0),
                                       child: Text(
                                         '4 days left',
-                                        style: FlutterFlowTheme.of(context)
+                                        style: CustomTheme.of(context)
                                             .bodySmall,
                                       ),
                                     ),
@@ -611,10 +611,10 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                         width: MediaQuery.sizeOf(context).width * 0.92,
                         height: 70,
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).darkBackground,
+                          color: CustomTheme.of(context).darkBackground,
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
-                            color: FlutterFlowTheme.of(context).darkBackground,
+                            color: CustomTheme.of(context).darkBackground,
                             width: 0,
                           ),
                         ),
@@ -658,12 +658,12 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                       children: [
                                         Text(
                                           'Team Name',
-                                          style: FlutterFlowTheme.of(context)
+                                          style: CustomTheme.of(context)
                                               .titleMedium
                                               .override(
                                                 fontFamily: 'Lexend Deca',
                                                 color:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .textColor,
                                                 fontSize: 18,
                                                 fontWeight: FontWeight.w500,
@@ -678,12 +678,12 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               r'$5,000',
                                               textAlign: TextAlign.end,
                                               style:
-                                                  FlutterFlowTheme.of(context)
+                                                  CustomTheme.of(context)
                                                       .titleSmall
                                                       .override(
                                                         fontFamily: 'Lexend',
                                                         color:
-                                                            FlutterFlowTheme.of(
+                                                            CustomTheme.of(
                                                                     context)
                                                                 .tertiary,
                                                       ),
@@ -702,7 +702,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           child: Text(
                                             'Head of Design',
                                             textAlign: TextAlign.start,
-                                            style: FlutterFlowTheme.of(context)
+                                            style: CustomTheme.of(context)
                                                 .bodySmall
                                                 .override(
                                                   fontFamily: 'Lexend Deca',
@@ -723,7 +723,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               textAlign: TextAlign.end,
                                               style: TextStyle(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
+                                                    CustomTheme.of(context)
                                                         .grayLight,
                                                 fontWeight: FontWeight.w500,
                                                 fontSize: 10,

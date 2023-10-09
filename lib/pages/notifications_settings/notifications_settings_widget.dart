@@ -45,9 +45,9 @@ class _NotificationsSettingsWidgetState
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: CustomTheme.of(context).secondaryBackground,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        backgroundColor: CustomTheme.of(context).secondaryBackground,
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -59,13 +59,13 @@ class _NotificationsSettingsWidgetState
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.of(context).grayLight,
+            color: CustomTheme.of(context).grayLight,
             size: 32,
           ),
         ),
         title: Text(
           'Notifications',
-          style: FlutterFlowTheme.of(context).headlineSmall,
+          style: CustomTheme.of(context).headlineSmall,
         ),
         actions: const [],
         centerTitle: false,
@@ -92,7 +92,7 @@ class _NotificationsSettingsWidgetState
                   width: 40,
                   height: 40,
                   child: SpinKitPumpingHeart(
-                    color: FlutterFlowTheme.of(context).primary,
+                    color: CustomTheme.of(context).primary,
                     size: 40,
                   ),
                 ),
@@ -108,7 +108,7 @@ class _NotificationsSettingsWidgetState
                       Expanded(
                         child: Text(
                           'Choose what notifcations you w...',
-                          style: FlutterFlowTheme.of(context).bodySmall,
+                          style: CustomTheme.of(context).bodySmall,
                         ),
                       ),
                     ],
@@ -123,15 +123,15 @@ class _NotificationsSettingsWidgetState
                     },
                     title: Text(
                       'Push Notifications',
-                      style: FlutterFlowTheme.of(context).headlineSmall,
+                      style: CustomTheme.of(context).headlineSmall,
                     ),
                     subtitle: Text(
                       'Receive Push notifications fro...',
-                      style: FlutterFlowTheme.of(context).bodySmall,
+                      style: CustomTheme.of(context).bodySmall,
                     ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    activeColor: FlutterFlowTheme.of(context).tertiary,
-                    activeTrackColor: FlutterFlowTheme.of(context).primary,
+                    tileColor: CustomTheme.of(context).secondaryBackground,
+                    activeColor: CustomTheme.of(context).tertiary,
+                    activeTrackColor: CustomTheme.of(context).primary,
                     dense: false,
                     controlAffinity: ListTileControlAffinity.trailing,
                     contentPadding:
@@ -145,15 +145,15 @@ class _NotificationsSettingsWidgetState
                   },
                   title: Text(
                     'Email Notifications',
-                    style: FlutterFlowTheme.of(context).headlineSmall,
+                    style: CustomTheme.of(context).headlineSmall,
                   ),
                   subtitle: Text(
                     'Receive email notifications fr...',
-                    style: FlutterFlowTheme.of(context).bodySmall,
+                    style: CustomTheme.of(context).bodySmall,
                   ),
-                  tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  activeColor: FlutterFlowTheme.of(context).tertiary,
-                  activeTrackColor: FlutterFlowTheme.of(context).primary,
+                  tileColor: CustomTheme.of(context).secondaryBackground,
+                  activeColor: CustomTheme.of(context).tertiary,
+                  activeTrackColor: CustomTheme.of(context).primary,
                   dense: false,
                   controlAffinity: ListTileControlAffinity.trailing,
                   contentPadding:
@@ -166,15 +166,15 @@ class _NotificationsSettingsWidgetState
                   },
                   title: Text(
                     'Location Services',
-                    style: FlutterFlowTheme.of(context).headlineSmall,
+                    style: CustomTheme.of(context).headlineSmall,
                   ),
                   subtitle: Text(
                     'Allow us to track your locatio...',
-                    style: FlutterFlowTheme.of(context).bodySmall,
+                    style: CustomTheme.of(context).bodySmall,
                   ),
-                  tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  activeColor: FlutterFlowTheme.of(context).tertiary,
-                  activeTrackColor: FlutterFlowTheme.of(context).primary,
+                  tileColor: CustomTheme.of(context).secondaryBackground,
+                  activeColor: CustomTheme.of(context).tertiary,
+                  activeTrackColor: CustomTheme.of(context).primary,
                   dense: false,
                   controlAffinity: ListTileControlAffinity.trailing,
                   contentPadding:
@@ -192,11 +192,11 @@ class _NotificationsSettingsWidgetState
                       height: 50,
                       padding: EdgeInsetsDirectional.zero,
                       iconPadding: EdgeInsetsDirectional.zero,
-                      color: FlutterFlowTheme.of(context).primary,
+                      color: CustomTheme.of(context).primary,
                       textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
+                          CustomTheme.of(context).titleSmall.override(
                                 fontFamily: 'Lexend',
-                                color: FlutterFlowTheme.of(context).textColor,
+                                color: CustomTheme.of(context).textColor,
                               ),
                       elevation: 3,
                       borderSide: const BorderSide(

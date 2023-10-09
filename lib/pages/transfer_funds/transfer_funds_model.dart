@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'transfer_funds_widget.dart' show TransferFundsWidget;
 
-class TransferFundsModel extends FlutterFlowModel<TransferFundsWidget> {
+class TransferFundsModel extends CustomModel<TransferFundsWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for DropDown widget.
