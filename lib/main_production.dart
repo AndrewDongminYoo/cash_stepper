@@ -1,6 +1,6 @@
 // 🌎 Project imports:
-import 'package:cash_stepper/app/app.dart';
-import 'package:cash_stepper/bootstrap.dart';
+import '/app/app.dart';
+import '/bootstrap.dart';
 
 void main() {
   bootstrap(() => const MyApp());
