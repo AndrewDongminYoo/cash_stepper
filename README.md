@@ -22,16 +22,16 @@ To run the desired flavor either use the launch configuration in VSCode/Android 
 
 ```sh
 # Development
-$ flutter run --flavor development --target lib/main_development.dart
+flutter run --flavor development --target lib/main_development.dart
 
 # Staging
-$ flutter run --flavor staging --target lib/main_staging.dart
+flutter run --flavor staging --target lib/main_staging.dart
 
 # Production
-$ flutter run --flavor production --target lib/main_production.dart
+flutter run --flavor production --target lib/main_production.dart
 ```
 
-_\*Cash Stepper works on iOS, Android, Web, and Windows._
+_\*Cash Stepper works on iOS, Android, Web._
 
 ---
 
@@ -40,17 +40,17 @@ _\*Cash Stepper works on iOS, Android, Web, and Windows._
 To run all unit and widget tests use the following command:
 
 ```sh
-$ flutter test --coverage --test-randomize-ordering-seed random
+flutter test --coverage --test-randomize-ordering-seed random
 ```
 
 To view the generated coverage report you can use [lcov](https://github.com/linux-test-project/lcov).
 
 ```sh
 # Generate Coverage Report
-$ genhtml coverage/lcov.info -o coverage/
+genhtml coverage/lcov.info -o coverage/
 
 # Open Coverage Report
-$ open coverage/index.html
+open coverage/index.html
 ```
 
 ---
@@ -63,43 +63,43 @@ This project relies on [flutter_localizations][flutter_localizations_link] and f
 
 1. To add a new localizable string, open the `app_en.arb` file at `lib/l10n/arb/app_en.arb`.
 
-```arb
-{
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    ```json
+    {
+        "@@locale": "en",
+        "counterAppBarTitle": "Counter",
+        "@counterAppBarTitle": {
+            "description": "Text shown in the AppBar of the Counter Page"
+        }
     }
-}
-```
+    ```
 
 2. Then add a new key/value and description
 
-```arb
-{
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    },
-    "helloWorld": "Hello World",
-    "@helloWorld": {
-        "description": "Hello World Text"
+    ```json
+    {
+        "@@locale": "en",
+        "counterAppBarTitle": "Counter",
+        "@counterAppBarTitle": {
+            "description": "Text shown in the AppBar of the Counter Page"
+        },
+        "helloWorld": "Hello World",
+        "@helloWorld": {
+            "description": "Hello World Text"
+        }
     }
-}
-```
+    ```
 
 3. Use the new string
 
-```dart
-import 'package:cash_stepper/l10n/l10n.dart';
+    ```dart
+    import 'package:cash_stepper/l10n/l10n.dart';
 
-@override
-Widget build(BuildContext context) {
-  final l10n = context.l10n;
-  return Text(l10n.helloWorld);
-}
-```
+    @override
+    Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    return Text(l10n.helloWorld);
+    }
+    ```
 
 ### Adding Supported Locales
 
@@ -109,10 +109,10 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
     ...
 
     <key>CFBundleLocalizations</key>
-	<array>
-		<string>en</string>
-		<string>es</string>
-	</array>
+    <array>
+        <string>en</string>
+        <string>es</string>
+    </array>
 
     ...
 ```
@@ -121,38 +121,38 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
 
 1. For each supported locale, add a new ARB file in `lib/l10n/arb`.
 
-```
-├── l10n
-│   ├── arb
-│   │   ├── app_en.arb
-│   │   └── app_es.arb
-```
+    ```log
+    ├── l10n
+    │   ├── arb
+    │   │   ├── app_en.arb
+    │   │   └── app_es.arb
+    ```
 
 2. Add the translated strings to each `.arb` file:
 
-`app_en.arb`
+    `app_en.arb`
 
-```arb
-{
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    ```json
+    {
+        "@@locale": "en",
+        "counterAppBarTitle": "Counter",
+        "@counterAppBarTitle": {
+            "description": "Text shown in the AppBar of the Counter Page"
+        }
     }
-}
-```
+    ```
 
-`app_es.arb`
+    `app_es.arb`
 
-```arb
-{
-    "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
+    ```json
+    {
+        "@@locale": "ko",
+        "counterAppBarTitle": "카운터",
+        "@counterAppBarTitle": {
+            "description": "카운터 페이지의 앱바에 표시되는 텍스트"
+        }
     }
-}
-```
+    ```
 
 ### Generating Translations
 
