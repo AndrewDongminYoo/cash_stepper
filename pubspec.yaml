@@ -16,7 +16,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   dropdown_button2: ^2.3.9
   file_picker: ^5.5.0
-  firebase_auth: ^4.10.1
+  firebase_auth: ^4.11.1
   firebase_core: ^2.17.0
   firebase_messaging: ^14.6.9
   firebase_storage: ^11.2.8
