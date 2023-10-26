@@ -148,6 +148,7 @@ analyzer:
     deprecated_member_use_from_same_package: ignore
     invalid_annotation_target: ignore
   exclude:
+    - lib/bootstrap.dart
     - lib/firebase_options.dart
     - bin/cache/**
     - "**/*.g.dart"
