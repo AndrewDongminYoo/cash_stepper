@@ -3,6 +3,7 @@ name: cash_stepper
 concurrency:
   group: $-$
   cancel-in-progress: true
+permissions: read-all
 
 on:
   push:
