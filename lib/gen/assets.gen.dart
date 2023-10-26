@@ -10,6 +10,10 @@
 // 🐦 Flutter imports:
 import 'package:flutter/widgets.dart';
 
+// 📦 Package imports:
+import 'package:lottie/lottie.dart';
+import 'package:rive/rive.dart';
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
@@ -96,10 +100,61 @@ class $AssetsImagesGen {
       ];
 }
 
+class $AssetsLottieAnimationsGen {
+  const $AssetsLottieAnimationsGen();
+
+  /// File path: assets/lottie_animations/custom_loader.json
+  LottieGenImage get customLoader =>
+      const LottieGenImage('assets/lottie_animations/custom_loader.json');
+
+  /// List of all assets
+  List<LottieGenImage> get values => [customLoader];
+}
+
+class $AssetsRiveAnimationsGen {
+  const $AssetsRiveAnimationsGen();
+
+  /// File path: assets/rive_animations/button.riv
+  RiveGenImage get button =>
+      const RiveGenImage('assets/rive_animations/button.riv');
+
+  /// File path: assets/rive_animations/check.riv
+  RiveGenImage get check =>
+      const RiveGenImage('assets/rive_animations/check.riv');
+
+  /// File path: assets/rive_animations/confetti.riv
+  RiveGenImage get confetti =>
+      const RiveGenImage('assets/rive_animations/confetti.riv');
+
+  /// File path: assets/rive_animations/house.riv
+  RiveGenImage get house =>
+      const RiveGenImage('assets/rive_animations/house.riv');
+
+  /// File path: assets/rive_animations/icons.riv
+  RiveGenImage get icons =>
+      const RiveGenImage('assets/rive_animations/icons.riv');
+
+  /// File path: assets/rive_animations/menu_button.riv
+  RiveGenImage get menuButton =>
+      const RiveGenImage('assets/rive_animations/menu_button.riv');
+
+  /// File path: assets/rive_animations/shapes.riv
+  RiveGenImage get shapes =>
+      const RiveGenImage('assets/rive_animations/shapes.riv');
+
+  /// List of all assets
+  List<RiveGenImage> get values =>
+      [button, check, confetti, house, icons, menuButton, shapes];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsLottieAnimationsGen lottieAnimations =
+      $AssetsLottieAnimationsGen();
+  static const $AssetsRiveAnimationsGen riveAnimations =
+      $AssetsRiveAnimationsGen();
 }
 
 class AssetGenImage {
@@ -168,6 +223,100 @@ class AssetGenImage {
       _assetName,
       bundle: bundle,
       package: package,
+    );
+  }
+
+  String get path => _assetName;
+
+  String get keyName => _assetName;
+}
+
+class RiveGenImage {
+  const RiveGenImage(this._assetName);
+
+  final String _assetName;
+
+  RiveAnimation rive({
+    String? artboard,
+    List<String> animations = const [],
+    List<String> stateMachines = const [],
+    BoxFit? fit,
+    Alignment? alignment,
+    Widget? placeHolder,
+    bool antialiasing = true,
+    List<RiveAnimationController> controllers = const [],
+    OnInitCallback? onInit,
+  }) {
+    return RiveAnimation.asset(
+      _assetName,
+      artboard: artboard,
+      animations: animations,
+      stateMachines: stateMachines,
+      fit: fit,
+      alignment: alignment,
+      placeHolder: placeHolder,
+      antialiasing: antialiasing,
+      controllers: controllers,
+      onInit: onInit,
+    );
+  }
+
+  String get path => _assetName;
+
+  String get keyName => _assetName;
+}
+
+class LottieGenImage {
+  const LottieGenImage(this._assetName);
+
+  final String _assetName;
+
+  LottieBuilder lottie({
+    Animation<double>? controller,
+    bool? animate,
+    FrameRate? frameRate,
+    bool? repeat,
+    bool? reverse,
+    LottieDelegates? delegates,
+    LottieOptions? options,
+    void Function(LottieComposition)? onLoaded,
+    LottieImageProviderFactory? imageProviderFactory,
+    Key? key,
+    AssetBundle? bundle,
+    Widget Function(BuildContext, Widget, LottieComposition?)? frameBuilder,
+    ImageErrorWidgetBuilder? errorBuilder,
+    double? width,
+    double? height,
+    BoxFit? fit,
+    AlignmentGeometry? alignment,
+    String? package,
+    bool? addRepaintBoundary,
+    FilterQuality? filterQuality,
+    void Function(String)? onWarning,
+  }) {
+    return Lottie.asset(
+      _assetName,
+      controller: controller,
+      animate: animate,
+      frameRate: frameRate,
+      repeat: repeat,
+      reverse: reverse,
+      delegates: delegates,
+      options: options,
+      onLoaded: onLoaded,
+      imageProviderFactory: imageProviderFactory,
+      key: key,
+      bundle: bundle,
+      frameBuilder: frameBuilder,
+      errorBuilder: errorBuilder,
+      width: width,
+      height: height,
+      fit: fit,
+      alignment: alignment,
+      package: package,
+      addRepaintBoundary: addRepaintBoundary,
+      filterQuality: filterQuality,
+      onWarning: onWarning,
     );
   }
 

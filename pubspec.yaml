@@ -38,12 +38,14 @@ dependencies:
   image_picker: 1.0.4
   intl: ^0.18.1
   json_path: ^0.6.3
+  lottie: ^2.7.0
   mime_type: 1.0.0
   page_transition: ^2.1.0
   path_provider: ^2.1.1
   percent_indicator: ^4.2.3
   plugin_platform_interface: ^2.1.6
   provider: ^6.0.5
+  rive: ^0.12.1
   rxdart: 0.27.7
   shared_preferences: ^2.2.2
   sign_in_with_apple: ^5.0.0
@@ -73,11 +75,15 @@ dev_dependencies:
   test: ^1.24.3
   very_good_analysis: ^5.1.0
 
+# 아이콘 생성 원할 시, dart run flutter_launcher_icons
 flutter_launcher_icons:
-  android: true
+  android: ic_launcher
+  min_sdk_android: 21
   ios: true
   remove_alpha_ios: true
   web:
+    generate: true
+  macos:
     generate: true
   image_path: assets/images/app_launcher_icon.png
 
@@ -89,14 +95,18 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  # Attempted to generate localizations code without having the flutter: generate flag turned on.
+  # Check pubspec.yaml and ensure that flutter: generate: true has been added and rebuild the project.
+  # Otherwise, the localizations source code will not be importable.
+  generate: true
 
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
-    # - assets/videos/
+    - assets/lottie_animations/
+    - assets/rive_animations/
     # - assets/audios/
-    # - assets/lottie_animations/
-    # - assets/rive_animations/
+    # - assets/videos/
     # - assets/pdfs/
 
   fonts:
@@ -104,3 +114,45 @@ flutter:
       fonts:
         - asset: assets/fonts/Lexend Deca-Medium.ttf
         - asset: assets/fonts/Lexend Deca-Regular.ttf
+
+# flutter_gen_runner는 자산, 폰트, 색상 등을 위한 Flutter 코드 생성기로, 문자열 기반 API를 없애줌.
+# String 기반으로 자산 경로를 사용하는 것은 안전하지 않음.
+# build_runner와 FlutterGen을 패키지의 pubspec.yaml 파일에 추가하고,
+# Homebrew 또는 Pub Global activate를 사용하여 FlutterGen CLI binary를 설치.
+# https://pub.dev/packages/flutter_gen_runner
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 120 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true
+
+  colors:
+    enabled: true
+    outputs:
+      class_name: Palette
+    inputs:
+      - assets/colors/primary.xml
+
+# Usage:
+#   dart run import_sorter:main -e
+import_sorter:
+  emojis: true
+
+analyzer:
+  errors:
+    deprecated_member_use_from_same_package: ignore
+    invalid_annotation_target: ignore
+  exclude:
+    - bin/cache/**
+    - "**/*.g.dart"
+    - "**/*.gen.dart"
+    - "**/gen/*.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mocks.dart"
+    - "**/injector.config.dart"
+    - "**/test/*.dart"
