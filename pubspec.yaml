@@ -44,7 +44,7 @@ dependencies:
   path_provider: ^2.1.1
   percent_indicator: ^4.2.3
   plugin_platform_interface: ^2.1.7
-  provider: ^6.0.5
+  provider: ^6.1.1
   rive: ^0.12.1
   rxdart: 0.27.7
   shared_preferences: ^2.2.2
