@@ -37,7 +37,7 @@ dependencies:
   google_sign_in: ^6.1.6
   image_picker: 1.0.4
   intl: ^0.18.1
-  json_path: ^0.6.3
+  json_path: ^0.6.6
   lottie: ^2.7.0
   mime_type: 1.0.0
   page_transition: ^2.1.0
