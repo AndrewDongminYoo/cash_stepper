@@ -26,7 +26,7 @@ class CashStepperFirebaseUser extends BaseAuthUser {
   Future? delete() => user?.delete();
 
   @override
-  Future? updateEmail(String email) async => user?.updateEmail(email);
+  Future? updateEmail(String email) async => user?.verifyBeforeUpdateEmail(email);
 
   @override
   Future? sendEmailVerification() => user?.sendEmailVerification();

@@ -299,7 +299,7 @@ Future<int> queryCollectionCount(
   }
 
   final catches = await query.count().get();
-  return catches.count;
+  return catches.count!;
 }
 
 Stream<List<T>> queryCollection<T>(
