@@ -45,7 +45,7 @@ dependencies:
   percent_indicator: ^4.2.3
   plugin_platform_interface: ^2.1.8
   provider: ^6.1.1
-  rive: ^0.12.4
+  rive: ^0.13.0
   rxdart: 0.27.7
   shared_preferences: ^2.2.2
   sign_in_with_apple: ^5.0.0
