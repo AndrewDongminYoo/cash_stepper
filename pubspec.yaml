@@ -57,7 +57,7 @@ dependencies:
   video_player: ^2.8.2
 
 dev_dependencies:
-  build_runner: ^2.4.8
+  build_runner: ^2.4.9
   build_web_compilers: ^4.0.9
   flutter_driver:
     sdk: flutter
